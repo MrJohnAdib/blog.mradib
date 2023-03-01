@@ -1,0 +1,71 @@
+/*migrate and need to transfer to tailwind*/
+@import 'migrate/grid.scss';
+@import 'migrate/row.scss';
+@import 'migrate/avand.scss';
+@import 'migrate/box.scss';
+@import 'migrate/starRating.scss';
+@import 'migrate/table1.scss';
+@import 'migrate/table2.scss';
+@import 'migrate/kerkere.scss';
+@import 'migrate/msg.scss';
+@import 'migrate/spay.scss';
+@import 'migrate/pagination.scss';
+@import 'migrate/share.scss';
+@import 'migrate/share1.scss';
+@import 'migrate/welcome.scss';
+
+@import 'migrate/grid/grid.scss';
+@import 'migrate/grid/gridLarge.scss';
+@import 'migrate/grid/gridMobile.scss';
+@import 'migrate/grid/gridPhablet.scss';
+@import 'migrate/grid/gridTablet.scss';
+
+@import 'migrate/margin.scss';
+@import 'migrate/padding.scss';
+@import 'migrate/others.scss';
+
+@import 'migrate/forms/_general.scss';
+@import 'migrate/forms/_input.scss';
+@import 'migrate/forms/_checkbox.scss';
+@import 'migrate/forms/_switch.scss';
+@import 'migrate/forms/_radio.scss';
+@import 'migrate/forms/_textarea.scss';
+@import 'migrate/forms/_select.scss';
+@import 'migrate/forms/_rangeslider.scss';
+@import 'migrate/forms/_button.scss';
+
+@import 'migrate/enter.scss';
+
+@import 'migrate/lib/alerty2.scss';
+@import 'migrate/lib/iziToast.scss';
+@import 'migrate/lib/nprogress.scss';
+@import 'migrate/lib/ck.scss';
+
+@import 'migrate/new-elements/uploader.scss';
+@import 'migrate/new-elements/circleChart.scss';
+@import 'migrate/new-elements/option.scss';
+@import 'migrate/new-elements/stat.scss';
+@import 'migrate/new-elements/seo.scss';
+@import 'migrate/new-elements/checklist.scss';
+@import 'migrate/new-elements/chart.scss';
+@import 'migrate/new-elements/items2.scss';
+
+@import 'migrate/jibres-store-panel/priceBox.scss';
+@import 'migrate/jibres-store-panel/storePanel.scss';
+
+
+@import 'migrate/blog1.scss';
+@import 'migrate/productPage.scss';
+@import 'migrate/cartPage.scss';
+@import 'migrate/postPage.scss';
+@import 'migrate/tagPage.scss';
+@import 'migrate/shippingPage.scss';
+
+@import 'migrate/product1.scss';
+@import 'migrate/product2.scss';
+
+
+@import 'migrate/panel/_pay.scss';
+@import 'migrate/panel/_ticket.scss';
+@import 'migrate/panel/_titleBox.scss';
+

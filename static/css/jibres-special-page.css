@@ -1,0 +1,73 @@
+
+.wedbox{font-family: Open sans,sans-serif;position: absolute;z-index: 1000;left: 50px;top: 150px;margin:0 auto;}
+.wed-title{font-size:4rem;font-weight: bold;text-align:center; color: #fff;background: rgba(0,0,0,.5);padding: 0px 5rem;height: 2.3em;line-height: 2.3em;border-radius: 50px;overflow: hidden;}
+.wed-title span{font-size: 0.5em;vertical-align: middle;line-height: 0.5em;}
+.wed-date{background: #EA5546;height: 2.5em;line-height: 2.5em;border-radius: 25px;text-align: center;color: #fff;font-size: 1.8em;margin: -10px 2rem 0px;overflow: hidden;white-space: nowrap;padding: 0 3rem;}
+body .mc-cycle {height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:-1;}
+.bg{position:absolute;z-index:4;top:0px;left:0px;display:block;-webkit-transition: opacity 1s ease-in-out;-moz-transition: opacity 1s ease-in-out;-o-transition: opacity 1s ease-in-out;transition: opacity 1s ease-in-out;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center center;background-repeat:no-repeat;height:100%;overflow:hidden;width:100%;}
+.mesh{background:url(../img/bg/mesh.png);width:100%;height:100%;position:absolute;top:0px;}
+
+.emergencyMode .bg{background-image:url(../img/bg/jibres-emergency-1.jpg);}
+.botMode .bg{background-image:url(../img/bg/jibres-bot-1.jpg);}
+.unknownMode .bg{background-image:url(../img/bg/jibres-unknown-1.jpg);}
+.soonMode .bg{background-image:url(../img/bg/jibres-soon-1.jpg);}
+.lockMode .bg{background-image:url(../img/bg/jibres-lock-1.jpg);}
+
+
+@-webkit-keyframes pulse {
+	from {
+		-webkit-transform: scale(1.0);
+		opacity: 1;
+	}
+	50% {
+		-webkit-transform: scale(1.2);
+		opacity: 0.75;
+	}
+	to {
+		-webkit-transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+
+.cplus{
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	color: #f20e0e;
+	font-size:50px;
+	position: absolute;
+	top:1px;
+	z-index: 1000000;
+	margin: 5px auto 0px;
+}
+
+.plus {
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@media print {
+	/*html,.wedbox,.bg1{display:none;}*/
+}
+
+
+@media only screen and (max-width: 768px){
+	.wedbox{
+		top: inherit;
+		bottom:5%;
+		left:5%;
+		right: 5%;
+		min-width: 25rem;
+		max-width: 40rem;
+	}
+	.wed-title{
+		font-size: 3rem;
+	}
+	.wed-date{
+		font-size: 1.5rem;
+	}
+}
+

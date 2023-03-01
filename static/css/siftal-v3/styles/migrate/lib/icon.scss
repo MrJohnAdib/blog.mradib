@@ -1,0 +1,178 @@
+[class^="sf-"]{
+  margin:0;
+  min-width:1.2em;
+  text-align:center;
+  backface-visibility:hidden;
+  transition-duration:0.3s;
+  transition-property:opacity, background-color, color;
+}
+
+[data-icon]:before{
+  font-family: "siftal", "tahoma" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:0.2s;
+}
+
+[class^="sf-"]:before,
+[class*=" sf-"]:before{
+  font-family: "siftal","tahoma" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  transition:0.2s;
+}
+
+
+.sf-check:before{content:"\6b";}
+.sf-times:before{content:"\e041";}
+.sf-external-link:before{content:"\e0d6";}
+.sf-refresh:before{content:"\e056";}
+.sf-info-circle:before{content:"\e03a";}
+.sf-link-external:before{content:"\e074";}
+.sf-th:before{content:"\e13b";}
+.sf-edit:before{content:"\e17f";}
+.sf-lock:before{content:"\e039";}
+.sf-download:before{content:"\e1ae";}
+.sf-plus-circle:before{content:"\e03d";}
+.sf-trash:before{content:"\e06e";}
+.sf-list-ul:before{content:"\58";}
+.sf-credit-card:before{content:"\e078";}
+.sf-thumbnails:before{content:"\e026";}
+.sf-unlock:before{content:"\e00b";}
+.sf-search:before{content:"\e03f";}
+.sf-database:before{content:"\e04f";}
+.sf-exchange:before{content:"\e0cf";}
+.sf-globe:before{content:"\3f";}
+.sf-star:before{content:"\5c";}
+.sf-plus:before{content:"\e03e";}
+.sf-eraser:before{content:"\e1af";}
+.sf-cogs:before{content:"\e04b";}
+.sf-sort:before{content:"\e12b";}
+.sf-shop:before{content:"\e26d";}
+.sf-asterisk:before{content:"\53";}
+.sf-chart:before{content:"\e04e";}
+.sf-mobile:before{content:"\e103";}
+.sf-bell:before{content:"\65";}
+.sf-user-md:before{content:"\e010";}
+.sf-question-circle:before{content:"\e03c";}
+.sf-link:before{content:"\e073";}
+.sf-folder:before{content:"\e0de";}
+.sf-internet:before{content:"\e243";}
+.sf-envelope:before{content:"\42";}
+.sf-out:before{content:"\e036";}
+.sf-print:before{content:"\e047";}
+.sf-briefcase:before{content:"\e094";}
+.sf-check-circle:before{content:"\e0bc";}
+.sf-chevron-down:before{content:"\e0c0";}
+.sf-chevron-right:before{content:"\e0c2";}
+.sf-chevron-up:before{content:"\e0c3";}
+.sf-gift:before{content:"\e0e3";}
+.sf-heartbeat:before{content:"\e0ec";}
+.sf-eye:before{content:"\e1ac";}
+.sf-cloud-upload:before{content:"\6e";}
+.sf-cog:before{content:"\79";}
+.sf-file-o:before{content:"\25";}
+.sf-save:before{content:"\e027";}
+.sf-cart-plus:before{content:"\e0ba";}
+.sf-paper-plane:before{content:"\e10d";}
+.sf-attach:before{content:"\e16a";}
+.sf-mail:before{content:"\e1c0";}
+.sf-in-alt:before{content:"\e23b";}
+.sf-tree:before{content:"\e253";}
+.sf-cloud:before{content:"\76";}
+.sf-file-pdf-o:before{content:"\41";}
+.sf-file-archive-o:before{content:"\e017";}
+.sf-files-o:before{content:"\39";}
+.sf-history:before{content:"\2c";}
+.sf-gauge:before{content:"\e02e";}
+.sf-filter:before{content:"\e042";}
+.sf-money-banknote:before{content:"\e08a";}
+.sf-table:before{content:"\e134";}
+.sf-terminal:before{content:"\e138";}
+.sf-atom:before{content:"\e178";}
+.sf-crosshairs:before{content:"\46";}
+.sf-file:before{content:"\33";}
+.sf-file-text:before{content:"\36";}
+.sf-heart:before{content:"\2a";}
+.sf-star-half-o:before{content:"\e001";}
+.sf-star-o:before{content:"\e002";}
+.sf-user:before{content:"\e00f";}
+.sf-users:before{content:"\e012";}
+.sf-chat:before{content:"\e02c";}
+.sf-question:before{content:"\e03b";}
+.sf-tag:before{content:"\e049";}
+.sf-analytics-chart-graph:before{content:"\e04d";}
+.sf-retweet:before{content:"\e055";}
+.sf-pencil-square-o:before{content:"\e05d";}
+.sf-trash-o:before{content:"\e06f";}
+.sf-tools:before{content:"\e075";}
+.sf-arrows-out:before{content:"\e08f";}
+.sf-angle-double-left:before{content:"\e097";}
+.sf-angle-double-right:before{content:"\e098";}
+.sf-battery-half:before{content:"\e0a9";}
+.sf-binoculars:before{content:"\e0af";}
+.sf-calculator:before{content:"\e0b3";}
+.sf-chevron-left:before{content:"\e0c1";}
+.sf-life-ring:before{content:"\e0f5";}
+.sf-phone:before{content:"\e10c";}
+.sf-plug:before{content:"\e112";}
+.sf-shopping-cart:before{content:"\e125";}
+.sf-upload:before{content:"\e145";}
+.sf-repeat:before{content:"\e117";}
+.sf-date:before{content:"\e199";}
+.sf-group-full:before{content:"\e1dd";}
+.sf-box:before{content:"\e219";}
+.sf-in:before{content:"\e23a";}
+.sf-ellipsis-v:before{content:"\43";}
+.sf-align-left:before{content:"\4f";}
+.sf-flag:before{content:"\26";}
+.sf-heart-o:before{content:"\2b";}
+.sf-unlock-alt:before{content:"\e00c";}
+.sf-user-plus:before{content:"\e00e";}
+.sf-user-secret:before{content:"\e011";}
+.sf-monitor:before{content:"\e023";}
+.sf-times-circle:before{content:"\e040";}
+.sf-at:before{content:"\e044";}
+.sf-instagram:before{content:"\e045";}
+.sf-tags:before{content:"\e048";}
+.sf-linkedin:before{content:"\e052";}
+.sf-twitter:before{content:"\e054";}
+.sf-building:before{content:"\e05c";}
+.sf-minus-circle:before{content:"\e071";}
+.sf-display:before{content:"\e086";}
+.sf-battery-full:before{content:"\e0a8";}
+.sf-exclamation-circle:before{content:"\e0d2";}
+.sf-music:before{content:"\e108";}
+.sf-pie-chart:before{content:"\e10f";}
+.sf-sitemap:before{content:"\e128";}
+.sf-android:before{content:"\e15a";}
+.sf-basket:before{content:"\e169";}
+.sf-bag:before{content:"\e182";}
+.sf-new-sign:before{content:"\e183";}
+.sf-facebook-official:before{content:"\e18f";}
+.sf-calendar-o:before{content:"\e195";}
+.sf-receipt-shopping-streamline:before{content:"\e19c";}
+.sf-clock:before{content:"\e237";}
+.sf-camera-surveillance:before{content:"\e24a";}
+.sf-hand-stop:before{content:"\e24e";}
+.sf-wallet-money:before{content:"\e255";}
+.sf-trash-can:before{content:"\e266";}
+.sf-file-image-o:before{content:"\45";}
+.sf-file-video-o:before{content:"\48";}
+.sf-share:before{content:"\5d";}
+.sf-certificate:before{content:"\e007";}
+

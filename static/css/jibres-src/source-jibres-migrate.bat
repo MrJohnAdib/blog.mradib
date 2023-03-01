@@ -1,0 +1,1 @@
+sass --watch source-jibres-migrate.scss:../jibres-migrate.min.css --style=compressed

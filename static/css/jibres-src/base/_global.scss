@@ -1,0 +1,31 @@
+body[data-preload] * { -webkit-transition: none !important; -moz-transition: none !important; -ms-transition: none !important; -o-transition: none !important;}
+#pageNotif{display:none!important;}
+
+
+
+/* list */
+ul{list-style:none inside none;}
+
+ul.list{list-style:square outside none;margin:0 2rem;line-height:2rem;}
+[dir="rtl"] ul.list{line-height:3rem;}
+ul.list li {padding:0.5rem 1rem;}
+ul.list li a {padding:0.3rem 0.5rem;}
+
+
+/* very usefull styles*/
+.selectable{
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	user-select: text;
+}
+
+.visible{visibility:visible;opacity:1;-webkit-transition:opacity .5s linear;-o-transition:opacity .5s linear;-moz-transition:opacity .5s linear;transition:opacity .5s linear}
+.hidden{visibility:hidden;opacity:0;-webkit-transition:visibility 0 0.5s,opacity .5s linear;-o-transition:visibility 0 0.5s,opacity .5s linear;-moz-transition:visibility 0 0.5s,opacity .5s linear;transition:visibility 0s 0.5s,opacity .5s linear}
+.hide{display:none!important}
+.hideIn{display:none}
+.center{text-align:center;}
+
+
+
+
+

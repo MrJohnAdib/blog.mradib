@@ -1,0 +1,211 @@
+.box{
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+  font-size: 14px;
+  margin:0 auto 10px;
+  display: block;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+[data-pwa] .box{
+  border-radius: 3px;
+}
+.box:hover{
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+.box.hasCover{
+  margin-top: 100px;
+}
+.avand.impact .box{
+  border:none;
+  margin-bottom: 0;
+}
+[class^="avand-"].impact .box{
+  border:none;
+  margin-bottom: 0;
+}
+.box.impact{
+  box-shadow: 0 10px 25px #ddd;
+  border: 1px solid #ddd;
+}
+[data-pwa] .box.impact{
+  border-radius: 8px;
+}
+.box .cover{
+  border-radius: 50%;
+  margin-top: -100px;
+  width: 200px;
+  border: 10px solid #fff;
+  box-shadow: #ddd 0px -5px 10px 0;
+}
+.box > header{
+  padding: 0 15px;
+  min-height: 36px;
+  font-weight: 900;
+  color: #222;
+  border: none;
+  transition: 0.3s;
+  background-color: #e3f2fd;
+  overflow: hidden;
+}
+.box > header:hover{
+  background-color: #bbdefb;
+}
+.box > header[data-kerkere-status="close"]{
+  background-color: #cfd8dc;
+}
+.box > header h2{
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 900;
+  margin: 0;
+}
+.box > header h2:not(.f){
+  display: inline-block;
+}
+.box > header h3{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 800;
+  margin: 0;
+}
+.box > header h4{
+  display: inline-block;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+.box > header .btn{
+
+}
+.box .pad{
+  padding: 10px 15px;
+}
+[data-pwa] .box .pad{
+  padding: 10px 10px;
+}
+.box .body{
+  padding: 20px;
+  overflow: hidden;
+}
+[dir="ltr"] .box .body{line-height:20px;}
+[dir="rtl"] .box .body{line-height:25px;}
+
+.box .body.maxPad{
+  padding: 30px 30px;
+}
+.box .body.lessPad{
+  padding: 5px;
+}
+.box .body.zeroPad{
+  padding: 0;
+}
+.box .body:empty{
+  padding: 0;
+  display: none;
+}
+.box .body p:last-child{
+  margin-bottom: 0;
+}
+.box video.infoVideo{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.box footer{
+  padding: 10px 15px;
+  color: #222;
+  transition: 0.3s;
+  border-top: 1px solid #efefef;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+.box footer .btn{
+  min-width: 100px;
+  transition: 0.2s;
+}
+.box footer .btn.linkDel{
+  min-width: 60px;
+}
+.box footer .btn.linkDel:focus{
+  background-color: #eee;
+}
+
+
+.box .mediaBox{position:relative;overflow:hidden;margin:0 auto;text-align:center;}
+.box .mediaBox img{display:block;margin: 0 auto;max-height:300px;}
+.box .mediaBox::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.box .mediaBox:hover::before { -webkit-animation: shineMediaBox .75s; animation: shineMediaBox .75s; }
+@-webkit-keyframes shineMediaBox { 100% { left: 125%; } }
+@keyframes shineMediaBox { 100% { left: 125%; } }
+
+
+.box.card1{
+  border-radius: 10px;
+  font-size: 16px;
+  height: 96%;
+}
+[data-pwa] .box.card1{
+  font-size: 10px;
+}
+.box.card1:hover{
+  box-shadow:  0 30px 30px 0 rgba(0,0,0,0.05)
+}
+.box.card1:focus{
+  box-shadow:  0 30px 30px 0 rgba(0,0,0,0.1)
+}
+[data-pwa] .box.card1 .body{
+  line-height: 1.7
+}
+.box.card1 .title{
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+}
+[dir="rtl"] .box.card1 .title{
+  font-weight: 900;
+}
+[data-pwa] .box.card1 .title{
+  font-size: 12px;
+}
+.box.card1 .imgBox{
+  position: relative;
+  width: 50%;
+  margin: 0 auto 20px;
+}
+.box.card1 .imgBox:before{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.box.card1 img{
+  position: absolute;
+  width: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  object-fit:contain;
+}
+

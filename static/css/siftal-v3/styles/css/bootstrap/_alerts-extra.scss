@@ -1,0 +1,31 @@
+[class^="alert-"]:empty{
+  display:none
+}
+[class^="alert-"] > a{
+  font-weight: bold;
+}
+[class^="alert-"].minimal{
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+[data-pwa] [class^="alert-"].minimal{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+[class^="alert-"].rounded{
+  border-radius:10px;
+}
+
+.alert-special{
+  border-radius:1rem;
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+}
+.alert-link{
+  padding: 0;
+  margin: 0;
+}

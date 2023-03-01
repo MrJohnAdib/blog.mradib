@@ -1,0 +1,133 @@
+.tbl2 {
+	background-color: #fff;
+	width:100%;
+	max-width:100%;
+	position: relative;
+	overflow: hidden;
+	line-height: 1.4;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+[dir="rtl"] .tbl2{
+	line-height: 2
+}
+.tbl2 thead{
+	font-size:12px;
+	display: table-row-group;
+}
+
+
+.tbl2 th {
+	padding: 5px 5px;
+	max-width:600px;
+	text-overflow: ellipsis;
+}
+.tbl2 th.collapsing, .tbl2 td.collapsing{
+	width:1px;
+	white-space: nowrap;
+}
+
+.tbl2 tr{
+	transition:0.3s;
+}
+.tbl2 tbody{
+	color: #808080;
+}
+.tbl2 tbody tr:hover{
+	background-color:rgba(0,0,0,0.05);
+}
+.tbl2 tbody tr:active{
+	background-color:rgba(0,0,0,0.15)!important;
+}
+.tbl2 tbody tr[data-selected]{
+	background-color:rgba(0,0,0,0.1);
+}
+.tbl2 tbody td {
+	padding: 5px 5px;
+	transition:0.3s;
+}
+.tbl2 tr th{
+	width: 200px;
+}
+
+
+.tbl2.txtC th, .tbl2.txtC td {
+	text-align: center;
+}
+
+
+.tbl2.repeatHead{
+	-fs-table-paginate: paginate;
+}
+.tbl2.repeatHead thead{
+	display: table-header-group;
+}
+
+.tbl1.repeatFoot tfoot{
+	display: table-footer-group;
+}
+.tbl1 tfoot.dontRepeatFoot{
+	display: table-row-group;
+}
+
+.tbl2.minimal thead tr{
+	font-size: 10px;
+}
+.tbl2.minimal td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.tbl2 tr th:first-of-type, .tbl2 tr td:first-of-type{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tbl2 td.breakWord {
+	word-break:break-word;
+}
+.tbl2 td.breakAll {
+	word-break:break-all;
+}
+
+
+/*================================================================== [ v1 ]*/
+.tbl2.v1 {
+	border-radius: 5px;
+}
+.tbl2.v1 thead {
+	color: #fff;
+	background-color: #36304a;
+}
+.tbl2.v1 thead th {
+  border:solid #aaa;
+  border-width:1px 1px 3px 1px;
+}
+.tbl2.v1 tfoot {
+	color: #fff;
+	background-color: #36304a;
+}
+.tbl2.v1 tfoot td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+  border:solid #aaa;
+  border-width:5px 1px 1px 1px;
+	max-width:600px;
+	text-overflow: ellipsis;
+}
+.tbl2.v1 tbody tr:nth-child(even) {
+	background-color: #f5f5f5;
+}
+.tbl2.v1 tbody tr:hover{
+	background-color:rgba(0,0,0,0.1);
+}
+.tbl2.v1 td {
+	border:solid #aaa;
+  border-width:0 1px 1px 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.tbl2.v1 th{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+

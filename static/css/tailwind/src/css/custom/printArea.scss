@@ -1,0 +1,57 @@
+
+.printArea{
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+/* print preview style on screen*/
+@media screen{
+  .printArea{
+    box-shadow: 0 0.5mm 2mm rgba(0,0,0,.3);
+    margin:0 auto 10px;
+    overflow: visible;
+    max-width: 100%;
+  }
+
+  .printArea[data-size='A3']               { width: 297mm; min-height: 419mm; height: 419mm; }
+  .printArea[data-size='A3.landscape']     { width: 420mm; min-height: 296mm; height: 296mm; }
+  .printArea[data-size='A4']               { width: 210mm; min-height: 296mm; height: 296mm; overflow-x: auto; }
+  .printArea[data-size='A4.landscape']     { width: 297mm; min-height: 209mm; height: 209mm; overflow-x: auto; }
+  .printArea[data-size='A5']               { width: 148mm; min-height: 209mm; height: 209mm; }
+  .printArea[data-size='A5.landscape']     { width: 210mm; min-height: 147mm; height: 147mm; }
+  .printArea[data-size='A6']               { width: 105mm; min-height: 148mm; height: 148mm; }
+  .printArea[data-size='A6.landscape']     { width: 147mm; min-height: 105mm; height: 105mm; }
+  .printArea[data-size='letter']           { width: 216mm; min-height: 279mm; height: 279mm; }
+  .printArea[data-size='letter.landscape'] { width: 280mm; min-height: 215mm; height: 215mm; }
+  .printArea[data-size='legal']            { width: 216mm; min-height: 356mm; height: 356mm; }
+  .printArea[data-size='legal.landscape']  { width: 357mm; min-height: 215mm; height: 215mm; }
+  .printArea[data-size='receipt8']         { width: 84mm;  padding:10mm 4mm 1mm; }
+  .printArea[data-size='receipt8']         { width: 79mm;  padding:5mm 4mm 1mm; }
+
+  .printArea[data-size='A4'] .invoice{width: 204mm;}
+  .printArea[data-size='A4.landscape'] .invoice{width: 291mm;}
+
+  .printArea[data-height='auto']{height: auto;}
+}
+
+
+.printArea{
+	-webkit-print-color-adjust: exact;
+}
+.pageBreak{page-break-after: always;}
+.pageBreakBefore{page-break-before: always;}
+.keepTogether{page-break-inside: avoid;}
+
+
+.printArea[data-size='A5']               { padding: 3mm;}
+.printArea[data-size='A4']               { padding: 3mm;}
+.printArea[data-size='A4.landscape']     { padding: 3mm;}
+
+
+[dir="ltr"] .printArea .tbl1 tr th:first-of-type, [dir="ltr"] .printArea .tbl1 tr td:first-of-type{
+  padding-left: 10px;
+}
+[dir="rtl"] .printArea .tbl1 tr th:first-of-type, [dir="rtl"] .printArea .tbl1 tr td:first-of-type{
+  padding-right: 10px;
+}

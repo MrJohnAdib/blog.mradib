@@ -1,0 +1,17 @@
+body.ipBlock{
+	height: 100%!important;
+	background-color: #c80a5a!important;
+	user-select: none;
+}
+body.ipBlock section{
+	margin-top: 50px;
+	font-size: 14px;
+	border-radius: 10px;
+	position: relative;
+}
+body.ipBlock section svg{
+	width: 100px;
+	height: auto;
+	max-width: 30%;
+	margin-bottom: 10px;
+}

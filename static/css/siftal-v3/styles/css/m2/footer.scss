@@ -1,0 +1,14 @@
+body[data-m2] #pageFooter .desktop{
+	user-select: none;
+	/*box-shadow: 0 0 #0000, 0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06);*/
+	overflow: hidden;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	line-height: 40px;
+	background-color:#eff6fe;
+}
+
+body[data-m2] #pageFooter{
+	width: 100%;
+}

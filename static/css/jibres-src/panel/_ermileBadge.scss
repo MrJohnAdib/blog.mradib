@@ -1,0 +1,13 @@
+#jibresBadge{padding:10px 1.5em;background-color:#24292e;color:#eee;transition:0.3s;height:70px;user-select:none}
+#jibresBadge:hover{background-color:#044f6f;}
+#jibresBadge:focus{background-color:#0d3f54;}
+#jibresBadge:active{background-color:#0b3446;}
+#jibresBadge img{border-radius:50%;background-color:#eee;width:50px;height:50px;display:block;vertical-align:middle;overflow:hidden;transition:0.3s;padding:2px;}
+#jibresBadge img:hover{background-color:#fff}
+#jibresBadge h2{color:#eee;font-size:2em;margin:0;line-height:30px;transition:0.3s;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}
+#jibresBadge h2:hover{color:#fff;}
+#jibresBadge h3{color:#eee;font-size:1.2em;margin:0;line-height:20px;transition:0.3s;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}
+#jibresBadge h3:hover{color:#fff;}
+[data-panel] #sidebar #jibresBadge h2{max-width:170px;}
+[data-panel] #sidebar #jibresBadge h3{max-width:170px;}
+

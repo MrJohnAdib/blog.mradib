@@ -1,0 +1,112 @@
+.roundedBox{
+	max-height: 400px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.5rem;
+	display: block;
+	border-radius: 1rem;
+}
+.roundedBox[data-gr] img{
+	opacity: 0.3;
+}
+[data-pwa] .roundedBox{
+	margin-bottom: 1rem;
+}
+.roundedBox .overlay{
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.roundedBox .overlay:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(to bottom, transparent 31%, rgba(0,0,0,0.32) 55%, #000 100%);
+	transition: 0.3s;
+	opacity: 0.7;
+	z-index: 1;
+}
+.roundedBox .overlay:hover:after{
+	opacity: 1;
+}
+
+.roundedBox .overlay a{
+	display: block}
+.roundedBox .overlay img{
+	display:block; transition: 0.3s;
+	transform: scale(1);
+	width:100%;
+}
+[data-desktop] .roundedBox .overlay:hover img{
+	transform: scale(1.1);
+}
+.roundedBox figcaption{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 5% 1em;
+	transition: 0.3s;
+	z-index: 2;
+	color: #fff;
+}
+.roundedBox a:hover figcaption{
+	padding-bottom: 2em;
+}
+.roundedBox h2{
+	font-size: 1.3em;
+	font-weight: 700;
+	margin: 0;
+	max-height: 6rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: initial;
+}
+[data-desktop] .jSlider1:hover .roundedBox img{
+	transform: scale(1.1);
+}
+[data-pwa] .jSlider1{
+	margin-bottom: 1rem;
+}
+.jSlider1 .roundedBox{
+
+}
+.jSlider1 .roundedBox .overlay{
+	margin:0;
+	border-radius: 0;
+}
+.jSlider1 .roundedBox h2{
+	font-size: 1.5em;
+}
+[data-pwa] .roundedBox h2{
+	font-size: 1rem;
+	-webkit-line-clamp: 2;
+	display: none;
+}
+[data-pwa] .jSlider1 .roundedBox{
+	margin: 0;
+	border-radius: 0;
+}
+[data-pwa] .jSlider1 .roundedBox h2{
+	display: block;
+	font-size: 1.2rem;
+}
+.category .roundedBox figcaption{
+	text-shadow: 0px 3px 3px #777;
+}
+.category .roundedBox .overlay::after{
+	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.3) 100%);
+}
+[data-pwa] .category .roundedBox h2{
+	display: block;
+}
+

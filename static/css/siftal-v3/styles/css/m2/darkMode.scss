@@ -1,0 +1,44 @@
+/* dark mode */
+
+[data-desktop] body[data-m2="dark"] #pageHeader{
+	background-color: #1e1e2d;
+}
+body[data-m2="dark"] #sidebar .asideM2 li [data-item][data-selected]{
+	color: #9899ac;
+	background-color: rgba(0,0,0,0.5);
+
+}
+body[data-m2="dark"] #sidebar .asideM2 li [data-item][href]:hover{
+	color: #9899ac;
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+body[data-m2="dark"] #sidebar{
+	background-color: #1e1e2d;
+	height: 100%;
+	height: calc( 100vh - 58px - 6vh);
+	margin-top: 3vh;
+	@apply rounded-l-3xl;
+}
+[dir="ltr"] body[data-m2="dark"] #sidebar{
+	@apply rounded-l-none;
+	@apply rounded-r-3xl;
+}
+body[data-m2="dark"] #sidebar .asideM2{
+	padding: 20px 0
+}
+
+body[data-m2="dark"] #sidebar .asideM2 li [data-item]{
+	color: #9899ac;
+}
+body[data-m2="dark"] #sidebar .asideM2 li [data-item="heading"]{
+	color: #fff;
+}
+body[data-m2="dark"] #sidebar .asideM2 li [data-item="seperator"]{
+	border-bottom-color: #494b74;
+}
+body[data-m2="dark"] #sidebar .asideM2 li [data-item] svg path{
+	fill: #9899ac;
+}
+

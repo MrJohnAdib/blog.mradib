@@ -1,0 +1,141 @@
+
+.eQuote{
+	position:relative;
+	overflow: hidden;
+	font-size: 15px;
+	padding: 100px 0 100px;
+	background-color:#f7fafc;
+	color: #415161
+}
+[dir='rtl'] .eQuote{
+	font-size: 14px;
+}
+[data-pwa] .eQuote{
+	padding: 50px 0;
+}
+
+/* heading */
+.eQuote h4{
+	text-align: center;
+	font-weight: 900;
+	font-size: 32px;
+	margin-bottom: 50px;
+	position: relative;
+	line-height: 50px
+}
+.eQuote h4:after{
+	content: "";
+	width: 7%;
+	min-width:50px;
+	 border-top:3px solid #ff5151;
+	 display:block;
+	margin: 22px auto 0;
+	transition:0.3s
+}
+.eQuote:hover h4:after{
+	width: 10%;
+}
+.eQuote:active h4:after{
+	width: 15%;
+}
+
+.eQuote .item{
+	background-color:#fff;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.07);
+	border-radius: 20px;
+	padding: 100px 8% 8%;
+	height: 100%;
+	transition:0.3s;
+	position: relative;
+}
+.eQuote .itemBox{
+	padding-top:50px;
+	padding-bottom: 10px;
+}
+.eQuote .item:hover{
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1)
+}
+.eQuote .item:active{
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2)
+}
+.eQuote .shapeTop{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+.eQuote .shapeTop::before{
+	position: absolute;
+	top: -150px;
+	left: -60px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 30px;
+	content: '';
+	background-color: #f3f4fa;
+	transform: rotate(45deg);
+	transition: 0.3s;
+}
+.eQuote .shapeTop{
+	border-radius: 20px;
+}
+.eQuote .item:hover .shapeTop::before{
+	background-color: #dfe3fb
+}
+.eQuote .item::before{
+	content: "\6c";
+	font-family: 'siftal';
+	position: absolute;
+	z-index: 1;
+	top: -30px;
+	left: 25px;
+	font-size: 60px;
+	text-shadow: 0 0 5px rgba(0,0,0,.3);
+	color: #fff;
+	line-height: 60px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+}
+.eQuote p{
+	min-height: 140px;
+	margin: 0;
+}
+.eQuote .fiveStar{
+	font-family: "siftal";
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 110px;
+	overflow: hidden;
+	color: #ff5a44;
+	font-size: 20px;
+	line-height:20px;
+}
+.eQuote .fiveStar span:after{
+	content:"\5c";
+	padding:0 1px;
+
+}
+.eQuote .from{
+	min-height: 60px;
+	padding:10px 0 0;
+	overflow: hidden;
+}
+.eQuote .from{
+	font-size: 14px
+}
+.eQuote .from .position{
+	margin-top:5px;
+}
+.eQuote img{
+	width:50px;
+	height:50px;
+	overflow: hidden;
+	border-radius: 50%;
+	display: block;
+}

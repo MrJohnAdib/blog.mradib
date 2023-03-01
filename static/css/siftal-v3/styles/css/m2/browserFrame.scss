@@ -1,0 +1,43 @@
+.browserFrame[data-size='desktop']{
+	width:100%;
+	max-width: 100%;
+	min-height: 400px;
+}
+.browserFrame[data-size='mobile']{
+	max-width:375px;
+	min-height: 300px;
+	height: 700px;
+	height: 100%;
+	max-height: 100%;
+}
+[data-pwa] .browserFrame{
+	max-width: 100%;
+	min-height: 100px;
+}
+.browserFrame[data-size='mobile'] .address{
+	display: none;
+}
+.browserFrame[data-size='mobile'] .connectDomain{
+	display: none;
+}
+[data-pwa] .browserFrame .address{
+	display: none;
+}
+.browserFrame .toolbar{
+	height: 45px;
+}
+.browserFrame .resizePreview [data-mode]{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 24px;
+}
+.browserFrame .resizePreview [data-mode]:hover{
+	background-color:#aaa;
+}
+.browserFrame .resizePreview [data-mode="mobile"]{
+	font-size: 29px;
+}
+[data-pwa] .browserFrame .resizePreview{
+	display: none!important;
+}

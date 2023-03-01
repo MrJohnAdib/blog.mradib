@@ -1,0 +1,105 @@
+.jFooter201{
+	overflow: hidden;
+	margin:0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	font-size: 1.4rem;
+	transition: 0.3s;
+	padding: 8rem 0 4rem;
+	color: #786f90;
+	margin-top: 3rem;
+	background: url(/img/business/footer/footer201.svg) right bottom no-repeat, linear-gradient(254.96deg, HSL(257, 32%, 11%) 0%, HSL(314, 33%, 18%) 99.41%);
+}
+
+.jFooter201 h3{
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 1.15;
+	margin-bottom: 1rem;
+	color: #eae7f3;
+}
+.jFooter201 p{
+	margin: 0;
+	font-size: 1.6rem;
+}
+
+.jFooter201 hr{
+  height: 0;
+  border: 0;
+  border: .1rem solid;
+  margin: 3rem 0;
+  color: HSLA(256, 13%, 50%, 0.25);
+}
+
+.jFooter201 .button{
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: .02em;
+	text-decoration: none;
+	border: .1rem solid transparent;
+	border-radius: 0.3rem;
+	padding: 1.5rem 3rem;
+	margin: 0 auto;
+	background-color: transparent;
+	display: inline-block;
+	color: #ef4a25;
+	background-color: #fff;
+	border-color: #fff;
+}
+.jFooter201 .certifications{
+
+}
+.jFooter201 .cert{
+	background-color: #fff;
+	border-radius: 0.5rem;
+	width: 12rem;
+	height: 12rem;
+	overflow: hidden;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+.jFooter201 .cert img{
+	display: block;
+	margin: 0 auto;
+}
+.jFooter201 h4{
+	color: #eae7f3;
+	margin: 4rem 0 2rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.jFooter201 ul{
+	list-style: none;
+}
+.jFooter201 ul li{
+	margin-bottom: .5rem;
+}
+.jFooter201 ul li a{
+	padding: 0 0.5rem;
+	line-height: 3rem;
+}
+.jFooter201 a{
+	color: #eae7f3;
+	text-decoration: none;
+	display: inline-block;
+}
+.jFooter201 ul li a:hover{
+	color: #cec3ea;
+}
+.jFooter201 ul li a:focus{
+	box-shadow: 0 0 0 0.4rem HSLA(195, 84%, 39%, 0.5);
+}
+.jFooter201 ul li a:active{
+	color: #cec3ea;
+}
+
+.jFooter201 .bottom{
+	font-size: 1.6rem;
+	color: #968caa;
+	margin:0;
+}
+
+

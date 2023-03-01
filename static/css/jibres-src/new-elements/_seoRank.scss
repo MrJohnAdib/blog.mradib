@@ -1,0 +1,22 @@
+.seoRank{
+
+}
+.seoRank[data-size='hero']{
+  font-size: 10rem;
+}
+[data-pwa] .seoRank[data-size='hero']{
+  font-size: 5rem;
+}
+.seoRank[data-size='normal']{
+  font-size: 5rem;
+}
+[data-pwa] .seoRank[data-size='normal']{
+  font-size: 4rem;
+}
+.seoRank i{
+  display: inline-block;
+}
+.seoRank i::before{
+  display: block;
+}
+

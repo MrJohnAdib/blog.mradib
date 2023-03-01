@@ -1,0 +1,85 @@
+
+.printEmptyBox{
+  border: 1px solid #777;
+  border-radius: 0.2rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  color: red;
+  width: 18rem;
+}
+.printArea .invoice[data-theme="1"] .logo img{
+  max-height: 6rem;
+  display: block;
+  margin: 0.5rem 1rem;
+}
+.printArea .invoice[data-theme="1"] h1{
+  font-size: 3rem;
+  line-height: 6.5rem;
+  margin: 0;
+  font-weight: 900;
+  color: #0d47a1;
+}
+.printArea .invoice[data-theme="1"] .oneSide{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  border: 1px solid #777;
+  border-radius: 0.2rem;
+  background-color: #f1f1f1;
+  margin-bottom: 0.5rem;
+}
+.printArea .invoice[data-theme="1"] .oneSide .title{
+  font-weight: 900;
+}
+.printArea .invoice[data-theme="1"] .oneSide h2{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 0.5rem;
+  line-height: 2.5rem;
+  height: 100%;
+  background-color: #ddd;
+}
+.printArea .invoice[data-theme="1"] .oneSide span{
+  display: inline-block;
+}
+.printArea .invoice[data-theme="1"] .oneSide code{
+  float: right;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  direction: ltr;
+  text-align: left;
+}
+[dir="rtl"] .printArea .invoice[data-theme="1"] .oneSide code{
+  float: left;
+}
+.printArea .invoice[data-theme="1"] .oneSide b{
+
+}
+
+.printArea .invoice[data-theme="1"] table{
+  margin-top: 1.5rem;
+}
+.printArea .invoice[data-theme="1"] table .productTitle{
+  width: 35%;
+}
+.printArea .invoice[data-theme="1"] table .valPrice{
+  direction: ltr;
+  text-align: right;
+  font-size: 1.2rem;
+}
+.printArea .invoice[data-theme="1"] table .lastCol{
+  width: 15%;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+

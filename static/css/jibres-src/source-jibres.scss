@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*
+@ In the name of Allah
+Description  [data-panel] CSS Framework! made in Jibres
+Author        Jibres
+Author URI    Jibres.com
+Version       2.0.0
+*/
+
+@import 'tools/variables';
+@import 'tools/mixins';
+@import 'tools/include-media';
+
+// add fonts
+@import 'fonts/iranyekan';
+@import 'fonts/lato';
+@import 'fonts/siftal';
+
+// add fonts
+@import 'base/reset';
+
+// add base styles
+@import 'base/global';
+@import 'base/typography';
+@import 'base/switchResponsive';
+
+// add grid
+@import 'grid/grid';
+
+// add extra componenet
+// @import 'components/alert';
+@import 'components/callout';
+@import 'components/msg';
+@import 'components/badge';
+@import 'components/icon';
+@import 'components/breadcrumb';
+@import 'components/pagination';
+@import 'components/progress';
+@import 'components/table';
+@import 'components/table1';
+@import 'components/table2';
+@import 'components/box';
+@import 'components/pbox';
+@import 'components/panel';
+@import 'components/dcard';
+@import 'components/vcard';
+@import 'components/icard';
+@import 'components/modal';
+@import 'components/deadline';
+@import 'components/line';
+@import 'components/clock';
+@import 'components/statistic';
+@import 'components/share';
+@import 'components/printArea';
+@import 'components/errorPage';
+@import 'components/devices';
+@import 'components/scroll';
+@import 'components/cms';
+@import 'components/timeline';
+@import 'components/seo';
+
+
+// add extra library styles
+@import 'lib/icon';
+@import 'lib/sortable';
+
+@import 'lib/iziToast';
+@import 'lib/spay';
+// @import 'lib/tagDetector';
+// @import 'lib/uploader';
+
+// @import 'lib/slick';
+
+
+@import 'lib/nprogress';
+@import 'lib/alerty2';
+@import 'lib/kerkere';
+@import 'lib/dataCopy';
+@import 'lib/redirect';
+
+
+// enter
+@import 'enter/enter';
+
+// store panel
+@import 'jibres-store-panel/priceBox';
+@import 'jibres-store-panel/storePanel';
+
+// website
+@import 'jibres-website/header';
+@import 'jibres-website/landing';
+@import 'jibres-website/footer';
+@import 'jibres-website/layout';
+@import 'jibres-website/homepage';
+@import 'jibres-website/page_logo';
+@import 'jibres-website/page_domains';
+@import 'jibres-website/page_pricing';
+@import 'jibres-website/page_blog';
+@import 'jibres-website/page_team';
+@import 'jibres-website/page_bug';
+
+// @import 'jibres-website/subdomain';
+// @import 'jibres-website/theme_full';
+// @import 'jibres-website/theme_start';
+
+
+// store website
+// @TODO transfer to new file
+// header
+@import 'jibres-store/header/header1';
+@import 'jibres-store/header/header2';
+// new header
+@import 'jibres-store/header/header-general';
+@import 'jibres-store/header/header100';
+
+
+// blog
+@import 'jibres-store/blog/blog1';
+// slider
+@import 'jibres-store/slider/slider1';
+@import 'jibres-store/slider/specialSlider';
+
+// title
+@import 'jibres-store/title/title1';
+@import 'jibres-store/title/title2';
+// product item
+@import 'jibres-store/product/product1';
+@import 'jibres-store/product/product2';
+// footer
+@import 'jibres-store/footer/footer101';
+@import 'jibres-store/footer/footer201';
+// page
+@import 'jibres-store/page/productPage';
+@import 'jibres-store/page/cartPage';
+@import 'jibres-store/page/postPage';
+@import 'jibres-store/page/tagPage';
+@import 'jibres-store/page/shippingPage';
+
+
+// site builder elements
+@import 'site-builder/etitle';
+@import 'site-builder/puzzle';
+@import 'site-builder/quote';
+
+// enterprise style
+// @import 'site-builder/enterprise/rafiei/headerRafiei';
+// @import 'site-builder/enterprise/rafiei/footerRafiei';
+// @import 'site-builder/enterprise/rafiei/styleRafiei';
+
+// special pages
+@import 'special/recaptcha';
+@import 'special/ipProtection';
+@import 'special/ipBlock';
+
+
+// form elements
+@import 'forms/general';
+@import 'forms/input';
+@import 'forms/checkbox';
+@import 'forms/switch';
+@import 'forms/radio';
+@import 'forms/textarea';
+@import 'forms/select';
+@import 'forms/rangeslider';
+// buttons
+@import 'forms/button';
+@import 'forms/btn2';
+
+
+// import color after all other styles, because sometimes we need to overwrite
+@import 'components/el';
+@import 'lastchanges/general';
+@import 'lastchanges/color';
+
+
+// add style of panel
+@import 'panel/layout';
+@import 'panel/header';
+@import 'panel/titleBox';
+@import 'panel/aside';
+@import 'panel/footer';
+@import 'panel/pay';
+@import 'panel/ticket';
+@import 'panel/ermileBadge';
+@import 'panel/themeNight';
+@import 'panel/themeLight';
+
+
+// add invoice style
+@import 'invoice/a4-theme1';
+@import 'invoice/receipt-thme1';
+
+
+// add style of blog
+@import 'blog/blog';
+
+
+// add new elements
+@import 'new-elements/variables';
+@import 'new-elements/get_started_card';
+@import 'new-elements/dashboard';
+@import 'new-elements/starRating';
+@import 'new-elements/seoRank';
+@import 'new-elements/product';
+@import 'new-elements/comment';
+@import 'new-elements/jbox';
+@import 'new-elements/jform';
+@import 'new-elements/bigCart';
+@import 'new-elements/sortItem';
+@import 'new-elements/box';
+@import 'new-elements/hey';
+@import 'new-elements/ibtn';
+@import 'new-elements/setupGuide';
+@import 'new-elements/stepGuide';
+@import 'new-elements/welcome';
+@import 'new-elements/mobileFrame';
+@import 'new-elements/checklist';
+@import 'new-elements/appBox';
+@import 'new-elements/stat';
+@import 'new-elements/items';
+@import 'new-elements/items2';
+@import 'new-elements/chart';
+@import 'new-elements/userPack';
+@import 'new-elements/circleChart';
+@import 'new-elements/domainQuickBuy';
+@import 'new-elements/emptyState';
+@import 'new-elements/giftcard';
+@import 'new-elements/gradient';
+@import 'new-elements/card';
+@import 'new-elements/option';
+@import 'new-elements/settings';
+@import 'new-elements/uploader';
+@import 'new-elements/roundedBox';
+
+// add pwa style
+@import 'pwa/pwa_var';
+@import 'pwa/app';
+@import 'pwa/layout';
+@import 'pwa/item';
+@import 'pwa/footer';
+@import 'pwa/header';
+@import 'pwa/language';
+@import 'pwa/dashboard';
+@import 'pwa/search';
+@import 'pwa/store_dashboard';
+
+// use new container
+@import 'new-grid/avand';
+@import 'new-grid/row';
+@import 'new-grid/display';
+@import 'new-grid/font';
+
+// add responsive styles
+@import 'responsive/mobile';
+@import 'responsive/phablet';
+@import 'responsive/tablet';
+@import 'responsive/desktop';
+@import 'responsive/large';
+@import 'responsive/print';
+@import 'responsive/standalone';
+
+// new responsive
+@import 'responsive-new/dev';
+@import 'responsive-new/xs';
+@import 'responsive-new/sm';
+@import 'responsive-new/md';
+@import 'responsive-new/lg';
+@import 'responsive-new/xl';
+@import 'responsive-new/xxl';
+
+
+// add shame style temporary
+@import 'tools/shame';
+

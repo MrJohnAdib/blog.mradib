@@ -1,0 +1,97 @@
+.giftBox{
+	background-color: #e6e7e8;
+	padding: 10rem 0;
+	border-radius: 0.5rem;
+}
+.giftcard{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	border-radius: 3rem;
+	background-color: #fff;
+	width: 85rem;
+	height: 55rem;
+	margin: 1rem auto;
+	font-size: 1.6rem;
+}
+.giftcard header{
+	padding: 2.5rem;
+	height: 15rem;
+}
+.giftcard header .logo{
+	height: 10rem;
+}
+.giftcard header .meta{
+	border-left: 5px solid #eee;
+	min-width: 30rem;
+}
+[dir="rtl"] .giftcard header .meta{
+	border-left: none;
+	border-right: 5px solid #eee;
+}
+.giftcard header .meta abbr{
+	color: #777
+}
+.giftcard header h3{
+	color: #aaa;
+}
+.giftcard .body{
+	background-color: #ccc;
+	color: #fff;
+	height: 40rem;
+	position: relative;
+}
+.giftcard .body img{
+	width: 100%;
+	height: 100%;
+	max-height: initial;
+	display: block;
+}
+.giftcard .body .code{
+	position: absolute;
+	top: 7rem;
+	right: 0;
+	left: 0;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 2em;
+}
+.giftcard .body .code abbr{
+	font-size: 2em;
+	display: block;
+	margin-bottom: 1rem;
+}
+.giftcard .body .circle{
+	width: 25rem;
+	height: 25rem;
+	background-color: rgba(255,255,255,0.2);
+	position: absolute;
+	bottom: -10rem;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+	padding:4rem 2rem 0;
+	font-size: 2em;
+	border-radius: 50%;
+}
+.giftcard .body .circle::after{
+	content: "";
+	width: 22rem;
+	height: 22rem;
+	border: 5px solid rgba(255,255,255,0.5);
+	position: absolute;
+	top:1rem;
+	bottom:1rem;
+	right: 1rem;
+	left: 1rem;
+	border-radius: 50%;
+}
+.giftcard .body .circle .percent{
+	font-size: 2.5em;
+}
+
+
+

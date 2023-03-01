@@ -1,0 +1,181 @@
+
+[data-panel] [data-option]{
+	position: relative;
+	font-size: 1.4rem;
+	margin: 1rem auto 2rem;
+	border:1px solid #d5d7d8;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	transition: 0.3s;
+	color: #333;
+}
+[data-panel] [data-option]:hover{
+	box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+}
+[data-pwa] [data-panel] [data-option]{
+	margin: 0.5rem auto 1rem;
+}
+[data-panel] [data-option] .data{
+	padding: 3rem;
+}
+[data-pwa] [data-panel] [data-option] .data{
+	padding: 1rem;
+}
+[data-panel] [data-option] .action{
+	border-left:1px solid #d5d7d8;
+	background-color: #f7f7f8;
+	padding: 2em;
+	transition: 0.3s;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+[data-panel] [data-option] .action .btn{
+	min-width: 18rem;
+}
+[data-panel] [data-option] .action .radio1{
+	min-width: 11rem;
+}
+[data-panel] [data-option] time{
+	display: block;
+	color: #777;
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
+[dir='rtl'] [data-panel] [data-option] time{
+	font-size: 1.2rem;
+}
+[data-pwa] [data-panel] [data-option] .action{
+	padding: 1.5rem;
+}
+[data-panel] [data-option] .action.dropzone{
+	flex-direction: column;
+}
+[data-panel] [data-option] .action.dropzone .progress{
+	min-width: 100%;
+}
+[dir='rtl'] [data-panel] [data-option] .action{
+	border: none;
+	border-right:1px solid #d5d7d8;
+}
+[data-pwa] [data-panel] [data-option] .action{
+	border:none;
+}
+[data-panel] [data-option]:hover .action{
+	background-color: #f5f5f5;
+}
+[data-panel] [data-option] h3{
+	font-size: 2rem;
+	line-height: 3rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+[data-panel] [data-option] h3{
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+[data-panel] [data-option] p{
+	margin-bottom: 0;
+}
+[data-panel] [data-option] p+p{
+	margin-top: 1rem;
+}
+[data-panel] [data-option] .radio1 + .radio1{
+	margin-top: 0.5rem;
+}
+[data-panel] [data-option] .body{
+	font-size: 1.6rem;
+	color: #555;
+}
+[data-pwa] [data-panel] [data-option] .body{
+	font-size: 1.4rem;
+}
+[dir="rtl"] [data-panel] [data-option] .body{
+	font-size: 1.4rem;
+}
+[dir="rtl"][data-pwa] [data-panel] [data-option] .body{
+	font-size: 1.2rem;
+	text-align: justify;
+}
+[data-panel] [data-option] .meta{
+	font-size: 1em;
+	color: #777;
+}
+[data-panel] [data-option] .btn.primary{
+	border-radius: 0.5rem;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+[data-panel] [data-option] footer{
+	border-top:1px solid #d5d7d8;
+	padding: 0 1rem 0 3rem;
+}
+[dir="rtl"] [data-panel] [data-option] footer{
+	padding: 0 3rem 0 1rem;
+}
+[data-pwa] [data-panel] [data-option] footer{
+	padding: 0 1rem;
+}
+// switch
+
+[data-panel] [data-option] .switch1 label:first-of-type{
+	min-width: 90px;
+}
+// switch on fa
+html[lang=fa] [data-panel] [data-option] .switch1 label:first-of-type{
+	min-width: 100px;
+}
+html[lang=fa] [data-panel] [data-option] .switch1 label:first-of-type:before{
+	font-size: 1.2rem;
+}
+html[lang=fa] [data-panel] [data-option] .switch1 input:checked+label:first-of-type:before
+{
+	font-size: 1.4rem;
+}
+
+// table
+[data-panel] [data-option] table{
+	margin: 0;
+	border-radius: 0;
+	border-top: 1px solid #d5d7d8;
+	line-height: 2.6rem;
+}
+[data-panel] [data-option] table thead th{
+	background-color: #eceff1;
+}
+[data-panel] [data-option] table tbody th{
+	color: #666;
+}
+[data-panel] [data-option] table tbody tr{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+[data-panel] [data-option] table tbody tr:last-child{
+	border-bottom: none;
+}
+[data-panel] [data-option] table img{
+	max-width: 10rem;
+	height: 2.4rem;
+}
+[data-panel] [data-option] table thead{
+	font-size: 1em;
+}
+[data-panel] [data-option] table time{
+	margin: 0;
+	color: inherit;
+	display: inline-block;
+}
+[data-panel] [data-option] footer .link{
+	display: inline-block;
+	line-height: 4rem;
+}
+[data-panel] [data-option] footer .btn.link{
+	line-height: 2.4rem;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+[data-panel] [data-option] a.link [class^="sf-"]{
+	display: inline-block;
+	line-height: 4rem;
+}

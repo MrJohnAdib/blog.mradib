@@ -1,0 +1,48 @@
+
+html[dir="ltr"]{
+  direction:ltr;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+html[dir="rtl"]{
+  direction:rtl;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body[data-preload] * {
+  -webkit-transition: none !important;
+   -moz-transition: none !important;
+   -ms-transition: none !important;
+   -o-transition: none !important;
+}
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
+}
+a {
+  touch-action: manipulation;
+  -webkit-text-decoration-skip: objects;
+  -webkit-tap-highlight-color:transparent;
+
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+:root{
+  --clr-jibres:#c80a5a;
+  --clr-jibresMono:#F31271;
+  --clr-jibresDark:#A00848;
+  --clr-jibresBack:#f7f7f9;
+
+  --clr-black:#000;
+  --clr-white:#fff;
+
+  --clr-success:#20b040;
+  --clr-danger:#e02020;
+  --clr-warn:#ffc000;
+  --clr-info:#00b0aa;
+}

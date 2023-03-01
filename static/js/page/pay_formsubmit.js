@@ -1,0 +1,4 @@
+function pageScript()
+{
+	$("#payformsubmit").submit();
+}

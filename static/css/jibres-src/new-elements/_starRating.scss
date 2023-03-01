@@ -1,0 +1,152 @@
+.starRating {
+  margin: 1rem auto;
+  @include select-none-only();
+}
+.starRating > fieldset {
+  border: none;
+  // display: inline-block;
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 20rem;
+}
+.starRating > fieldset > label{
+  transition: 0.1s;
+}
+.starRating > fieldset:not(:checked) > input {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.starRating > fieldset:not(:checked) > label {
+  float: right;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  // color: #17a087;
+  color: #fbc02d;
+}
+.starRating > fieldset label:before{
+  font-family: 'siftal';
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+}
+// pwa
+[data-pwa] .starRating > fieldset {
+  width: 15rem;
+}
+[data-pwa] .starRating > fieldset:not(:checked) > label {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+[data-pwa] .starRating > fieldset label:before{
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.7rem;
+}
+.starRating > fieldset:not(:checked) > label:before {
+  content: "\e002";
+}
+.starRating > fieldset:not(:checked) > label:hover,
+.starRating > fieldset:not(:checked) > label:hover ~ label {
+  // color: #1cbc9c;
+  // text-shadow: 0 0 3px #1abc9c;
+  color: #ffa700;
+  text-shadow: 0 0 3px #ffa700;
+}
+.starRating > fieldset:not(:checked) > label:hover:before,
+.starRating > fieldset:not(:checked) > label:hover ~ label:before {
+  content: "\5c";
+}
+.starRating > fieldset > input:checked ~ label:before {
+  content: "\5c";
+}
+.starRating > fieldset > label:active {
+  // position: relative;
+  // top: 2px;
+  padding-top: 3px;
+}
+
+// preview star
+.starRating[data-star] {
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 10rem;
+  height: 2rem;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.starRating[data-star][data-gold] i{
+  color: #ffa700;
+}
+.starRating[data-star] i {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0;
+  font-style: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #17a087;
+}
+.starRating[data-star] i:before{
+  font-family: 'siftal';
+  content: "\e002";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.starRating[data-star^="1"] i:nth-child(1):before{
+  content: "\5c";
+}
+.starRating[data-star^="1."] i:nth-child(2):before{
+  content: "\e001";
+}
+.starRating[data-star^="2"] i:nth-child(1):before,
+.starRating[data-star^="2"] i:nth-child(2):before,{
+  content: "\5c";
+}
+.starRating[data-star^="2."] i:nth-child(3):before{
+  content: "\e001";
+}
+.starRating[data-star^="3"] i:nth-child(1):before,
+.starRating[data-star^="3"] i:nth-child(2):before,
+.starRating[data-star^="3"] i:nth-child(3):before,{
+  content: "\5c";
+}
+.starRating[data-star^="3."] i:nth-child(4):before{
+  content: "\e001";
+}
+.starRating[data-star^="4"] i:nth-child(1):before,
+.starRating[data-star^="4"] i:nth-child(2):before,
+.starRating[data-star^="4"] i:nth-child(3):before,
+.starRating[data-star^="4"] i:nth-child(4):before,{
+  content: "\5c";
+}
+.starRating[data-star^="4."] i:nth-child(5):before{
+  content: "\e001";
+}
+.starRating[data-star^="5"] i:nth-child(1):before,
+.starRating[data-star^="5"] i:nth-child(2):before,
+.starRating[data-star^="5"] i:nth-child(3):before,
+.starRating[data-star^="5"] i:nth-child(4):before,
+.starRating[data-star^="5"] i:nth-child(5):before,{
+  content: "\5c";
+}

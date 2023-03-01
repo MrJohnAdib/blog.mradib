@@ -1,0 +1,108 @@
+.chart{
+    direction:ltr;
+    overflow:hidden;
+    width:100%;
+    min-height:10rem;
+    max-height:60rem;
+    user-select:none;
+    position:relative;
+    transition:0.2s ease-in-out;
+    will-change: transform;
+}
+.chart::after{
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    right: 11px;
+    width: 25px;
+    height: 25px;
+    background:url('../logo/icon/svg/Jibres-Logo-icon.svg') no-repeat;
+}
+[data-pwa] .chart::after{
+    width: 20px;
+    height: 20px;
+    bottom: 12px;
+    right: 14px;
+}
+.chart[data-hint]::before{
+    content: attr(data-hint);
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    width: 70%;
+    line-height: 25px;
+    text-align: center;
+    margin:0 auto;
+    color: #ccc;
+    z-index: 2;
+}
+.chart:active{
+    transform: scale(0.95);
+}
+.chart.notActive:active{transform: none;}
+[dir="rtl"] .chart{text-align:right}
+
+.chart.x100{height:10rem;}
+.chart.x150{height:15rem;}
+.chart.x200{height:20rem;}
+.chart.x210{height:21rem;}
+.chart.x240{height:24rem;}
+.chart.x250{height:25rem;}
+.chart.x260{height:26rem;}
+.chart.x270{height:27rem;}
+.chart.x280{height:28rem;}
+.chart.x285{height:28.5rem;}
+.chart.x290{height:29rem;}
+.chart.x300{height:30rem;}
+.chart.x310{height:31rem;}
+.chart.x320{height:32rem;}
+.chart.x330{height:33rem;}
+.chart.x350{height:35rem;}
+.chart.x370{height:37rem;}
+.chart.x380{height:38rem;}
+.chart.x400{height:40rem;}
+.chart.x450{height:45rem;}
+.chart.x470{height:47rem;}
+.chart.x500{height:50rem;}
+.chart.x600{height:60rem;}
+.chart.x700{height:70rem;}
+
+// highcharts
+// .highcharts-root {font-family:IRANSans,Tahoma,sans-serif!important;}
+.highcharts-title {
+    fill:#333!important;
+    opacity:0.5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem!important;
+    right: 0!important;
+    left: 0!important;
+    margin: 0 auto!important;
+}
+.highcharts-tooltip > span {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid silver;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #888;
+    padding: 8px;
+}
+.highcharts-no-data{
+
+}
+[dir="rtl"] .highcharts-tooltip > span{
+    direction:rtl;
+    text-align:right;
+    unicode-bidi: embed;
+}
+[dir="rtl"] .highcharts-tooltip > span b{
+    display:inline-block;
+    direction:ltr;
+}
+[dir="rtl"] .highcharts-contextmenu{
+    text-align: right;
+}
+.chart .chartServiceLogo{
+    y:calc(100% - 32px);
+    x:calc(100% - 32px);
+}

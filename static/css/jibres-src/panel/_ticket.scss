@@ -1,0 +1,182 @@
+.ticketPage .ticketSidebar .hero{
+  position: relative;
+  text-align: center;
+  display: block;
+  font-size: 1.6rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.ticketPage .ticketSidebar .hero img{
+  width: 12rem;
+  height: 12rem;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ticketPage .ticketSidebar .hero h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.ticketPage .chat{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.ticketPage .messageLine{
+  position: relative;
+  margin-top: 0.5rem;
+}
+// multi line
+[data-pwa] .ticketPage .messageLine[data-line-1]{
+  margin-top: 1rem;
+}
+.ticketPage .messageLine[data-line-multi]{
+  margin-top: 0;
+}
+.ticketPage .messageLine .profileAvatar{
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: 0;
+}
+[data-pwa] .ticketPage .messageLine[data-line-multi] .profileAvatar{
+  display: none;
+}
+[data-pwa] .ticketPage .messageLine img{
+  margin-bottom: 0.5rem;
+}
+.ticketPage .messageBox{
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 1rem 1rem 1rem 0;
+  overflow: hidden;
+  padding: 1rem 1.5rem 0;
+  line-height: 3rem;
+}
+.ticketPage .messageBox[data-user]{
+  border-radius: 1rem 1rem 0 1rem;
+}
+// rtl
+[dir="rtl"] .ticketPage .messageBox{
+  border-radius: 1rem 1rem 0 1rem;
+}
+[dir="rtl"] .ticketPage .messageBox[data-user]{
+  border-radius: 1rem 1rem 1rem 0;
+}
+// show rounded for multi
+.ticketPage .messageLine[data-line-multi] .messageBox{
+  border-radius: 1rem;
+}
+[data-desktop] .ticketPage .messageBox{
+  max-width: 85%;
+}
+.ticketPage .messageBox[data-admin]{
+  background-color: #f8ffff;
+  color: #276f86;
+  box-shadow: 0 0 0 1px #a9d5de inset, 0 0 0 0 transparent;
+}
+.ticketPage .messageBox[data-color=green1]{
+  background-color: #d4edda;
+}
+.ticketPage .messageBox[data-color=green2]{
+  background-color: #fcfff5;
+  color: #2c662d;
+  box-shadow: 0 0 0 1px #a3c293 inset, 0 0 0 0 transparent;
+}
+.ticketPage .messageBox[data-note]{
+  background-color: #ffe8e6;
+  color: #db2828;
+  box-shadow: 0 0 0 1px #db2828 inset, 0 0 0 0 transparent;
+}
+.ticketPage .messageBox .message{
+  text-align: initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.ticketPage .messageBox p{
+  margin-bottom: 0.5rem;
+}
+.ticketPage .messageBox p:last-child{
+  margin-bottom: 0;
+}
+.ticketPage .messageBox b{
+  font-weight: 900;
+}
+.ticketPage .messageBox a{
+  font-weight: 700;
+}
+.ticketPage .messageBox footer{
+  color: #444;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+}
+.ticketPage .messageBox footer i{
+  display: block;
+}
+.ticketPage .messageBox footer i::before{
+  display: block;
+  line-height: 2rem;
+  text-shadow: 0 0 1px #333;
+}
+.ticketPage .messageBox footer a{
+  display: block;
+}
+.ticketPage .messageBox footer .sf-check{
+  color: #eee;
+}
+.ticketPage .messageBox footer .sf-check.seen{
+  color: #306efe;
+  text-shadow: 0 0 5px #306efe;
+}
+.ticketPage .messageBox time{
+  display: inline-block;
+  direction: ltr;
+}
+.ticketPage .attachment{
+  display: inline-block;
+}
+.ticketPage .attachment.btn{
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+.ticketPage .attachment img{
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 25rem;
+  max-height: 50rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin:0;
+  box-shadow: 0 0 0 1px #fff;
+}
+[data-pwa] .ticketPage .attachment img{
+  max-width: 100%;
+  margin:0 auto;
+}
+
+// answer box
+.ticketPage .quickReply{
+  font-size: 1.4rem;
+  line-height: 2;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+[data-pwa] .ticketPage .quickReply textarea{
+  margin-bottom: 1rem;
+}
+
+
+

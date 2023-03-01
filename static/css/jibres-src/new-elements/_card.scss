@@ -1,0 +1,109 @@
+.card{
+	position: relative;
+	max-width: 100%;
+	@include flexbox;
+	@include flex-direction(column);
+	min-width: 0;
+	word-wrap: break-word;
+	border:none;
+	border-radius: .5rem;
+	overflow: hidden;
+	line-height: 1.25;
+	background-color: rgba(255,255,255,0.7);
+	margin:0 auto 1rem;
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+	box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff;
+}
+// fix height for card inside row
+.row .card{
+	height: 100%;
+}
+.card img, .card .img{
+	position: relative;
+	display: block;
+	padding: 0;
+	width:100%;
+	height: auto;
+	opacity: 1;
+	transition: .3s ease-in-out;
+}
+.card img:hover{
+	-webkit-animation: flashByOpacity .5s;
+	animation: flashByOpacity .5s;
+	// transform: scale(1.05);
+}
+@-webkit-keyframes flashByOpacity { 0% { opacity:1; } 40% { opacity: .7; } 100% { opacity:1; } }
+@keyframes flashByOpacity {0% { opacity:1; } 40% { opacity: .7; } 100% { opacity:1; } }
+
+.card .body{
+	margin: 0;
+	padding: 1rem 1rem;
+	-webkit-box-flex:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+}
+.card .body header{
+	display: block;
+	color:#222;
+	font-weight:700;
+	font-size:1.2em;
+	margin-top: -0.2em;
+	line-height: 1.5em;
+}
+.card .body .desc{
+	clear: both;
+	color:#777;
+	margin-top: 0.5em;
+	display: block;
+	line-height: 1.5;
+}
+// content title
+.card .body.title{
+	background-color: #eee;
+	color: #333;
+	padding:7em 0;
+	text-align: center;
+}
+.card .body.title header{
+	font-size: 2em;
+}
+// meta
+.card .meta{
+	clear: both;
+	color:rgba(0,0,0,0.4);
+	font-size: 0.9em;
+	transition: 0.3s;
+	display: block;
+}
+.card .meta a{
+	color:rgba(0,0,0,0.4);
+	transition: 0.3s;
+}
+.card .meta a:hover{
+	color:rgba(0,0,0,0.6);
+}
+.card .meta a:focus{
+	color:rgba(0,0,0,0.7);
+}
+.card footer{
+	max-width: 100%;
+	min-height: 0!important;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	background-color: rgba(0,0,0,.03);
+	padding:0.7rem 1.5rem;
+	transition: 0.2s;
+	color: rgba(0,0,0,0.4);
+	font-size: 0.9em;
+	-webkit-box-flex:0;
+	-ms-flex-positive:0;
+	flex-grow:0;
+}
+.card footer:empty{
+	padding:0;
+}
+.card footer.zeroPad{padding: 0;}
+.card footer.zeroPad .btn{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}

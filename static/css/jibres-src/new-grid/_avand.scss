@@ -1,0 +1,104 @@
+.avand {
+  position: relative;
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+[class^="avand-"]{
+  position: relative;
+  width: 96%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+[data-pwa] [class^="avand-"]{
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+// shadow
+.avand.impact{
+  background-color: $white;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 5rem 2rem;
+  margin-bottom:4rem;
+  box-shadow: 0px 1rem 1.4rem -7px rgba(0, 0, 0, 0.08), 0px 2rem 3rem 3px rgba(0, 0, 0, 0.09), 0px 8px 2rem 7px rgba(0, 0, 0, 0.02);
+}
+[class^="avand-"].impact{
+  background-color: $white;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 5rem 2rem;
+  margin-bottom:4rem;
+  box-shadow: 0px 1rem 1.4rem -7px rgba(0, 0, 0, 0.08), 0px 2rem 3rem 3px rgba(0, 0, 0, 0.09), 0px 8px 2rem 7px rgba(0, 0, 0, 0.02);
+}
+[data-pwa] [class^="avand-"].impact{
+  padding: 2rem 1rem;
+}
+[data-panel] [class^="avand-"].impact{
+  width: 100%;
+  margin-bottom: 1rem!important;
+}
+// zero
+.avand.zero{
+  padding: 0;
+}
+[class^="avand-"].zero{
+  padding: 0!important;
+}
+
+// avand zero with img effect
+.avand.zero > img{transition: 0.2s ease-in-out;will-change: transform;}
+.avand.zero > img:hover{transform: scale(1.05);}
+[class^="avand-"].zero > img{transition: 0.2s ease-in-out;}
+[class^="avand-"].zero > img:hover{transform: scale(1.05);}
+
+
+// responsive
+@media (min-width: 480px) {
+  .avand {
+    max-width: 460px;
+  }
+  .avand-sm {
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .avand {
+    max-width: 720px;
+  }
+  .avand-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 980px) {
+  .avand {
+    max-width: 950px;
+  }
+  .avand-lg {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .avand {
+    max-width: 1140px;
+  }
+  .avand-xl {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .avand{
+    max-width: 1400px;
+  }
+  .avand-xxl {
+    max-width: 1400px;
+  }
+}

@@ -1,0 +1,16 @@
+[data-pwa] body{background-color: $pwaBg!important;
+	// position:relative;
+}
+
+[data-pwa] [data-in="business"] #pageContent{
+	padding-top:1rem;
+	padding-bottom:6rem;
+}
+
+// design for apps in enter
+[data-pwa] #sidebar{display:none!important}
+[data-pwa] [data-panel] #main{margin:0!important}
+[data-pwa] #xaccess{display:none}
+[data-pwa] .tbox .breadcrumb{display:none}
+[data-pwa] .superAdmin{top:inherit;bottom:30px;left: 0;}
+

@@ -1,0 +1,81 @@
+.jBlog1{
+	overflow: hidden;
+	margin:3rem 0 0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	font-size: 1.6rem;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+	padding: 2rem 0;
+	border-top: 1px solid #eee;
+}
+.jBlog1 article{
+	margin-bottom:3em;
+	padding: 2rem 0 1rem;
+}
+
+.jBlog1 article a:visited {
+    color: #22bb88;
+}
+.jBlog1 article h2{
+	margin: 0 0 1rem;
+	transition: 0.3s;
+	font-weight: 900;
+	border-bottom: 10px solid #ddd;
+	padding-bottom: 5px;
+}
+.jBlog1 article h2 a{
+	display: block;
+}
+.jBlog1 article h3{
+	margin: 0.5em 0 0;
+	transition: 0.3s;
+	font-weight: 700;
+}
+.jBlog1 article h3{
+	border-bottom: 3px solid #777;
+	padding-bottom: 5px;
+	margin-bottom:5px;
+}
+.jBlog1 article .meta{
+	color:#aaa;
+	text-transform: uppercase;
+	overflow: hidden;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+.jBlog1 article p{
+	margin: 0 0 1.5em;
+}
+.jBlog1 ul{
+	list-style: square inside;
+	margin: 1em 0 1.5em;
+}
+.jBlog1 li{
+	margin-bottom: 1em;
+}
+.jBlog1 article .thumb{
+	display: block;
+	margin: 1rem auto;
+}
+.jBlog1 article img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.jBlog1 .more{
+	transition: 0.3s;
+	line-height: 3rem;
+	padding: 0.5rem 1rem;
+	display: block;
+}
+.jBlog1 .more:hover{
+	background-color: #eee;
+	padding: 0.5rem 1.5rem;
+}
+.jBlog1 .more:focus{
+	background-color: #ddd;
+	padding: 0.5rem 2rem;
+}

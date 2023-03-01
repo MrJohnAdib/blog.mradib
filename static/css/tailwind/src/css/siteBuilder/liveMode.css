@@ -1,0 +1,33 @@
+[data-type]{
+	position: relative;
+}
+[data-type][data-focus]::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: transparent;
+	transition: 0.2s;
+	outline: 3px solid transparent;
+	outline-offset: -3px;
+	z-index: 99;
+}
+body:hover [data-type][data-focus]::after, [data-type][data-focus="no"]::after{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-type][data-focus]:hover{
+	overflow: hidden;
+}
+[data-type][data-focus]:hover::after, [data-type][data-focus="yes"]::after{
+	background-color: transparent!important;
+	outline-color:#0d6efd;
+	pointer-events: none;
+}
+[data-type][data-focus]:hover .focusAction, [data-type][data-focus="yes"] .focusAction{
+	display: block!important;
+}
+
+

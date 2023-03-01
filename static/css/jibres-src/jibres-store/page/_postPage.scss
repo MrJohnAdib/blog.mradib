@@ -1,0 +1,342 @@
+.postBlock{
+
+}
+
+.postBlock video{
+	display: block;
+	width: 100%;
+	max-height: 80vh;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	position: relative;
+	margin: 1rem 0;
+}
+.postBlock header video{
+}
+.postBlock audio{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 1rem 0;
+}
+.postBlock header audio{
+}
+.postBlock header h2{
+	font-size: 4rem;
+	line-height: 1.25;
+	font-weight: 900;
+	color: #272727;
+	margin-bottom: 0;
+	border-radius: 0.25rem;
+}
+[dir="rtl"] .postBlock header h2{
+	line-height: 2;
+	font-size: 3rem;
+}
+[data-pwa] .postBlock header h2{
+	font-size: 2.5rem;
+	margin:1rem 0;
+}
+[data-pwa][dir="rtl"] .postBlock header h2{
+	font-size: 2.2rem;
+}
+
+.postBlock .postTitleBox{
+	margin-bottom: 2rem;
+}
+.postBlock header img{
+	border-radius: 0.5rem;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.postBlock header .postTitleBox img{
+	margin-bottom: 0;
+	min-width: 12rem;
+	max-height: 25rem;
+}
+[data-pwa] .postBlock .postTitleBox img{
+	min-width: 8rem;
+	max-height: initial;
+	margin-top: 1rem;
+}
+.postBlock header .postTitleBox h2{
+	padding: 0 1rem;
+}
+
+// excerpt
+.postBlock .excerpt{
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-color: #f7f7f7;
+	color: #333;
+	padding: 1rem;
+	font-size: 1.6rem;
+	margin: 0 0 1rem!important;
+	line-height: 3rem;
+	transition: 0.3s;
+}
+.postBlock .excerpt:hover{
+	background-color: #eee;
+}
+[data-pwa] .postBlock .excerpt{
+	font-size: 1.4rem;
+}
+.postBlock .postTitleBox .excerpt{
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+}
+.postBlock abbr{
+	text-decoration:none;
+}
+
+
+.postBlock .text{
+	margin: 2rem 0;
+	line-height:2.5rem;
+	font-size: 1.6rem;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	padding: 1rem;
+	box-shadow: 0px 0px 1.5rem 0px rgba(0, 0, 0, 0.05);
+	transition: 0.3s;
+}
+
+.postBlock .text:hover{
+	box-shadow: 0px 0px 0.5rem 0px rgba(0, 0, 0, 0.1);
+}
+[dir="rtl"] .postBlock .text{
+	line-height:3rem;
+}
+.postBlock .text h2{
+	font-size: 2.6rem;
+	font-weight: 900;
+	margin: 1rem 0 1rem;
+}
+.postBlock .text h3{
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin: 1rem 0 1rem;
+}
+.postBlock .text h4{
+	font-size: 2.0rem;
+	font-weight: 700;
+	margin: 1rem 0 0.5rem;
+}
+.postBlock .text h5{
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin: 1rem 0 0.5rem;
+}
+.postBlock .text h6{
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 1rem 0 0.5rem;
+}
+// pwa
+[data-pwa] .postBlock .text{
+	font-size: 1.4rem;
+}
+[data-pwa] .postBlock .text h2{
+	font-size: 2rem;
+}
+[data-pwa] .postBlock .text h3{
+	font-size: 1.8rem;
+}
+[data-pwa] .postBlock .text h4{
+	font-size: 1.6rem;
+}
+[data-pwa] .postBlock .text h5{
+	font-size: 1.4rem;
+}
+[data-pwa] .postBlock .text h6{
+	font-size: 1.2rem;
+}
+
+.postBlock .text p{
+	margin-bottom: 2.5rem;
+	color: #282828;
+}
+.postBlock .text p:last-child{
+	margin-bottom: 0;
+}
+.postBlock .text pre{
+	margin: 1rem 0 3rem;
+}
+.postBlock .gallery{
+	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+// blockquote
+.postBlock blockquote{
+	position: relative;
+	background-color: #f9f9f9;
+	border-left: 0.3rem solid #ccc;
+	border-right: 0.3rem solid #ccc;
+	padding: 5rem 4rem 4rem;
+	margin: 3rem 0 2rem;
+	font-size: 1.4rem;
+	transition: 0.3s;
+	font-style: normal!important;
+	overflow: visible!important;
+}
+.postBlock blockquote:hover{
+	background-color: #efefef;
+}
+.postBlock blockquote:before{
+	content:"\e009";
+	font-family: "siftal" !important;
+  position: absolute;
+  top:-3rem;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  font-size: 3rem;
+  color: #333;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+[data-pwa] .postBlock blockquote{
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+// figure
+.postBlock figure{
+	position: relative;
+	margin: 1rem auto;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+.postBlock figure img{
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+.postBlock figcaption{
+	position: absolute;
+	bottom: 0;
+	font-size: 1.4rem;
+	padding: 0 1rem;
+	background-color: rgba(255,255,255,0.7);
+}
+[data-pwa] .postBlock figcaption{
+	font-size: 1.2rem;
+}
+
+.postBlock ul{
+	list-style: square outside none;
+	margin: 0 2rem 1rem;
+}
+.postBlock ol{
+	margin: 0 2rem 1rem;
+}
+.postBlock li{
+	padding: 0.5rem 1rem;
+}
+
+.postBlock .gallery a{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	border-radius: 0.5rem;
+}
+.postBlock .gallery a.file{
+	background-color: #f7f7f7;
+	color: #37474f;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	padding: 2rem 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	transition: 0.3s;
+}
+.postBlock .gallery a.file:hover{
+	background-color: #eee;
+}
+.postBlock .gallery a i{
+	font-size: 4rem;
+	display: block;
+	margin-bottom: 1rem;
+}
+.postBlock .gallery a i::before{
+	display: block;
+}
+.postBlock .gallery a [data-fancybox]{
+	line-height: 0;
+	max-height: 40vh;
+}
+[data-pwa] .postBlock .gallery a{
+	max-height: 60vh;
+}
+.postBlock .gallery img{
+	overflow: hidden;
+	position: relative;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+	// vertical-align: bottom;
+	transition: 0.3s;
+	will-change: transform;
+}
+.postBlock .gallery img:hover{
+	transform: scale(0.95);
+}
+.postBlock .gallery img:focus{
+	transform: scale(0.90);
+}
+
+
+.postBlock .infoBox{
+	font-size: 1.4rem;
+	line-height: 3.5rem;
+	@include select-none();
+}
+[data-pwa] .postBlock .infoBox{
+	font-size: 1.2rem
+}
+.postBlock .share1 a{
+	margin: 0.5rem 0.5rem;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	transition: 0.1s;
+}
+[data-pwa] .postBlock .share1 a{
+	margin: 0.5rem 0.2rem;
+}
+.postBlock .share1 a:hover{
+	filter: grayscale(0);
+}
+
+.postBlock .similarPost .body{
+	font-size: 1.4rem;
+	line-height: 3rem;
+}
+
+.postBlock .tagLine{
+	@include select-none();
+	margin-top: 3rem;
+	font-size: 1.4rem;
+}
+[data-pwa] .postBlock .tagLine{
+	font-size: 1.2rem;
+}

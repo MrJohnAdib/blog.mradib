@@ -1,0 +1,135 @@
+.stat{
+  position: relative;
+  background-color: #fff;
+  box-shadow: #eee 0 0 5px;
+  font-size: 14px;
+  margin:0 auto 10px;
+  display: block;
+  border-radius: 2px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  height: 100px;
+  min-width: 70px;
+}
+.stat.ok{
+  background-color: #dcedc8;
+}
+.stat.nok{
+  background-color: #ffe082;
+}
+
+.stat.available h3{
+  color: #2e7d32;
+}
+.stat.available .val{
+	border-bottom: 2px solid #20b040;
+}
+
+.stat.unavailable h3{
+  color: #fa4444;
+}
+.stat.unavailable .val{
+	border-bottom: 2px solid #fa4444;
+}
+
+.stat.green .val{
+  color: #016936;
+}
+
+.stat.active{
+	transform: scale(0.97);
+}
+.stat.active .val{
+	border-bottom: 2px solid #0E6EB8;
+}
+.stat h3{
+	display: block;
+	font-size: 10px;
+	font-weight: 700;
+	color: #333;
+	line-height: 20px;
+	height: 30px;
+	padding: 10px 5px 0;
+	margin: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	opacity: 0.5;
+	transition: 0.3s;
+}
+.stat .val{
+	display: block;
+	font-size: 20px;
+	color: #333;
+	line-height: 50px;
+	height: 70px;
+	padding: 10px 0.5em;
+	margin: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.stat footer{
+	display: block;
+	color: #777;
+	line-height: 30px;
+}
+
+a.stat:hover{transform: scale(0.95);}
+.stat:hover{background-color: #f7f7f7;}
+.stat:focus{box-shadow: 0 0 10px #ddd;}
+.stat:focus h3{opacity: 1;}
+a.stat:active{transform: scale(0.9);}
+.stat:active{background-color: #e6e5eb;}
+
+.stat.x70{
+  height: 70px;
+  font-size: 12px;
+  min-width: 60px;
+}
+.stat.x70 h3{
+  padding-top: 5px;
+}
+.stat.x70 .val{
+	line-height: 30px;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 40px;
+}
+
+.stat.x50{
+  height: 50px;
+  font-size: 10px;
+  min-width: 50px;
+}
+.stat.x50 h3{
+  padding-top: 0;
+  height: 20px;
+}
+.stat.x50 .val{
+	line-height: 20px;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 30px;
+}
+
+.stat.x120{
+  height: 120px;
+  font-size: 18px;
+  min-width: 80px;
+}
+.stat.x120 h3{
+  padding-top: 10px;
+  line-height: 40px;
+  height: 50px;
+}
+.stat.x120 .val{
+	line-height: 50px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 70px;
+}

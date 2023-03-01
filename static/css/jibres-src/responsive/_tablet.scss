@@ -1,0 +1,31 @@
+@media (min-width: 768px) and (max-width: 1200px) {
+@import '../grid/gridTablet';
+
+  .cn{min-width:710px;max-width:940px;width:92%;}
+
+
+  // custom style for another part of siftal
+  [dir="ltr"] [data-panel] #main{margin-left:0}
+  [dir="rtl"] [data-panel] #main{margin-right:0}
+  // sidebar
+  [dir="ltr"] [data-panel] #sidebar{left:-250px;}
+  [dir="rtl"] [data-panel] #sidebar{right:-250px;}
+  // header
+  [data-panel] .toggleClean{display:none}
+  [data-panel] #pageHeader .desktop{margin: 0!important}
+  [data-panel] #pageContent{margin:0!important;}
+
+  // padding and margin
+  .mp0{padding:0}
+  .mm0{padding:0}
+
+  .page-title{padding:7em 0;}
+  .pricingQuick .col2{border: none!important;}
+  #landing .title .h2{font-size:3em;}
+
+
+  .items.simple li:after{display:none;}
+  .items.simple li .go{display: none;}
+}
+
+

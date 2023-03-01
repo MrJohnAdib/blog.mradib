@@ -1,0 +1,63 @@
+
+.eQuote{position:relative;overflow: hidden;font-size: 1.5rem;padding: 10rem 0 10rem;background-color:#f7fafc;color: #415161}
+[dir='rtl'] .eQuote{font-size: 1.4rem;}
+[data-pwa] .eQuote{padding: 5rem 0;}
+
+// heading
+.eQuote h4{text-align: center;font-weight: 900;font-size: 3.2rem;margin-bottom: 5rem;position: relative;line-height: 5rem}
+.eQuote h4:after{content: "";width: 7%;min-width:5rem; border-top:3px solid #ff5151;display:block;margin: 2.2rem auto 0;transition:0.3s}
+.eQuote:hover h4:after{width: 10%;}
+.eQuote:active h4:after{width: 15%;}
+
+.eQuote .item{background-color:#fff;box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.07);border-radius: 2rem;padding: 10rem 8% 8%;height: 100%;transition:0.3s;position: relative;}
+.eQuote .itemBox{padding-top:5rem;padding-bottom: 1rem;}
+.eQuote .item:hover{background-color: rgba(255,255,255,0.7);box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1)}
+.eQuote .item:active{box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2)}
+.eQuote .shapeTop{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15rem;
+	height: 15rem;
+	overflow: hidden;
+}
+.eQuote .shapeTop::before{
+	position: absolute;
+	top: -15rem;
+	left: -6rem;
+	width: 20rem;
+	height: 20rem;
+	overflow: hidden;
+	border-radius: 3rem;
+	content: '';
+	background-color: #f3f4fa;
+	transform: rotate(45deg);
+	transition: 0.3s;
+}
+.eQuote .shapeTop{
+	border-radius: 2rem;
+}
+.eQuote .item:hover .shapeTop::before{
+	background-color: #dfe3fb
+}
+.eQuote .item::before{
+	content: "\6c";
+	font-family: 'siftal';
+	position: absolute;
+	z-index: 1;
+	top: -3rem;
+	left: 2.5rem;
+	font-size: 6rem;
+	text-shadow: 0 0 5px rgba(0,0,0,.3);
+	color: #fff;
+	line-height: 6rem;
+	width: 6rem;
+	height: 6rem;
+	text-align: center;
+}
+.eQuote p{min-height: 14rem;margin: 0;}
+.eQuote .fiveStar{font-family: "siftal";position: absolute;top: 3rem; right: 3rem; width: 11rem; overflow: hidden;color: #ff5a44;font-size: 2rem;line-height:2rem;}
+.eQuote .fiveStar span:after{content:"\5c";padding:0 1px;}
+.eQuote .from{min-height: 60px;padding:1rem 0 0;overflow: hidden;}
+.eQuote .from .position{margin-top:5px;}
+.eQuote img{width:5rem;height:5rem;overflow: hidden;border-radius: 50%;display: block;}

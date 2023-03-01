@@ -1,0 +1,429 @@
+// varibles
+$inputBorder: 1px solid rgba(0,0,0,0.15);
+
+
+// on all elements with input class
+.input{
+	position: relative;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(0,0,0,0.9);
+	width: 100%;
+	border-radius: 0.25rem;
+	@include flexbox;
+	@include flex-wrap(wrap);
+}
+[dir="rtl"] .input.fix{
+	@include flex-direction(row-reverse);
+}
+
+span.input{
+	display: inline-flex;
+	width: auto;
+}
+
+.input input{
+	font-weight: 400;
+	color: rgba(0,0,0,0.9);
+	position: relative;
+	height:36px;
+	line-height: 34px;
+	font-size: 1.4rem;
+	padding: 0 1rem;
+	background-color: #fff;
+	background-clip: padding-box;
+	// box-shadow: none !important;
+	border: $inputBorder;
+	transition-duration:0.3s;
+	transition-property:opacity, background-color, color, border;
+	border-radius: 0.25rem;
+	outline:none;
+	-ms-flex:1 1 auto;
+	flex:1 1 auto;
+	width: 1%;
+	display: -ms-flexbox;
+	display:flex;
+	-ms-flex-align:center;
+	align-items:center;
+}
+[data-pwa] .input input{
+	font-size: 1.6rem;
+}
+.input input::placeholder{
+	color: rgba(0,0,0,0.4);
+}
+.input input:hover{
+	border-color:rgba(0,0,0,0.25);
+}
+.input input:focus, .input.focus input{
+	border-color:rgba(128,192,208,0.9);
+}
+.input.active input{
+	border-color:rgba(0,0,0,0.4);
+}
+// all type of errors
+.input.error input{
+	border-color:rgba(255,0,0,0.5);
+}
+.input.requirement input{
+	border-color:rgba(255,0,0,0.3);
+}
+.input.warning input{
+	border-color:rgba(255,145,0,0.5);
+}
+.input.ok input{
+	border-color:rgba(39,128,39,0.5);
+}
+.input input.error{
+	border-color:rgba(255,0,0,0.5);
+}
+.input input.requirement{
+	border-color:rgba(255,0,0,0.3);
+}
+.input input.warning{
+	border-color:rgba(255,145,0,0.5);
+}
+.input input.ok{
+	border-color:rgba(39,128,39,0.5);
+}
+
+// for preview
+.input.preview.error label{
+	border-color:rgba(255,0,0,0.5);
+}
+.input.preview.requirement label{
+	border-color:rgba(255,145,0,0.3);
+}
+.input.preview.warning label{
+	border-color:rgba(255,145,0,0.5);
+}
+.input.preview.ok label{
+	border-color:rgba(39,128,39,0.5);
+}
+
+
+
+
+.input .addon{
+	padding: 5px 1em;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 0.25rem;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin: 0;
+	font-style: normal;
+	border:$inputBorder;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align:center;
+	align-items:center;
+	width: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.input .addon.small{
+	font-size:1rem;
+	padding-right:0.5rem;
+	padding-left:0.5rem;
+}
+.input .addon:not(.btn)
+{
+	color: #444;
+	background-color: rgba(0,0,0,0.05);
+}
+.input .addon.basic{
+	background-color: #fff;
+	border:$inputBorder;
+}
+.input .addon.flag{
+	border: none;
+	padding: 2px 1em;
+	transition: 0.3s;
+	width:auto;
+}
+.input .addon.none{
+	padding: 0!important;
+	width:0!important;
+}
+.input .addon.flag img{
+	display: block;
+	width: 2em;
+	margin:0 5px;
+	transition: 0.3s;
+}
+.input .addon:empty{
+	padding:5px;
+}
+// for radius
+[dir="ltr"] .input > :first-child{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+[dir="ltr"] .input > :not(div):last-child{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+// for border
+[dir="ltr"] .input > .addon:first-child{
+	border-right-width: 0;
+}
+[dir="ltr"] .input > .addon:last-child{
+	border-left-width: 0;
+}
+[dir="ltr"] .input > .addon:not(:first-child):not(:last-child){
+	border-left-width: 0;
+}
+// for all inputs
+[dir="ltr"] .input > :not(:first-child):not(:last-child){
+	border-radius: 0;
+	// border-right-width:0;
+}
+
+// rtl
+[dir="rtl"] .input > :first-child{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+[dir="rtl"] .input > :not(div):last-child{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+//  for border
+[dir="rtl"] .input > .addon:first-child{
+	border-left-width: 0;
+}
+[dir="rtl"] .input > .addon:last-child{
+	border-right-width: 0;
+}
+[dir="rtl"] .input > .addon:not(:first-child):not(:last-child){
+	border-right-width: 0;
+}
+// for all inputs
+[dir="rtl"] .input > :not(:first-child):not(:last-child){
+	border-radius: 0;
+	// border-left-width:0;
+}
+
+// force ltr
+.input.ltr > :first-child{
+	border-top-right-radius: 0!important;
+	border-bottom-right-radius: 0!important;
+	border-top-left-radius: 0.25rem!important;
+	border-bottom-left-radius: 0.25rem!important;
+}
+.input.ltr > :not(div):last-child{
+	border-top-left-radius: 0!important;
+	border-bottom-left-radius: 0!important;
+	border-top-right-radius: 0.25rem!important;
+	border-bottom-right-radius: 0.25rem!important;
+}
+// for border
+.input.ltr > .addon:first-child{
+	border-right-width: 0!important;
+	border-left-width: 1px!important;
+}
+.input.ltr > .addon:last-child{
+	border-left-width: 0!important;
+	border-right-width: 1px!important;
+}
+.input.ltr > .addon:not(:first-child):not(:last-child){
+	border-left-width: 0!important;
+}
+// for all inputs
+.input.ltr > :not(:first-child):not(:last-child){
+	border-radius: 0!important;
+	border-right-width:0!important;
+}
+
+
+// error coloring for addons
+.input.error .addon{
+	color:rgba(255,0,0,1);
+}
+.input.warning .addon{
+	color:rgba(255,145,0,1);
+}
+.input.ok .addon{
+	color:rgba(39,128,39,1);
+}
+
+
+// only on input elements
+input.input{
+	font-weight: 400;
+	display: inline-flex;
+	color: rgba(0,0,0,0.9);
+	position: relative;
+	height:36px;
+	line-height: 34px;
+	padding: 0 1rem;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: $inputBorder;
+	transition: 0.3s;
+	border-radius: 0.25rem;
+	outline:none;
+	width: auto;
+}
+input.input:hover{
+	border-color:rgba(0,0,0,0.25);
+}
+input.input:focus, input.input.focus{
+	border-color:rgba(128,192,208,0.9);
+}
+input.input.active{
+	border-color:rgba(0,0,0,0.4);
+}
+// all type of errors
+input.input.error{
+	border-color:rgba(255,0,0,0.5);
+}
+input.input.requirement{
+	border-color:rgba(255,0,0,0.3);
+}
+input.input.warning{
+	border-color:rgba(255,145,0,0.5);
+}
+input.input.ok{
+	border-color:rgba(39,128,39,0.5);
+}
+// disable yellow effect on chrome and ios
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+/* handle all type of files*/
+// hide default file selctor
+.input.preview input[type='file']{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
+.input.preview input:focus+label:after{color:rgba(128, 192, 208, 0.9)}
+// add some style on label
+.input.preview label{position:relative;display:block;height:110px;width:110px;text-align:center;margin:0 auto;padding:0;-webkit-transition:.3s;transition:.3s;border-radius:3px;background-color:rgba(0,0,0,.05);border:1px solid transparent;}
+.input.preview label:empty{background-color:rgba(0,0,0,.05);}
+.input.preview label:empty:after{font-family:"siftal";content:"3";color:#bbb;display:inline-block;text-align:center;line-height:110px;font-size:50px;vertical-align:middle;}
+.input.preview label[for^='avatar']:empty:after{content:""}
+.input.preview label[for^='logo']:empty:after{content:"\e002"}
+.input.preview label:hover{background-color:rgba(0,0,0,.07)}
+.input.preview label span{display:inline-block;width:auto;}
+.input.preview label img{position:absolute;top:0;bottom:0;right:0;left:0;margin:0 auto;max-width:108px;max-height:108px;width:auto;height:auto; padding:0;background-color:#eee;opacity:0;transition:0.3s}
+.input.preview label img[src]{opacity:1;}
+
+
+label{
+	padding:0;
+	line-height:2.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2rem;
+}
+label+.input{
+	margin-bottom: 10px;
+}
+label small{
+	display: inline-block;
+	font-size: 1rem;
+	color: #666;
+}
+.input label{
+	width: 100%;
+	margin-top:10px;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="url"],
+input[name="email"],
+input[name="website"]{
+	direction: ltr;
+}
+input[data-format]{
+	direction: ltr;
+}
+input[disabled]{
+	background-color: #f7f7f7;
+}
+input[type="number"] {
+  direction: ltr;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="color"]{
+	direction: ltr;
+	display: inline-block;
+	min-height:35px;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"].circle::-webkit-color-swatch {
+	border-radius: 50%;
+	border: none;
+}
+input[type="color"].circle{
+	border-radius:50%;
+	width:35px;
+	height:35px;
+}
+input[type="color"].picker::-webkit-color-swatch-wrapper {
+	padding: 2px;
+}
+input[type="color"].picker::-webkit-color-swatch {
+	border-radius: 10px;
+	border: none;
+	transition: 0.3s;
+}
+input[type="color"].picker{
+	border: 2px solid #162666;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius:10px;
+	width:42px;
+	height:42px;
+	transition: 0.3s;
+}
+input[type="color"].picker:hover, button.picker:hover{
+	border-color: #3f51b5;
+	background: #eee;
+}
+input[type="color"].picker:focus, button.picker:focus{
+	border-color: #2196f3;
+	background: #eee;
+}
+input[type="color"].picker:focus::-webkit-color-swatch{
+	border-radius: 50%;
+}
+.picker.reset{
+	border: 2px solid #162666;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius:10px;
+	width:42px;
+	height:42px;
+	transition: 0.2s;
+}
+.picker.reset:hover{
+	background: #eee;
+}
+.picker img{
+	padding: 5px;
+}

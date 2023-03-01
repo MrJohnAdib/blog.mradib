@@ -1,0 +1,52 @@
+
+#pageNotif{
+	display:none!important;
+}
+
+body [data-response-hide]{
+	display:none!important
+}
+
+.ltr{
+	direction: ltr;
+}
+.rtl{
+	direction: rtl;
+}
+
+/* for some bad guys, because they are use direct link! */
+svg g[opacity="0.3"][style][filter]{
+	display:none;
+}
+svg g[opacity="0.4"][style][filter]{
+	display:none;
+}
+
+/* very usefull styles*/
+.selectable{
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	user-select: text;
+}
+
+img[src="#"] {
+  visibility: hidden;
+}
+img[src=""] {
+  visibility: hidden;
+}
+
+[dir="ltr"] .txtRa{
+	text-align: right!important;
+}
+[dir="rtl"] .txtRa{
+	text-align: left!important;
+}
+
+[dir="ltr"] .txtLa{
+	text-align: left!important;
+}
+[dir="rtl"] .txtLa{
+	text-align: right!important;
+}
+

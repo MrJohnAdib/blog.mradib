@@ -1,0 +1,42 @@
+.jTitle1{
+	position: relative;
+	overflow: hidden;
+	margin: 3rem auto 2rem;
+	text-align: center;
+	display: block;
+	color: #303060;
+	font-weight: 900;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.jTitle1:before{
+    content: "";
+    display: inline-block;
+    background: #6a7b90;
+    height: 1px;
+	width: 5%;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+.jTitle1:after{
+    content: "";
+    display: inline-block;
+    background: #6a7b90;
+    height: 1px;
+	width: 5%;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+// pwa of title
+[data-pwa] .jTitle1{
+    text-align: initial;
+    font-size: 1.6rem;
+    margin: 2rem auto 1rem;
+}
+[data-pwa] .jTitle1:before{
+    display: none;
+}
+[data-pwa] .jTitle1:after{
+    display: none;
+}

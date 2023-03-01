@@ -1,0 +1,83 @@
+[data-in="site"][data-page="bug"]{
+  background-color:#000;
+}
+[data-in="site"][data-page="bug"] #jibresGoToFa{background-color: rgba(255, 193, 7, 0.7)}
+[data-in="site"][data-page="bug"] #jibresHeader{
+  background-color:transparent;
+}
+[data-in="site"][data-page="bug"] #jibresHeader nav a{
+  color:#fff;
+}
+[data-in="site"][data-page="bug"] #jibresHeader .slave{
+  color:#fff;
+}
+[data-in="site"][data-page="bug"] #jibresPageTitle{
+  background-color:transparent;
+}
+[data-in="site"][data-page="bug"] .jibresBanner::before{
+  background:transparent;
+}
+[data-in="site"][data-page="bug"] .jibresBanner .avand.zero.love{
+  max-width: 500px;
+}
+[data-in="site"][data-page="bug"] .jibresBanner .avand{
+  background: rgba(0,0,0,0.7);
+  color: #aaa;
+  transition:0.3s;
+}
+[data-in="site"][data-page="bug"] .jibresBanner .avand:hover{
+  background: rgba(0,0,0,0.8);
+  color: #ccc;
+}
+[data-in="site"][data-page="bug"] .jibresBanner a{
+  color: #eee;
+}
+[data-in="site"][data-page="bug"] .jibresBanner b{
+  color: #ddd;
+}
+[data-in="site"][data-page="bug"] #jibresSupportLine{
+  display: none;
+}
+[data-in="site"][data-page="bug"] #jibresFooter{
+  background:rgba(0,0,0,0.7);
+  color:#999;
+}
+[data-in="site"][data-page="bug"] #jibresFooter h3{
+  color:#eee!important;
+  border-bottom-color: #777;
+}
+[data-in="site"][data-page="bug"] #jibresFooter a{
+  color:#ccc!important;
+}
+[data-in="site"][data-page="bug"] .items li .item:hover{
+  background-color: #222;
+}
+[data-in="site"][data-page="bug"] .items li .item:focus{
+  background-color: #333;
+}
+[data-in="site"][data-page="bug"] .items li .item:active{
+  background-color: #444;
+}
+[data-in="site"][data-page="bug"] .input input{
+  background: rgba(255,255,255,0.1);
+  color: #eee;
+}
+[data-in="site"][data-page="bug"] .txt{
+  background: rgba(255,255,255,0.1);
+  color: #eee;
+}
+[data-in="site"][data-page="bug"] .share1 a{
+  filter: grayscale(1);
+}
+
+
+#matrix{
+  position: fixed;
+  // height: 100%;
+  // width: 100%;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  z-index:-1;
+}

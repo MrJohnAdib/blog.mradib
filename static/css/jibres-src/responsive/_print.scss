@@ -1,0 +1,154 @@
+/* Design for print */
+@media print {
+  html{
+    height:auto;
+    min-height:initial;
+    overflow: auto
+  }
+  body{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    background-color: transparent!important;
+    background-image: none!important;
+    color: #000;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    overflow: auto;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  h1,h2,h3,h4,h5,h6 {page-break-after:avoid;page-break-inside: avoid;}
+  thead {display: table-header-group;}
+  tr {page-break-inside:avoid;}
+  textarea {overflow:auto;}
+  .alerty2-container{display:none!important;}
+  // some style for break
+  .break-before-always{page-break-before: always;}
+  .break-before-auto{page-break-before:auto}
+  .break-inside-avoid{page-break-inside: avoid;}
+
+  // for siftal panel
+  body[data-panel]{background-color:transparent;}
+  [data-panel] #main:after{display:none}
+  [data-panel] #sidebar{display:none;}
+  [data-panel] #pageHeader .desktop{display:none;}
+  [data-panel] .scr::-webkit-scrollbar{display:none;}
+  ::-webkit-scrollbar {display: none;}
+  .highcharts-button{display: none;}
+  .medium-editor-toolbar, .medium-editor-anchor-preview, .medium-editor-toolbar ul {display: none!important}
+  // some default for dash
+  .superAdmin{display:none;}
+  #xaccess{display:none;}
+  .iziToast-wrapper{display:none;}
+  video{display:none;}
+  audio{display:none;}
+  #nprogress{display: none;}
+
+  .p0{display:none;}
+  .pBlock{display:block;}
+  label small{display: none;}
+
+
+  .tbl1.v1 thead{color:#000;background-color:#ccc;}
+  .tbl1 tbody td{color:#000;}
+  table td{color:#000;}
+  table td code{color:#000;}
+
+  #main {overflow: auto;}
+  #content {overflow: auto;}
+  [data-panel] #content .tbox{display: none}
+  [data-panel] #content .titleBox{display: none}
+  [data-panel] #content .titleBox a{display: none}
+  [data-panel] #content .titleBox .btn{display: none}
+  [data-panel] #content .titleBox h2{color: #000;font-weight: 700;}
+  .tbl1{color:#000!important;font-size:1.2em}
+  .tbl1 thead{background-color:#ddd;color:#000}
+
+  [data-panel] #content{padding:0;}
+  .invoice.printArea{color:#000!important;}
+  [data-panel] .tbl1{color:#000!important;font-size:1.2rem}
+  [data-panel] .tbl1 thead{background-color:#ccc;color:#000}
+  [data-panel] .tbl1 tfoot{background-color:#ccc;color:#000}
+
+  // table2 for print style for print
+  .tbl2.v1 thead{background-color:#ccc;color:#000}
+  .tbl2.v1 tfoot{background-color:#ccc;color:#000}
+  .tbl2.v1 tbody{color:#000;}
+
+
+
+  body #sidebar {display: none!important;}
+  body #pageHeader {display: none!important;}
+  body #pageFooter {display: none!important;}
+  body #pageContent {padding: 0!important;margin:0!important;}
+  [data-panel] #content{padding: 0!important}
+  [data-pwa] body{background-color: transparent!important}
+  [data-panel] body{background-color: transparent!important}
+  body .printArea{margin:0 auto!important;}
+
+
+  // accounting doc print receipt
+  [data-page="accounting_doc_edit"][data-panel] #content .titleBox{
+    margin-top: 2rem!important;
+    display: block;
+  }
+  [data-page="accounting_doc_edit"][data-panel] #content .titleBox h2{
+    font-size: 3rem!important;
+  }
+  [data-page="accounting_doc_edit"][data-panel] #content{
+    padding: 1rem 10% 0!important;
+  }
+  [data-page="accounting_doc_edit"] .box {
+    margin-bottom: 2rem!important;
+    font-size: 1rem;
+  }
+  [data-page="accounting_doc_edit"] label{
+    margin-top: 0.5rem!important;
+  }
+  [data-page="accounting_doc_edit"] .font-11{
+  	font-size: 1rem!important;
+  }
+  [data-page="accounting_doc_edit"] .font-12{
+  	font-size: 1rem!important;
+  }
+  // style for print all
+  [data-page="accounting_doc_printall"][data-panel] #content{
+    padding: 1rem 10% 0!important;
+  }
+  [data-page="accounting_doc_printall"] .box {
+    margin-bottom: 2rem!important;
+    font-size: 1rem;
+  }
+  [data-page="accounting_doc_printall"] label{
+    margin-top: 0.5rem!important;
+  }
+  [data-page="accounting_doc_printall"] .font-11{
+    font-size: 1rem!important;
+  }
+  [data-page="accounting_doc_printall"] .font-12{
+    font-size: 1rem!important;
+  }
+
+  // [data-panel] #content::after{
+  // 	content: "Integrated Ecommerce Platform Software - Jibres.com";
+  // 	position: fixed;
+  // 	bottom: 0;
+  // 	right: 0;
+  // 	left: 0;
+  // 	color: #000;
+  // 	font-size: 1.2rem;
+  // 	line-height: 2rem;
+  // 	padding:0.5rem 5% 1.5rem;
+  // }
+  // [lang="fa"] [data-panel] #content::after{
+  // 	content: "پلتفرم تجارت الکترونیک یکپارچه جیبرس - Jibres.ir";
+  // }
+
+}
+
+@page {
+  margin:0.2cm;
+}

@@ -1,0 +1,32 @@
+.topLine{
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.8rem;
+	text-align: center;
+	background-color: #e73c7e;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: topLineGradient 15s ease infinite;
+	color: #fff;
+}
+.topLine a{
+	color: #fff;
+}
+.topLine a:hover{
+	color: #eee;
+}
+.topLine a:focus{
+	color: #eee;
+}
+
+@keyframes topLineGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

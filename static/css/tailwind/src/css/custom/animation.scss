@@ -1,0 +1,11 @@
+@keyframes bgMoveLtr {
+	from { background-position: 0 bottom; }
+	to { background-position: 100% bottom; }
+}
+@-webkit-keyframes bgMoveLtr {
+	0% { -webkit-background-position: 0 bottom; }
+	25% { -webkit-background-position: 25% bottom; }
+	50% { -webkit-background-position: 50% bottom; }
+	75% { -webkit-background-position: 75% bottom; }
+	100% { -webkit-background-position: 100% bottom; }
+}

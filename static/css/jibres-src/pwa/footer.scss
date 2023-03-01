@@ -1,0 +1,172 @@
+[data-pwa] #pageFooter:empty{
+	height: 0;
+	display: none;
+}
+#pageFooter .pwa{
+	position: fixed;
+	z-index:10;
+	background-color:#f8f8f8;
+	bottom:-1px;
+	right:0;
+	left:0;
+	width: 100%;
+	height: 50px;
+	overflow:hidden;
+	text-align: center;
+	transition:0.3s;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.24);
+	touch-action: none;
+}
+#pageFooter .pwa:empty{
+	height:0;
+	background-color:#c80a5a
+}
+#pageFooter .pwa a{
+	display:block;
+	color: #444!important;
+	overflow:hidden;
+
+}
+#pageFooter .pwa .selected{
+	color: #2ea5ff!important
+}
+#pageFooter .pwa .icon{
+	position:relative;
+	display: block;
+	width:100%;
+	overflow:hidden;
+	height: 3rem;
+	line-height: 1;
+	font-size: 20px;
+
+}
+#pageFooter .pwa .icon i{
+	font-style: normal;
+	position: relative;
+	display: inline-block;
+	line-height: 3rem;
+
+}
+#pageFooter .pwa .title{
+	position:relative;
+	display: block;
+	width:100%;
+	overflow:hidden;
+	height: 2rem;
+	line-height: 1.5rem;
+	font-size:1rem;
+}
+
+#pageFooter .pwa .pwafooterBuy .title{
+	background: #fff1f1;
+	color: #c80a5a;
+	line-height: 50px;
+	height:50px;
+	font-size: 1.4rem;
+	font-weight: 700;
+
+}
+#pageFooter .pwa .pwafooterAddToCart .title{
+	background: #c80a5a;
+	color:#fff;
+	line-height: 50px;
+	height:50px;
+	font-size: 1.4rem;
+	font-weight: 700;
+
+}
+#pageFooter .pwa .pwafooterGoShipping .title{
+	background: #c80a5a;
+	color:#fff;
+	line-height: 50px;
+	height:50px;
+	font-size: 1.4rem;
+	font-weight: 700;
+
+}
+#pageFooter .pwa .pwafooterGoToCart .title{
+	background: #66bb6a;
+	color:#fff;
+	line-height: 50px;
+	height:50px;
+	font-size: 1.4rem;
+	font-weight: 700;
+
+}
+#pageFooter .pwa .pwafooterPay button{
+	background: #1e88e5;
+	color:#fff;
+	line-height: 50px;
+	height:50px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	width: 100%;
+	border:none;
+}
+
+
+#pageFooter .pwa .icon i[data-item]::after{
+	content: attr(data-item);
+	vertical-align: middle;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 18px;
+	min-width: 1.6rem;
+	height: 1.6rem;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #c80a5a;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition:0.3s;
+}
+#pageFooter .pwa .icon i[data-item="۰"]::after{
+	opacity: 0;
+}
+#pageFooter .pwa .icon i[data-item="0"]::after{
+	opacity: 0;
+}
+
+
+#pageFooter .pwa .icon i[data-count]::after{
+	content: attr(data-count);
+	vertical-align: middle;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 18px;
+	min-width: 1.6rem;
+	height: 1.6rem;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #c80a5a;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition:0.3s;
+}
+#pageFooter .pwa .icon i[data-count="۰"]::after{
+	visibility: hidden;
+}
+#pageFooter .pwa .icon i[data-count="0"]::after{
+	visibility: hidden;
+}
+
+#pageFooter .pwa .icon i[data-count].pulse::after{
+	animation:pulsePWANotificationHeart 0.7s infinite ease-in-out;
+}
+@keyframes pulsePWANotificationHeart {
+ 0%{ opacity:.7 } 80%{opacity:.9; transform: scale(1.1); } 100%{opacity:.7; transform: scale(1);}
+}
+
+

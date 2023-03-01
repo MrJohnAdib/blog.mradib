@@ -1,0 +1,41 @@
+.ck.ck-content.ck-editor__editable{
+  min-height: 200px;
+  line-height: 2rem;
+}
+#aProductData .ck.ck-content.ck-editor__editable{
+  min-height: 120px;
+}
+.ck.ck-link-form{
+  direction: ltr;
+}
+.ck.ck-link-form input{
+  direction: ltr;
+  text-align: left!important;
+}
+.ck-media-form{
+  direction: ltr;
+}
+.ck-media-form input{
+  direction: ltr;
+  text-align: left!important;
+}
+
+[dir="rtl"] .ck.ck-content.ck-editor__editable{
+  direction: rtl;
+  line-height: 2.5rem;
+}
+[dir="rtl"] .ck.ck-button .ck-button__label, a.ck.ck-button .ck-button__label{
+  font-family: IRANSans, tahoma;
+}
+[dir="rtl"] .ck.ck-tooltip .ck-tooltip__text{
+  font-family: IRANSans, tahoma;
+}
+[dir="rtl"] .ck.ck-labeled-input .ck-labeled-input__status{
+  font-family: IRANSans, tahoma!important;
+}
+[dir="rtl"] .ck.ck-label{
+  font-family: IRANSans, tahoma!important;
+}
+
+
+

@@ -1,0 +1,81 @@
+.emptyState{
+	max-width: 90%;
+	width: 500px;
+	margin: 10px auto 0;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	background-color: #fff;
+	overflow: hidden;
+	text-align: center;
+}
+[data-pwa] .emptyState{
+	max-width: 96%;
+}
+.emptyState img{
+	width: 250px;
+	margin: 0 auto 10px;
+	display: block;
+	filter: grayscale(1);
+	transition: 0.3s;
+	will-change: filter;
+}
+[data-pwa] .emptyState img{
+	width: 200px;
+}
+.emptyState.search img{
+	filter: grayscale(0);
+}
+.emptyState:hover img{
+	filter: grayscale(0.5);
+}
+
+.emptyState h2{
+	color: #678;
+}
+.emptyState h3{
+	color: #9aa;
+}
+.emptyState a{
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 40px;
+	background-color: #fd6864;
+	background: linear-gradient(to left, #fd6864, #dc3535);
+	color: #fff;
+	display: inline-block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	transition: 0.3s;
+	will-change: transform;
+}
+[data-pwa] .emptyState a{
+	font-size: 16px;
+}
+.emptyState a:hover{
+	opacity: 0.9;
+	transform: scale(1.05);
+}
+.emptyState a:focus{
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+.emptyState a:active{
+	transform: scale(1);
+	opacity: 1;
+}
+.emptyState a::before{
+	content: "\e03d";
+	font-family: "siftal" !important;
+	font-size: 30px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+[data-pwa] .emptyState a::before{
+	display: none;
+}
+

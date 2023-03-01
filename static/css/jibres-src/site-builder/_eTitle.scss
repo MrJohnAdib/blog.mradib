@@ -1,0 +1,30 @@
+.eTitle{
+	position: relative;
+	overflow: hidden;
+	margin: 2rem 0 1rem;
+}
+[data-pwa] .eTitle{
+	padding: 0;
+}
+.eTitle .title{
+	font-size: 1.6rem;
+	line-height: 4rem;
+	font-weight: 700;
+	margin: 0;
+}
+.eTitle .more{
+	font-size: 1.2rem;
+	line-height: 4rem;
+	margin: 0;
+	color: #0074D9;
+	transition: 0.3s;
+}
+.eTitle .more:hover{
+	color: #0F4C81;
+}
+.eTitle .more:focus{
+	color: #FF4136;
+}
+.eTitle .more:active{
+	color: #001f3f;
+}

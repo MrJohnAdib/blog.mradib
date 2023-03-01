@@ -1,0 +1,127 @@
+
+.btn{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	padding: 5px 12px;
+	text-decoration:none;
+	text-align:center;
+	transition:.2s ease-out;
+	border-radius:3px;
+	white-space:nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	height:36px;
+	line-height:24px;
+	font-weight:700;
+	background-color:#e2e2e2;
+	color:rgba(0,0,0,.5);
+	overflow: hidden;
+	font-size:0.9em;
+	max-width:100%;
+	text-overflow:ellipsis;
+
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.outline{
+	background-color: transparent;
+	border-color:#e2e2e2;
+	color: #aaa;
+}
+.btn:hover{
+	background-color:#dcdcdc;
+	color:rgba(0,0,0,.8);
+}
+.btn:focus{
+	background-color:#cdcdcd;
+	color:rgba(0,0,0,1);
+}
+.btn:active, .btn.active{
+	background-color:#bbbbbb;
+	color:rgba(0,0,0,1);
+}
+.btn.disabled{
+	cursor:not-allowed!important;
+	opacity: 0.4;
+}
+
+.btn.xs{
+	height:20px;
+	font-size: 60%;
+	padding: 1px 10px;
+	line-height:18px;
+}
+.btn.sm{
+	height:30px;
+	font-size: 75%;
+	padding: 5px 10px;
+	line-height:20px;
+}
+.btn.lg{
+	height:50px;
+	font-size: 120%;
+	padding: 10px 10px;
+	line-height:30px;
+}
+.btn.xl{
+	height:60px;
+	font-size: 150%;
+	padding: 15px 10px;
+	line-height:30px;
+}
+.btn.hauto{height:auto;white-space:normal;}
+
+.btn.weAreHere{
+	border-color: #168187;
+}
+.btn[data-shortkey] kbd{
+	font-size:10px;
+	background-color:rgba(0,0,0,0.07);
+	transition:none;
+}
+.btn[data-shortkey] kbd.floatLa{
+	font-size:13px;
+}
+
+
+.btn.clicked{
+  animation:pulsePulseBorder 0.5s infinite ease-in-out;
+}
+@keyframes pulsePulseBorder { 0%{box-shadow: 0 0 5px 2px #ddd;} 70%{box-shadow: 0 0 5px 2px #aaa;} 100%{box-shadow: 0 0 5px 2px #ddd;}}
+
+
+
+[data-loading-form] button.btn[data-clicked]::after{
+	content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #fff;
+  transition:0.3s;
+  animation-name: loader-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+@keyframes loader-animation {
+  0% {
+    left: -100%;
+  }
+  49% {
+    left: 100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+

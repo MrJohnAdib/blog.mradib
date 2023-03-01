@@ -1,0 +1,10 @@
+// team page
+.browserBox{max-width:100%;border:3px solid #e5e5e8;border-top-width:30px;border-radius:5px;box-shadow:0 0 10px 1px #e5e5e8;margin:0 auto;position:relative;background-color:#e5e5e8;}
+.browserBox::before{content:attr(data-board);position:absolute;height:14px;background-color:#d6d7d6;border-radius:5px;top:-22px;right:10px;left:80px;transition:0.3s;padding: 2px 1em;text-align: left;direction: ltr;color: #777;line-height:1.4rem;font-size:1.4rem;}
+.browserBox:hover::before{background-color:#ccc}
+.browserBox span{position:absolute;height:14px;width:14px;background-color:#d6d7d6;border-radius:50%;top:-22px;left:10px;transition:0.3s;}
+.browserBox span:before{content:'';position:absolute;height:14px;width:14px;background-color:#d6d7d6;border-radius:50%;left:20px;cursor:auto;}
+.browserBox span::after{content:'';position:absolute;height:14px;width:14px;background-color:#d6d7d6;border-radius:50%;left:40px;cursor:auto;}
+.browserBox:hover span{background-color:#777;cursor:not-allowed;}
+.browserBox img{display:block;margin:0 auto;cursor:progress;}
+.browserBox iframe{width: 100%;height:100vh;min-height:800px;max-height:1000px;display: block;}

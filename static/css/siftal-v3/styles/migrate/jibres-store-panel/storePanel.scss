@@ -1,0 +1,43 @@
+#factorAdd .cbox{margin-bottom:10px;padding:5px}
+
+/*final price*/
+[data-page="buy"] .priceBox{background-color:#a03030}
+[data-page="buy"] .priceBox .final{background-color:#702020;}
+[data-page="buy"] .priceBox .discount{background-color:#703030;}
+[data-m2] kbd{font-family:monospace;}
+
+[data-m2] .tbl1.productList[data-item='0']{display:none}
+[data-m2] .tbl1.productList .headProduct{white-space:nowrap;min-width:100px;}
+[data-m2] .tbl1.productList input.count{white-space:nowrap;min-width:50px;max-width:60px;padding:5px 1px;text-align:center;background-color:transparent;}
+[data-m2] .tbl1.productList input.buy{white-space:nowrap;min-width:60px;max-width:80px;padding:5px 1px;text-align:center;background-color:transparent;}
+
+[data-m2] .tbl1.productList .input.discountCn{min-width:70px;max-width:120px;margin:0 auto;}
+[data-m2] .tbl1.productList .input.discountCn input.discount{padding:5px 1px;text-align:center;}
+[data-m2] .tbl1.productList .input.discountCn .addon.small{min-width:40px;max-width:45px;text-align:center;transition:0.3s;opacity:1;line-height:24px;display:inline-block;}
+[data-m2] .tbl1.productList .input.discountCn .addon.small:empty{min-width:0;width:0;opacity:0;border-width:0;padding:0}
+
+[data-m2] .tbl1 .min80{white-space:nowrap;width:80px}
+[data-m2] .tbl1 .min100{white-space:nowrap;width:100px}
+[data-m2] .tbl1 .min120{white-space:nowrap;width:120px}
+[data-m2] .tbl1 .min150{white-space:nowrap;width:150px}
+
+[data-m2] .finalPriceVal span{font-size: 20px;font-weight:bold;}
+
+
+
+
+
+@media (max-width: 767px) {
+  [data-m2] .tbl1.productList .headProduct{min-width:auto;}
+  [data-m2] .tbl1 .min80{width:auto;}
+  [data-m2] .tbl1 .min100{width:auto;}
+  [data-m2] .tbl1 .min120{width:auto;}
+  [data-m2] .tbl1 .min150{width:auto;}
+
+  [data-m2] #factorAdd .tbl1 tr td:first-child, [data-m2] #factorAdd .tbl1 tr th:first-child{display: none;}
+  [data-m2] #factorAdd .tbl1 tr td:last-child, [data-m2] #factorAdd .tbl1 tr th:last-child{display: none;}
+  [data-m2] #factorAdd .tbl1.productList input.count{width:50px;}
+  [data-m2] #factorAdd .tbl1.productList .input.discountCn{width:60px;}
+  [data-m2] #factorAdd .tbl1.productList .input.discountCn .addon.small{display:none!important}
+}
+

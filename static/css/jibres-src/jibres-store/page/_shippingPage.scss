@@ -1,0 +1,32 @@
+.shippingPage .box{
+	padding: 1.5rem;
+}
+.shippingPage h2{
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 3rem;
+}
+
+.shippingPage address{
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+.shippingPage address .title{
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+.shippingPage address div{
+}
+.shippingPage address b{
+	direction: ltr;
+	text-align: left;
+}
+[dir=ltr] .shippingPage address b{
+	float: right;
+}
+[dir=rtl] .shippingPage address b{
+	float: left;
+}
+.shippingPage .addr{
+	margin: 0.5rem 0;
+}

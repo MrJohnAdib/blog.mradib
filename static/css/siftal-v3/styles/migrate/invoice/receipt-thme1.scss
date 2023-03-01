@@ -1,0 +1,18 @@
+
+.invoice[data-size="receipt8"] .storeDetail .logo img{width: 80px;height:auto;max-width:80px;max-height:80px;border-radius:3px;overflow:hidden;}
+
+.invoice[data-size="receipt8"] .factorDetail{padding-top:10px;border-top:2px solid #333}
+.invoice[data-size="receipt8"] .factorDetail .datetime .time{font-weight:700}
+.invoice[data-size="receipt8"] .factorDetail code{font-size: 15px;background-color:#eee;border-radius:3px;padding:3px 5px;min-width:50px;text-align:center;}
+.invoice[data-size="receipt8"] .barcodePrev{height: 40px;width:140px;}
+.invoice[data-size="receipt8"] .barcodePrev.wide{height: auto;width:100%;}
+.invoice[data-size="receipt8"] .tbl1{color:#000}
+.invoice[data-size="receipt8"] .tbl1 thead th{border-bottom-color: #000;padding-top:10px;padding-bottom:10px; }
+.invoice[data-size="receipt8"] .tbl1 tbody td{line-height:14px;}
+.invoice[data-size="receipt8"] .tbl1 .productTitle{width:50%;}
+.invoice[data-size="receipt8"] .tbl1 td{vertical-align: middle;}
+.invoice[data-size="receipt8"] .tbl1 tfoot th{border-top:1px dotted #000;font-weight:bold}
+.invoice[data-size="receipt8"] .factorResult th{vertical-align: middle;}
+.invoice[data-size="receipt8"] .factorResult .collapsing{font-weight:bold;font-size: 12px;}
+.invoice[data-size="receipt8"] .factorResult .factorSum{font-size: 12px;color:#000!important;}
+

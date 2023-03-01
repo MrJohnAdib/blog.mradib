@@ -1,0 +1,117 @@
+.circularChartBox{
+  position: relative;
+  background-color: #fff;
+  box-shadow: #ddd 0 0 5px;
+  margin:0 auto 10px;
+  display: block;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+  padding: 5px;
+  will-change: transform;
+  @apply select-none;
+}
+a.circularChartBox{
+	cursor: pointer;
+}
+
+a.circularChartBox:hover{
+	transform: scale(0.95);
+	background-color: #f9f9f9;
+}
+a.circularChartBox:focus{
+	transform: scale(0.9);
+	background-color: #f6f6f6;
+}
+.circularChartBox:focus h3{
+	color: #000;
+}
+.circularChartBox:active{
+	background-color: #e6e5eb;
+	transform: scale(0.9);
+}
+.circularChartBox h3{
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	color: #999;
+	line-height: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+	text-align: center;
+	transition: 0.3s;
+}
+[dir='rtl'] .circularChartBox h3{
+	font-size: 12px;
+}
+[data-pwa] .circularChartBox h3{
+	height: 40px;
+	white-space: initial;
+}
+.circularChartBox:hover h3{
+	color: #333;
+}
+.circularChartBox p{
+	color: #aaa;
+	text-align: center;
+	transition:0.3s;
+	margin: 10px 0 0;
+	font-size: 12px;
+	padding: 0 3%;
+	line-height: 20px;
+}
+[dir='rtl'] .circularChartBox p{
+	font-size: 11px;
+}
+.circularChartBox:hover p{
+	color: #777;
+}
+.circularChart{
+	width: 100px;
+	min-height: 100px;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	margin: 10px auto;
+}
+.circularChart.x150{
+	width: 150px;
+	height: 150px;
+}
+.circularChart.x200{
+	width: 200px;
+	height: 200px;
+}
+.circularChart svg {
+  display: block;
+  margin: 0 auto;
+}
+.circularChart .percentage {
+  fill: #aaa;
+  font-size: 5px;
+  text-anchor: middle;
+  text-align: center;
+}
+.circularChart .circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+.circularChart .circle {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: circularChartProgress 1s ease-out forwards;
+}
+@keyframes circularChartProgress { 0% { stroke-dasharray: 0 100; }}
+.circularChart[data-color='red'] .circle {stroke: #dc2d2d;}
+.circularChart[data-color='green'] .circle {stroke: #4CC790;}
+.circularChart[data-color='blue'] .circle {stroke: #3c9ee5;}
+.circularChart[data-color='orange'] .circle {stroke: #ff9f00;}
+.circularChart[data-color='yellow'] .circle {stroke: #fdd835;}
+

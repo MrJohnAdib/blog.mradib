@@ -1,0 +1,208 @@
+@import "tailwindcss/base";
+
+
+
+
+
+/* Fonts */
+@import "./fonts/iranyekan.css";
+@import "./fonts/_iransansx.scss";
+@import "./fonts/_vazir.scss";
+@import "./fonts/_ganjnameh.scss";
+@import "./fonts/_nika.scss";
+@import "./fonts/_behdadweb.scss";
+@import "./fonts/_webnastaliq.scss";
+@import "./fonts/_lalezar.scss";
+@import "./fonts/_lato.scss";
+@import "./fonts/_siftal.scss";
+
+
+
+/* add extra style */
+@import "css/base/_reset.scss";
+@import "css/base/_global.scss";
+
+
+/*add lib style*/
+@import 'css/lib/kerkere.scss';
+@import 'css/lib/sortable.scss';
+@import "css/lib/alert2.scss";
+
+/*add pwa style*/
+@import 'css/pwa/app.scss';
+@import 'css/pwa/layout.scss';
+@import 'css/pwa/item.scss';
+@import 'css/pwa/footer.scss';
+@import 'css/pwa/header.scss';
+@import 'css/pwa/search.scss';
+
+
+
+/* ring */
+/*@import "css/ring/_ringWidth.scss";*/
+/*@import "css/ring/_ringColor.scss";*/
+/*@import "css/ring/_ringOpacity.scss";*/
+/*@import "css/ring/_ringOffsetWidth.scss";*/
+
+
+
+/* bootstrap*/
+@import "css/bootstrap/_alerts.scss";
+@import "css/bootstrap/_alerts-extra.scss";
+@import "css/bootstrap/_button.scss";
+@import "css/bootstrap/_button-extra.scss";
+@import "css/bootstrap/_coloredLinks.scss";
+@import "css/bootstrap/_nav.scss";
+
+/* components*/
+@import "css/components/_0var.scss";
+/*@import "css/components/_kbd.scss";*/
+@import "css/components/_mask.scss";
+/*@import "css/components/_progress.scss";*/
+/*@import "css/components/_steps.scss";*/
+
+/* siteBuilder*/
+@import "css/siteBuilder/liveMode.scss";
+@import "css/siteBuilder/quote.scss";
+@import "css/siteBuilder/txt.scss";
+
+/* customized elements*/
+@import "css/custom/_magicbox.scss";
+@import 'css/custom/items.scss';
+@import 'css/custom/animation.scss';
+@import 'css/custom/printArea.scss';
+
+/* responsive*/
+@import "css/responsive/_switchResponsive.scss";
+@import "css/responsive/_print.scss";
+@import "css/responsive/_dev.scss";
+
+
+/* add extra layouts*/
+@import "css/m2/pageBuilderAdmin.scss";
+@import "css/m2/header.scss";
+@import "css/m2/aside.scss";
+@import "css/m2/footer.scss";
+@import "css/m2/emptyState.scss";
+@import "css/m2/browserFrame.scss";
+@import "css/m2/specialSlider.scss";
+@import "css/m2/iframe.scss";
+@import "css/m2/darkMode.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* migrate and need to transfer to tailwind */
+@import 'migrate/grid.scss';
+@import 'migrate/row.scss';
+@import 'migrate/avand.scss';
+@import 'migrate/box.scss';
+@import 'migrate/starRating.scss';
+@import 'migrate/table1.scss';
+@import 'migrate/table2.scss';
+@import 'migrate/kerkere.scss';
+@import 'migrate/msg.scss';
+@import 'migrate/spay.scss';
+@import 'migrate/pagination.scss';
+@import 'migrate/share.scss';
+@import 'migrate/share1.scss';
+@import 'migrate/welcome.scss';
+@import 'migrate/general.scss';
+@import 'migrate/statistic.scss';
+
+@import 'migrate/grid/grid.scss';
+@import 'migrate/grid/gridLarge.scss';
+@import 'migrate/grid/gridMobile.scss';
+@import 'migrate/grid/gridPhablet.scss';
+@import 'migrate/grid/gridTablet.scss';
+
+@import 'migrate/margin.scss';
+@import 'migrate/padding.scss';
+@import 'migrate/others.scss';
+
+@import 'migrate/forms/_general.scss';
+@import 'migrate/forms/_input.scss';
+@import 'migrate/forms/_checkbox.scss';
+@import 'migrate/forms/_switch.scss';
+@import 'migrate/forms/_radio.scss';
+@import 'migrate/forms/_textarea.scss';
+@import 'migrate/forms/_select.scss';
+@import 'migrate/forms/_rangeslider.scss';
+@import 'migrate/forms/_button.scss';
+@import "migrate/forms/_toggle.scss";
+
+@import 'migrate/enter.scss';
+
+@import 'migrate/lib/alerty2.scss';
+@import 'migrate/lib/iziToast.scss';
+@import 'migrate/lib/nprogress.scss';
+@import 'migrate/lib/ck.scss';
+@import 'migrate/lib/icon.scss';
+
+@import 'migrate/new-elements/uploader.scss';
+@import 'migrate/new-elements/circleChart.scss';
+@import 'migrate/new-elements/option.scss';
+@import 'migrate/new-elements/stat.scss';
+@import 'migrate/new-elements/seo.scss';
+@import 'migrate/new-elements/checklist.scss';
+@import 'migrate/new-elements/chart.scss';
+@import 'migrate/new-elements/items2.scss';
+@import 'migrate/new-elements/hey.scss';
+@import 'migrate/new-elements/domainQuickBuy.scss';
+@import 'migrate/new-elements/get_started_card.scss';
+@import 'migrate/new-elements/panel.scss';
+@import 'migrate/new-elements/stepGuide.scss';
+@import 'migrate/new-elements/userPack.scss';
+
+@import 'migrate/jibres-store-panel/priceBox.scss';
+@import 'migrate/jibres-store-panel/storePanel.scss';
+
+
+@import 'migrate/blog1.scss';
+@import 'migrate/productPage.scss';
+@import 'migrate/cartPage.scss';
+@import 'migrate/postPage.scss';
+@import 'migrate/tagPage.scss';
+@import 'migrate/shippingPage.scss';
+
+@import 'migrate/product1.scss';
+@import 'migrate/product2.scss';
+
+
+@import 'migrate/panel/_pay.scss';
+@import 'migrate/panel/_ticket.scss';
+@import 'migrate/panel/_titleBox.scss';
+
+
+
+
+/* jibres website  */
+@import 'jibres-website/_header.scss';
+@import 'jibres-website/_footer.scss';
+@import 'jibres-website/_layout.scss';
+@import 'jibres-website/_homepage.scss';
+@import 'jibres-website/_page_logo.scss';
+@import 'jibres-website/_page_domains.scss';
+@import 'jibres-website/_page_pricing.scss';
+@import 'jibres-website/_page_team.scss';
+@import 'jibres-website/_page_bug.scss';
+
+/* special pages */
+@import 'special/_ipBlock.scss';
+@import 'special/_ipProtection.scss';
+@import 'special/_recaptcha.scss';
+
+
+
+/* add tailwind custom classes */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

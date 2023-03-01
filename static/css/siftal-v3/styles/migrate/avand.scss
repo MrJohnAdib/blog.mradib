@@ -1,0 +1,100 @@
+.avand {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+[class^="avand-"]{
+  position: relative;
+  width: 96%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+[data-pwa] [class^="avand-"]{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.avand.impact{
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px 20px;
+  margin-bottom:40px;
+  box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.08), 0px 20px 30px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+}
+[class^="avand-"].impact{
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px 20px;
+  margin-bottom:40px;
+  box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.08), 0px 20px 30px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+}
+[data-pwa] [class^="avand-"].impact{
+  padding: 20px 10px;
+}
+[data-m2] [class^="avand-"].impact{
+  width: 100%;
+  margin-bottom: 10px!important;
+}
+.avand.zero{
+  padding: 0;
+}
+[class^="avand-"].zero{
+  padding: 0!important;
+}
+
+.avand.zero > img{transition: 0.2s ease-in-out;will-change: transform;}
+.avand.zero > img:hover{transform: scale(1.05);}
+[class^="avand-"].zero > img{transition: 0.2s ease-in-out;}
+[class^="avand-"].zero > img:hover{transform: scale(1.05);}
+
+
+@media (min-width: 480px) {
+  .avand {
+    max-width: 460px;
+  }
+  .avand-sm {
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .avand {
+    max-width: 720px;
+  }
+  .avand-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 980px) {
+  .avand {
+    max-width: 950px;
+  }
+  .avand-lg {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .avand {
+    max-width: 1014px;
+  }
+  .avand-xl {
+    max-width: 1014px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .avand{
+    max-width: 1014px;
+  }
+  .avand-xxl {
+    max-width: 1014px;
+  }
+}

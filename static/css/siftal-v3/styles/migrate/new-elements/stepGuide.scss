@@ -1,0 +1,123 @@
+.stepGuide{
+	position: relative;
+	font-size: 12px;
+	margin: 20px auto;
+	text-align: center;
+}
+.stepGuide .item{
+	display: block;
+	padding: 50px 5px 10px;
+	line-height: 20px;
+	min-width: 100px;
+	position: relative;
+	color: #888;
+}
+.stepGuide a[href].item{
+	cursor:pointer;
+}
+.stepGuide .item::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin:0 auto;
+	border-radius: 50%;
+	border: 3px solid #e0e0e0;
+	background-color: #fff;
+	color: #fff;
+	transition: all .2s ease-in-out;
+	z-index: 2;
+}
+/* reaction */
+.stepGuide .item:hover::after{
+	border-color: #bcaaa4;
+	transform: scale(1.1);
+}
+.stepGuide .item:focus::after{
+	border-color: #a1887f;
+	transform: scale(1.2);
+}
+.stepGuide .item:active::after{
+	border-color: #8d6e63;
+}
+.stepGuide .item::before{
+	content: "";
+	position: absolute;
+	top: 23px;
+	right: 0;
+	left: 0;
+	height: 5px;
+	background-color: #e0e0e0;
+	transition:0.3s;
+	z-index: 1;
+}
+html[dir="ltr"] .stepGuide .f > div:first-child .item::before{
+	left: 50%;
+}
+html[dir="ltr"] .stepGuide .f > div:last-child .item::before{
+	right: 50%;
+}
+
+html[dir="rtl"] .stepGuide .f > div:first-child .item::before{
+	right: 50%;
+}
+html[dir="rtl"] .stepGuide .f > div:last-child .item::before{
+	left: 50%;
+}
+
+/* complete */
+.stepGuide .item.complete{
+	color: #275aa3;
+}
+.stepGuide .item.complete::after{
+	content: "\6b";
+	font-family: "siftal" !important;
+	font-size: 14px;
+	background-color: #275aa3;
+	border-color: #275aa3;
+}
+.stepGuide .item.complete::before{
+	background-color: #275aa3;
+}
+
+/* current */
+.stepGuide .item.current{
+	color: #275aa3;
+}
+.stepGuide .item.current::after{
+	background-color: #fff;
+	border-color: #275aa3;
+}
+.stepGuide .item.current::before{
+	background-color: #275aa3;
+}
+
+/* fail */
+.stepGuide .item.fail{
+	color: #ff5722;
+}
+.stepGuide .item.fail::after{
+	content: "\e041";
+	font-family: "siftal" !important;
+	font-size: 14px;
+	background-color: #ff5722;
+	border-color: #ff5722;
+}
+.stepGuide .item.fail::before{
+	background-color: #ff5722;
+}
+
+/* pwa */
+html[data-pwa] .stepGuide .item:not(.current){
+	font-size: 0px;
+	line-height: 0;
+	min-width: inherit;
+}
+html[data-pwa] .stepGuide .item::before{
+	background-color: #ddd;
+}

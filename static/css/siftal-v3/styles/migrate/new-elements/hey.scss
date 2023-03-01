@@ -1,0 +1,50 @@
+.hey{
+  position:relative;
+  transition:0.3s;
+  margin:10px auto;
+  overflow: hidden;
+  display: inline-block;
+  color: #1d1f20;
+  font-weight: 500;
+  line-height: 15px;
+  text-decoration: none;
+  background: linear-gradient(25deg,#c8095a,#ff9800);
+  border-radius: 5px;
+  transform: skew(-9deg);
+}
+[dir="rtl"] .hey{
+  line-height: 20px;
+}
+.hey .inside{
+  padding: 13px 20px;
+  border: 2px solid transparent;
+  background: #fff;
+  background-clip: padding-box;
+  border-radius: 5px;
+  transition:0.3s;
+}
+.hey:empty{
+  display:none
+}
+.hey:hover{
+  color: #111;
+}
+.hey:hover .inside{
+  background: rgba(255,255,255,0.9);
+  background-clip: padding-box;
+}
+.hey:focus{
+  color: #000;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+}
+.hey:focus .inside{
+  background: rgba(255,255,255,0.85);
+  background-clip: padding-box;
+}
+.hey:active{
+  color: #000;
+}
+.hey:active .inside{
+  background: rgba(255,255,255,0.8);
+  background-clip: padding-box;
+}

@@ -1,0 +1,80 @@
+
+body[data-m2]{
+  width: 100%;
+  overflow-x: hidden;
+}
+[data-desktop] body[data-m2]{
+  @apply flex flex-wrap;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body[data-m2] #pageCenter{
+	max-width: 100%;
+}
+[data-desktop] body[data-m2] #pageCenter{
+	display: flex!important;
+	flex: 2;
+	flex-grow: 1;
+	background-color:#EFF6FF;
+}
+[data-pwa] body[data-m2]{
+	display: initial;
+	height: initial;
+}
+
+
+body[data-m2] #pageContent{
+	@apply pt-2 px-2 pb-2 md:pt-2 md:px-4 md:pb-4;
+	@apply flex flex-col;
+	overflow-x: hidden;
+	overflow-y: auto;
+	flex: 1 1 0%;
+	/*min-height: calc( 100vh - 260px);*/
+	max-height: calc( 100vh - 58px);
+}
+body[data-m2] #pageContent #content{
+	@apply grow;
+	/* min-height: 100%; */
+}
+[data-pwa] body[data-m2] #pageContent{
+	height: 100%;
+	height: calc( 100vh - 100px);
+}
+body[data-m2] > .js{
+	@apply hidden;
+}
+body[data-m2] .h-full .ck.ck-editor{
+	height: 100%;
+}
+body[data-m2] .h-full .ck.ck-editor__main{
+	height: 90%;
+	height: calc(100% - 38px);
+}
+body[data-m2] .h-full .ck-editor__editable {
+	height: 100%;
+}
+
+
+/* radio design */
+.filter-switch label {
+  cursor: pointer;
+}
+.filter-switch-item input:checked + label {
+  color: inherit;
+  --tw-bg-opacity: 100;
+}
+.filter-switch-item input:not(:checked) + label {
+  --tw-bg-opacity: 0;
+  box-shadow: none;
+}
+.filter-switch-item input:focus + label{
+	background-color:#BFDBFE;
+}
+.filter-switch-item label:hover{
+  --tw-bg-opacity: 0.6;
+}
+.filter-switch-item label svg{
+	max-height: 22px;
+	margin: 3px auto 0;
+}
+

@@ -1,0 +1,10 @@
+/* google analytics style */
+.rc-anchor-checkbox-label{
+	font-family:IRANYekan,"Segoe UI",Helvetica,sans-serif;
+}
+
+
+/* recaptcha v3 */
+.grecaptcha-badge {visibility: hidden;}
+[data-desktop] [data-in="enter"] .grecaptcha-badge {visibility: visible;}
+

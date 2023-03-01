@@ -1,0 +1,135 @@
+.stat{
+  position: relative;
+  background-color: #fff;
+  box-shadow: #eee 0 0 0.5rem;
+  font-size: 1.4rem;
+  margin:0 auto 1rem;
+  display: block;
+  border-radius: $myRadius;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  height: 10rem;
+  min-width: 7rem;
+}
+.stat.ok{
+  background-color: #dcedc8;
+}
+.stat.nok{
+  background-color: #ffe082;
+}
+// available
+.stat.available h3{
+  color: #2e7d32;
+}
+.stat.available .val{
+	border-bottom: 2px solid #20b040;
+}
+// unavailable
+.stat.unavailable h3{
+  color: #fa4444;
+}
+.stat.unavailable .val{
+	border-bottom: 2px solid #fa4444;
+}
+// colors
+.stat.green .val{
+  color: #016936;
+}
+// active
+.stat.active{
+	transform: scale(0.97);
+}
+.stat.active .val{
+	border-bottom: 2px solid #0E6EB8;
+}
+.stat h3{
+	display: block;
+	font-size: 1em;
+	font-weight: 700;
+	color: #333;
+	line-height: 2rem;
+	height: 3rem;
+	padding: 1rem 0.5rem 0;
+	margin: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	opacity: 0.5;
+	transition: 0.3s;
+}
+.stat .val{
+	display: block;
+	font-size: 2em;
+	color: #333;
+	line-height: 5rem;
+	height: 7rem;
+	padding: 1rem 0.5em;
+	margin: 0;
+  overflow: hidden;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.stat footer{
+	display: block;
+	color: #777;
+	line-height: 3rem;
+}
+// reaction
+a.stat:hover{transform: scale(0.95);}
+.stat:hover{background-color: #f7f7f7;}
+.stat:focus{box-shadow: 0 0 1rem #ddd;}
+.stat:focus h3{opacity: 1;}
+a.stat:active{transform: scale(0.9);}
+.stat:active{background-color: #e6e5eb;}
+// size x70
+.stat.x70{
+  height: 7rem;
+  font-size: 1.2rem;
+  min-width: 6rem;
+}
+.stat.x70 h3{
+  padding-top: 0.5rem;
+}
+.stat.x70 .val{
+	line-height: 3rem;
+	font-size: 1.5em;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	height: 4rem;
+}
+// size x50
+.stat.x50{
+  height: 5rem;
+  font-size: 1rem;
+  min-width: 5rem;
+}
+.stat.x50 h3{
+  padding-top: 0;
+  height: 2rem;
+}
+.stat.x50 .val{
+	line-height: 2rem;
+	font-size: 1.5em;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	height: 3rem;
+}
+// size x120
+.stat.x120{
+  height: 12rem;
+  font-size: 1.8rem;
+  min-width: 8rem;
+}
+.stat.x120 h3{
+  padding-top: 1rem;
+  line-height: 4rem;
+  height: 5rem;
+}
+.stat.x120 .val{
+	line-height: 5rem;
+	font-size: 1.5em;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	height: 7rem;
+}

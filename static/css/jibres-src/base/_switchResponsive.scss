@@ -1,0 +1,15 @@
+/* header */
+/* hide pwa header on desktop */
+[data-pwa] #pageHeader .desktop{display: none;}
+/* hide desktop header on pwa */
+[data-desktop] #pageHeader .pwa{display: none;}
+
+
+
+/* footer */
+/* hide pwa footer on desktop */
+[data-pwa] #pageFooter .desktop{display: none;}
+/* hide desktop footer on pwa */
+[data-desktop] #pageFooter .pwa{display: none;}
+
+

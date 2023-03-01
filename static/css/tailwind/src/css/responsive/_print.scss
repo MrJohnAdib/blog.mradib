@@ -1,0 +1,140 @@
+/* Design for print */
+@media print {
+  html{
+    height:auto;
+    min-height:initial;
+    overflow: auto;
+  }
+  body{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    background-color: transparent!important;
+    background-image: none!important;
+    color: #000;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    overflow: auto;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  h1,h2,h3,h4,h5,h6 {page-break-after:avoid;page-break-inside: avoid;}
+  thead {display: table-header-group;}
+  tr {page-break-inside:avoid;}
+  textarea {overflow:auto;}
+  .alerty2-container{display:none!important;}
+
+  .break-before-always{page-break-before: always;}
+  .break-before-auto{page-break-before:auto}
+  .break-inside-avoid{page-break-inside: avoid;}
+
+
+  body[data-m2]{background-color:transparent;}
+  [data-m2] #main:after{display:none}
+  [data-m2] #sidebar{display:none;}
+  [data-m2] #pageHeader .desktop{display:none;}
+  [data-m2] .scr::-webkit-scrollbar{display:none;}
+  ::-webkit-scrollbar {display: none;}
+  .highcharts-button{display: none;}
+  .medium-editor-toolbar, .medium-editor-anchor-preview, .medium-editor-toolbar ul {display: none!important}
+
+  .superAdmin{display:none;}
+  #xaccess{display:none;}
+  [data-debugger]::before{display:none;}
+  .iziToast-wrapper{display:none;}
+  video{display:none;}
+  audio{display:none;}
+  #nprogress{display: none;}
+
+  .p0{display:none;}
+  .pBlock{display:block;}
+  label small{display: none;}
+
+
+  body .tbl1.v1 thead{color:#000;background-color:#aaa;}
+  body .tbl1 tbody td{color:#000;}
+  body .tbl1 td{color:#000;}
+  body .tbl1 td code{color:#000;}
+
+  #main {overflow: auto;}
+  #content {overflow: auto;}
+  [data-m2] #content .tbox{display: none}
+  [data-m2] #content .titleBox{display: none}
+  [data-m2] #content .titleBox-v2{display: none}
+  [data-m2] #content .titleBox a{display: none}
+  [data-m2] #content .titleBox .btn{display: none}
+  [data-m2] #content .titleBox h2{color: #000;font-weight: 700;}
+  .tbl1{color:#000!important;font-size:12px}
+  .tbl1 thead{background-color:#ddd;color:#000}
+
+  [data-m2] #content{padding:0;}
+  .invoice.printArea{color:#000!important;}
+  [data-m2] .tbl1{color:#000!important;font-size:12px}
+  [data-m2] .tbl1 thead{background-color:#ccc;color:#000}
+  [data-m2] .tbl1 tfoot{background-color:#ccc;color:#000}
+
+
+  .tbl2.v1 thead{background-color:#ccc;color:#000}
+  .tbl2.v1 tfoot{background-color:#ccc;color:#000}
+  .tbl2.v1 tbody{color:#000;}
+  .iziToast-wrapper{display: none!important;}
+
+
+  body #sidebar {display: none!important;}
+  body #pageHeader {display: none!important;}
+  body #pageFooter {display: none!important;}
+  body #pageContent {padding:0!important;margin:0!important;height:100%!important;background-color:transparent!important;background-image:none!important;}
+  [data-m2] #content{padding:0!important}
+  [data-pwa] body{background-color:transparent!important}
+  [data-m2] body{background-color:transparent!important}
+  body .printArea{margin:0 auto!important;box-shadow1:none!important;padding1:0!important;}
+
+
+  [data-page="accounting_doc_edit"][data-m2] #content .titleBox{
+    margin-top: 20px!important;
+    display: block;
+  }
+  [data-page="accounting_doc_edit"][data-m2] #content .titleBox h2{
+    font-size: 30px!important;
+  }
+  [data-page="accounting_doc_edit"][data-m2] #content{
+    padding: 10px 10% 0!important;
+  }
+  [data-page="accounting_doc_edit"] .box {
+    margin-bottom: 20px!important;
+    font-size: 10px;
+  }
+  [data-page="accounting_doc_edit"] label{
+    margin-top: 5px!important;
+  }
+  [data-page="accounting_doc_edit"] .font-11{
+  	font-size: 10px!important;
+  }
+  [data-page="accounting_doc_edit"] .font-12{
+  	font-size: 10px!important;
+  }
+
+  [data-page="accounting_doc_printall"][data-m2] #content{
+    padding: 10px 10% 0!important;
+  }
+  [data-page="accounting_doc_printall"] .box {
+    margin-bottom: 20px!important;
+    font-size: 10px;
+  }
+  [data-page="accounting_doc_printall"] label{
+    margin-top: 5px!important;
+  }
+  [data-page="accounting_doc_printall"] .font-11{
+    font-size: 10px!important;
+  }
+  [data-page="accounting_doc_printall"] .font-12{
+    font-size: 10px!important;
+  }
+
+}
+
+@page {
+  margin:0.2cm;
+}

@@ -1,0 +1,122 @@
+[data-text-style="t1"] h1{
+	font-size: 1.8rem;
+	margin: 1rem 0;
+	font-weight: 700;
+}
+[data-text-style="t1"] h2{
+	font-size: 1.7rem;
+	margin: 1rem 0;
+	font-weight: 700;
+}
+[data-text-style="t1"] h3{
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	font-weight: 700;
+}
+[data-text-style="t1"] h4{
+	font-size: 1.4rem;
+	margin: 1rem 0;
+	font-weight: 700;
+}
+[data-text-style="t1"] h5{
+	font-size: 1.2rem;
+	margin: 1rem 0;
+	font-weight: 700;
+}
+[data-text-style="t1"] h5{
+	font-size: 1.1rem;
+	margin: 1rem 0;
+	font-weight: 700;
+}
+
+[data-text-style="t1"] p{
+	margin: 1rem 0;
+}
+[data-text-style="t1"] figure{
+	margin-bottom: 1rem;
+}
+[data-text-style="t1"] figure img{
+	display: block;
+	width: auto;
+	border-radius: 5px;
+	margin:0 auto;
+}
+[data-text-style="t1"] strong{
+	font-weight: 800;
+}
+[data-text-style="t1"] ul{
+	list-style: square;
+	margin-bottom: 1.5rem;
+	margin-left: 1.5rem;
+}
+[dir="rtl"] [data-text-style="t1"] ul{
+	margin-left: 0;
+	margin-right: 1.5rem;
+}
+[data-text-style="t1"] ol{
+	list-style: decimal;
+	margin-bottom: 1.5rem;
+	margin-left: 1.5rem;
+}
+[dir="rtl"] [data-text-style="t1"] ol{
+	list-style: persian;
+	margin-left: 0;
+	margin-right: 1.5rem;
+}
+[data-text-style="t1"] li{
+	margin-bottom: 0.7em;
+}
+[data-text-style="t1"] pre{
+	position: relative;
+  padding: 1rem;
+  color: #353535;
+  background: #eee;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  text-align: left;
+  direction: ltr;
+  tab-size: 4;
+  white-space: pre-wrap;
+  font-style: normal;
+  min-width: 200px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 90%;
+
+  overflow: auto;
+  white-space: normal;
+  overflow-wrap: normal;
+
+}
+[data-text-style="t1"] pre[data-language]:after{
+	content: attr(data-language);
+	position: absolute;
+  top: -1px;
+  right: 10px;
+  background: #757575;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 2px 5px;
+  color: #fff;
+  white-space: nowrap;
+}
+[data-text-style="t1"] code {
+  background-color: rgb(227, 232, 244);
+  border-radius: 5px;
+  color: rgb(36, 51, 90);
+  font-size: 14px;
+  line-height: 1.4em;
+  padding: 3px;
+}
+[data-text-style="t1"] pre code{
+  background: unset;
+  color: unset;
+  padding: 0;
+  border-radius: 0;
+}
+[data-text-style="t1"] .shortcode iframe{
+	width:100%;
+	height:100%;
+}
+
+

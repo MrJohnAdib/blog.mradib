@@ -1,0 +1,542 @@
+
+[data-env="Jibres"][data-in="site"][data-page="home"] .txtB{
+	font-weight: 900!important;
+}
+[dir="rtl"] [data-env="Jibres"][data-in="site"] #pageHeader .pwa .action{
+	font-weight: 900;
+}
+[data-env="Jibres"][data-in="site"][data-page="home"] #pageHeader .pwa .title{
+	font-weight: 400;
+}
+[dir="ltr"] [data-env="Jibres"][data-in="site"][data-page="home"] #jibresLastLine .langlist a{
+	font-family: tahoma;
+}
+[data-env="Jibres"][data-in="site"][data-page="home"] .keywords{
+	font-family: tahoma;
+}
+.emoji{
+	font-family: tahoma;
+}
+#homeLanding{
+	color: #fff;
+	min-height: 35rem;
+	padding: 7rem 0 0;
+	position: relative;
+	font-size: 1.6rem;
+	background-color: #c80a5a;
+	overflow: hidden;
+}
+#homeLanding::before{
+	content: "";
+	position: absolute;
+	width: 24rem;
+	height: 24rem;
+	background-color: rgba(0,0,0,0.1);
+	opacity: 0.5;
+	border-radius: 50%;
+	left: -15rem;
+	top: 10rem;
+}
+#homeLanding::after{
+	content: "";
+	position: absolute;
+	width: 24rem;
+	height: 24rem;
+	background-color: rgba(0,0,0,0.1);
+	opacity: 0.5;
+	border-radius: 50%;
+	right: -15rem;
+	top: 10rem;
+}
+#homeLanding [class^="avand-"]{
+	z-index: 1;
+}
+#homeLanding .input{
+	width: 100%;
+	height: 5rem;
+	line-height: 4.8rem;
+	box-shadow: 0 0 0 1px #6b7177;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+#homeLanding h2{
+	min-height: 7rem;
+	font-size: 4.2rem;
+	line-height: 5rem;
+	margin: 0 0 1rem;
+}
+[dir='rtl'] #homeLanding h2{
+	font-size: 3.5rem;
+}
+
+// pwa
+[data-pwa] #homeLanding{
+	padding: 5rem 0 0;
+}
+[data-pwa] #homeLanding h2{
+	font-size: 3.5rem;
+}
+[data-pwa][dir='rtl'] #homeLanding h2{
+	font-size: 2.5rem;
+}
+
+#homeLanding .btn3{
+	height: 5rem;
+	display: block;
+	width: 100%;
+	padding: 1rem 1.8rem;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+	font-weight: 900;
+	font-size: 1.6rem;
+	line-height: 1.133;
+	-webkit-font-smoothing: antialiased;
+	transition: 1.5s ease;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 0 0.5rem 1.5rem 0 rgba(0,0,0,0.15);
+	background-color: #c8095a;
+	color: #fff;
+	border: 1px solid transparent;
+}
+#homeLanding .btn3:hover{
+	box-shadow: 0 5px 25px 0 rgba(0,0,0,0.25);
+}
+#homeLanding .btn3:focus{
+	box-shadow: 0 0 0.18em 0.18em rgba(0,128,96,0.5);
+}
+#homeLanding .btn3:active{
+	background-color: #002e25;
+	color: #ffffff;
+	border-color: #002e25;
+}
+#homeLanding p{
+	margin: 0 0 1.5rem;
+}
+
+
+#jibresChannel{
+	font-size: 1.8rem;
+	padding: 0rem 0 7rem;
+}
+[dir='rtl'] #jibresChannel{
+	font-size: 1.4rem;
+}
+#jibresChannel .row>[class*=c-]{
+	padding-bottom: 1.5rem;
+}
+#jibresChannel .channel{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 100%;
+	padding: 4rem;
+	background-color: #fff;
+	border-radius: 1rem;
+	box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+	transition: .15s;
+}
+[data-pwa] #jibresChannel .channel{
+	padding: 2rem;
+}
+#jibresChannel .channel:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #aab7c7;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity .15s;
+}
+#jibresChannel .channel:hover {
+   box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
+    color: #32325d!important;
+    // transform: translateY(-2px);
+}
+#jibresChannel .channel:active {
+	box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
+  transform: translateY(2px);
+}
+#jibresChannel .channel:focus:after {
+	opacity: 0.07;
+}
+#jibresChannel .channel:active:after {
+	opacity: 0.15;
+}
+#jibresChannel .channel p{
+	color: #525f7f;
+	margin: 0;
+}
+#jibresChannel .channel h2{
+	position: relative;
+	transition: 0.2s;
+	font-size: 3rem;
+	margin: 0 0 1rem;
+	top: 0;
+	font-weight: 900;
+	color: #c8095a;
+}
+
+[data-pwa] #jibresChannel .channel h2{
+	font-size: 2rem;
+}
+#jibresChannel .channel:hover h2{
+	// top: 1rem;
+	margin: 0.5rem 0;
+}
+
+
+
+#jibresDomain{
+  // background-color: #FD940A;
+  // background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+  background: #f5f5f5;
+  color: #000;
+	min-height: 300px;
+}
+
+#jibresDomain{position:relative;overflow: hidden;font-size: 1.5rem;padding: 5rem 0 10rem;background-color: #f7f7f9;color: #415161}
+#jibresDomain h2{text-align: center;font-weight: 900;font-size: 3.2rem;margin-bottom: 5rem;position: relative;line-height: 5rem}
+#jibresDomain h2:after{content: "";width: 7%;min-width:5rem; border-top:3px solid #ff5151;display:block;margin: 2.2rem auto 0;transition:0.3s}
+#jibresDomain h2 a{transition:0.3s;font-weight: 900;}
+#jibresDomain:hover h2:after{width: 10%;}
+#jibresDomain:active h2:after{width: 15%;}
+#jibresDomain .domainQuickBuy{background-color: #eee;color:#415161}
+
+
+#saleChannels{padding-top:0;font-size: 1.4rem;text-align: center;position:relative;}
+#saleChannels h3{font-size: 4rem;color:#444;font-weight: 900;margin-bottom: 2rem;}
+[data-pwa] #saleChannels h3{font-size: 1.5em;}
+#saleChannels h4{font-size: 1.6rem;color: #333;margin:0;}
+[data-pwa] #saleChannels h4{font-size: 1.4rem;}
+#saleChannels .item{background-color: #ffffff;border-radius: 0.5em;box-shadow: 0 0 1.5em rgba(220,90,90,0.15);padding: 20px 10px 10px;-webkit-transition: all 0.3s linear 0s;transition: all 0.3s linear 0s;overflow: hidden;height: 100%;}
+#saleChannels .item:hover{box-shadow: 0 0 2em rgba(220,90,90,0.3);}
+#saleChannels .item:active{box-shadow: 0 0 2em rgba(220,90,90,0.4);}
+#saleChannels .item img{display: block;min-height: 75px;max-height: 200px;margin:0 auto 20px;}
+[data-pwa] #saleChannels .avand{width: 95%;}
+
+
+.jibresChannel{
+	font-size: 2rem;
+	padding: 3rem 0;
+	background-color: #f5f5f7;
+}
+
+
+
+
+#keepitsimple{background:#3850cc;background:-webkit-linear-gradient(left,#3230a0, #4895ff 70%,#aabbff);background:linear-gradient(90deg,#3230a0, #4895ff 70%,#aabbff);color:#fff;position:relative;}
+#keepitsimple .title{font-size:2em;text-align:center;padding:10rem 5px 15rem;}
+#keepitsimple .title h3{font-weight:900;font-size:4em;line-height:2;position:relative;margin-bottom:3rem;}
+[data-pwa] #keepitsimple .title h3{font-size:3rem;}
+#keepitsimple .title h3:after{content:"";position:absolute;bottom:0;right:0;left:0;width:5rem;height:1px;margin:0 auto;background-color:#ddd;transition:0.3s;}
+#keepitsimple:hover .title h3:after{background-color:#fff;width:10rem;}
+#keepitsimple:active .title h3:after{background-color:#fff;width:15rem;}
+#keepitsimple .title p{font-size:1em;color:#eee;margin:0 0 1rem;}
+#keepitsimple .title p span{opacity:0;transition:0.3s}
+#keepitsimple .title p:hover span{opacity:1}
+#keepitsimple .waves {position: absolute;right: 0;left: 0;bottom: 0px;width: 100%;margin-bottom:-7px;height:10rem;}
+#keepitsimple .parallax > use {animation: simpleWave 25s cubic-bezier(.55,.5,.45,.5) infinite;}
+#keepitsimple .parallax > use:nth-child(1) {animation-delay: -2s;animation-duration: 7s;}
+#keepitsimple .parallax > use:nth-child(2) {animation-delay: -5s;animation-duration: 10s;}
+#keepitsimple .parallax > use:nth-child(3) {animation-delay: -4s;animation-duration: 15s;}
+#keepitsimple .parallax > use:nth-child(4) {animation-delay: -5s;animation-duration: 20s;}
+@keyframes simpleWave { 0% { transform: translate3d(-90px,0,0); } 100% { transform: translate3d(85px,0,0); }}
+/*Shrinking for mobile*/
+@media (max-width: 768px) { .waves { height:40px; min-height:40px; } }
+
+
+
+
+#statistic{padding:7em 0;background-color:#333;color:#eee}
+#statistic .statistic{margin-bottom: 2em;}
+#statistic .value{color:#fff}
+#statistic h3 span{opacity:0;transition:0.3s}
+#statistic:hover h3 span{opacity:1}
+
+
+#jibresInvoice{
+	font-size: 1.6rem;
+	background-color: #eff7fe;
+	padding: 10rem 0;
+	position: relative;
+}
+[dir='rtl'] #jibresInvoice{
+	font-size: 1.4rem;
+}
+[data-pwa] #jibresInvoice{
+	font-size: 1.4rem;
+	padding: 5rem 0;
+}
+#jibresInvoice h3{
+	font-size: 6rem;
+	color: #0d83dd;
+	font-weight: 900;
+}
+[data-pwa] #jibresInvoice h3{
+	font-size: 1.9rem;
+}
+#jibresInvoice h2{
+	font-size: 2.8rem;
+	color: #1565c0;
+	font-weight: 900;
+}
+#jibresInvoice p{
+	color: #343444;
+}
+
+
+
+#jibresForm{
+	font-size: 1.8rem;
+	background-color: #ffcc00;
+	background-color: #F4EDF8;
+	padding: 10rem 0;
+	position: relative;
+}
+[dir='rtl'] #jibresForm{
+	font-size: 1.4rem;
+}
+[data-pwa] #jibresForm{
+	font-size: 1.4rem;
+	padding: 5rem 0;
+}
+#jibresForm h2{
+	font-size: 4rem;
+	font-weight: 900;
+	text-align: center;
+}
+[data-pwa] #jibresForm h2{
+	font-size: 2rem;
+}
+#jibresForm h3{
+	font-size: 2.8rem;
+	// color: #1565c0;
+	font-weight: 900;
+}
+#jibresForm p{
+	color: #343444;
+}
+
+
+
+
+
+#jibresFeatures{
+	padding: 10rem 0 15rem;
+	font-size: 1.4rem;
+	background-color: #f9fbff;
+}
+[data-pwa] #jibresFeatures{
+	padding: 5rem 0;
+}
+
+#jibresFeatures h3{text-align: center;font-weight: 900;font-size: 3.2rem;margin-bottom: 5rem;position: relative;line-height: 5rem;color: #091c4d;}
+[data-pwa] #jibresFeatures h3{font-size: 2rem;line-height: 4rem;}
+#jibresFeatures h3:after{content: "";width: 7%;min-width:5rem; border-top:3px solid #ff5151;display:block;margin: 2.2rem auto 0;transition:0.3s}
+#jibresFeatures h3 a{transition:0.3s;}
+#jibresFeatures:hover h3:after{width: 10%;}
+#jibresFeatures:active h3:after{width: 15%;}
+
+
+#jibresFeatures .item{
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+#jibresFeatures a{
+	padding:5rem 2.5rem 2.5rem;
+	position: relative;
+	display: block;
+	height: 100%;
+	max-height: 30rem;
+	margin: 0 0.5rem;
+	border-radius: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2rem 2.5rem -0.5rem rgba(0,0,0,.1), 0 1rem 1rem -0.5rem rgba(0,0,0,.04);
+	transition: 0.3s;
+}
+#jibresFeatures a:hover{
+	box-shadow: 0 2rem 2.5rem -0.5rem rgba(0,0,0,.15), 0 1rem 1rem -0.5rem rgba(0,0,0,.06);
+}
+#jibresFeatures a:hover i{
+	color: #c8095a
+}
+#jibresFeatures a:focus{
+	box-shadow: 0 2rem 2.5rem -0.5rem rgba(0,0,0,.2), 0 1rem 1rem -0.5rem rgba(0,0,0,0.1);
+}
+#jibresFeatures a:active{
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+
+}
+#jibresFeatures a i{
+	position: absolute;
+	top: -3.5rem;
+	width: 7rem;
+	height: 7rem;
+	border: 1px solid #dfeafd;
+	background-color: #fff;
+	color: #4a5565;
+	border-radius: 50%;
+	padding: 1rem;
+	text-align: center;
+}
+#jibresFeatures a i::before{
+	line-height: 5rem;
+	height: 5rem;
+	display: block;
+	overflow: hidden;
+	font-size: 2.5rem;
+}
+#jibresFeatures h4{
+	color: #c8095a;
+	font-size: 2rem;
+	font-weight: 900;
+	margin: 0 0 1rem!important;
+}
+#jibresFeatures p{
+	color: #4a5565;
+	margin-bottom: 0.5rem;
+}
+
+
+
+#jibresApp{
+	// margin-top: 15rem;
+	// margin-bottom: 10rem;
+	// height: 40rem;
+  background-image: -moz-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+  background-image: -webkit-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+  background-image: -ms-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+  background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+	color: #fff;
+	font-size: 1.6rem;
+}
+#jibresApp figure{
+	margin-top: -12rem;
+	margin-bottom: -8rem;
+}
+#jibresApp figure img{
+	display: block;
+	margin: 0 auto;
+	height: 60rem;
+	position: relative;
+	z-index: 1;
+	transition: 0.3s;
+	will-change: transform;
+}
+#jibresApp:hover figure img{
+	transform: scale(0.9);
+}
+#jibresApp .text{
+	padding-top: 10rem;
+}
+[data-pwa] #jibresApp .text{
+	padding: 7rem 0;
+	text-align: center;
+}
+#jibresApp h2{
+	font-size: 4rem;
+	font-weight: 900;
+}
+[dir="rtl"] #jibresApp h2{
+	font-size: 3.5rem;
+}
+[data-pwa] #jibresApp h2{
+	font-size: 2.5rem;
+}
+[data-pwa] #jibresApp p{
+	font-size: 1.2rem;
+}
+#jibresApp .dl a{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.1);
+	// border:1px solid #fff;
+	border-radius: 0.5rem;
+	max-width: 18rem;
+	margin: 0.5rem;
+	transition: 0.3s;
+}
+[data-pwa] #jibresApp .dl a{
+	max-width: 15rem;
+}
+#jibresApp .dl a img{
+	display: block;
+	border-radius: 0.5rem;
+	width: 100%;
+	transition: 0.3s;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.07);
+	will-change: transform;
+}
+#jibresApp .dl a:hover img{
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+#jibresApp .dl a:focus img{
+	transform: scale(1.07);
+	box-shadow: 0 2rem 2.5rem -0.5rem rgba(0,0,0,0.15), 0 1rem 1rem -0.5rem rgba(0,0,0,0.06);
+}
+
+#jibresPrivacy{
+	background-color: #171717;
+	color: #a1a1a7;
+	text-align: center;
+	padding: 10rem 0;
+	font-size: 1.6rem;
+}
+#jibresPrivacy .securitySign{
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto 5rem;
+	background-color: #f7fafc;
+	overflow: hidden;
+}
+#jibresPrivacy .securitySign::before{
+	content: "\e124";
+	font-family: "siftal","tahoma" !important;
+	display: block;
+	margin: 0 auto;
+	line-height: 20rem;
+	font-size: 10rem;
+	color: #171717;
+	border-radius: 50%;
+	transition: transform .2s;
+	// will-change: transform;
+}
+
+#jibresPrivacy:hover .securitySign::before{
+	transform: scale(1.2);
+}
+#jibresPrivacy:active .securitySign::before{
+	content: "\e039";
+}
+#jibresPrivacy h3{
+	font-size: 6rem;
+}
+#jibresPrivacy h3 a{
+	font-weight: 900;
+}
+
+[dir="rtl"] #jibresPrivacy h3{
+	font-size: 4rem;
+}
+[data-pwa] #jibresPrivacy h3{
+	font-size: 2.5rem!important;
+}
+#jibresPrivacy h3 a{
+	color: #f5f5f7!important;
+}
+#jibresPrivacy p{
+	font-size: 2rem;
+	margin: 0;
+}
+[dir="rtl"] #jibresPrivacy p{
+	font-size: 1.8rem;
+}
+[data-pwa] #jibresPrivacy p{
+	font-size: 1.4rem!important;
+}
+

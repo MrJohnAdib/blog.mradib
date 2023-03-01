@@ -1,0 +1,13 @@
+@media (min-width: 480px) and (max-width: 767px) {
+@import '../grid/gridPhablet';
+
+  .cn{min-width:460px;max-width:720px;width:92%;}
+
+
+  #jibresFooter {padding-top: 2rem;}
+  #jibresLastLine #jibresCopyright{margin-bottom: 2rem;}
+  #jibresLastLine .langlist{margin-bottom: 2rem;}
+
+}
+
+

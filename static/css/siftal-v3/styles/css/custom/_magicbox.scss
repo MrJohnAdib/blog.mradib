@@ -1,0 +1,161 @@
+[data-magicbox]{
+    transition: 0.2s;;
+	will-change: transform, filter;
+    position: relative;
+    display: block;
+    user-select: none;
+}
+[data-magicbox] picture{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+[data-magicbox] img{
+	transition: 0.2s;
+    will-change: transform, filter;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 1px;
+    object-position: center;
+}
+[data-magicbox="zoom"]:hover{
+    transform: scale(1.02);
+    filter: brightness(110%);
+    z-index: 9;
+}
+[data-magicbox="dark"] picture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.9) 100%);
+    transition: 0.2s;
+    opacity: 0.7;
+    z-index: 1;
+}
+[data-magicbox="dark"]:hover img{
+	transform: scale(1.05);
+	filter: brightness(110%);
+}
+[data-magicbox="dark"] picture:hover::after {
+    opacity: 0.8;
+}
+[data-magicbox="light"] picture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 30%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.4) 80%, rgba(255,255,255,0.7) 100%);
+    transition: 0.2s;
+    opacity: 0.7;
+    z-index: 1;
+}
+[data-magicbox="light"]:hover img{
+    transform: scale(1.05);
+    filter: brightness(95%);
+}
+[data-magicbox="light"] picture:hover::after {
+    opacity: 0.8;
+}
+
+[data-magicbox] picture.rounded-sm::after{
+    border-radius: 0.125rem;
+}
+[data-magicbox] picture.rounded::after{
+    border-radius: 0.25rem;;
+}
+[data-magicbox] picture.rounded-md::after{
+    border-radius: 0.375rem;
+}
+[data-magicbox] picture.rounded-lg::after{
+    border-radius: 0.5rem;
+}
+[data-magicbox] picture.rounded-xl::after{
+    border-radius: 0.75rem;
+}
+[data-magicbox] picture.rounded-2xl::after{
+    border-radius: 1rem;
+}
+[data-magicbox] picture.rounded-3xl::after{
+    border-radius: 1.5rem;
+}
+[data-magicbox] picture.rounded-full::after{
+    border-radius: 9999px;
+}
+
+[data-magicbox] [data-magic-caption]{
+    pointer-events: none;
+    max-height: 100%;
+}
+
+/* magicbox inside slider */
+.grid .swiper [data-magicbox] picture{
+    height: 100%;
+}
+.grid .swiper{
+    display: none;
+}
+
+
+.videoFrame video{
+    cursor: pointer;
+}
+.videoFrame[data-clickable][data-player="default"]::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 3px;
+    transition: 0.2s;
+    opacity: 1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z'/></svg>");
+    will-change:width,height,opacity;
+}
+.videoFrame[data-clickable][data-player="default"]:hover::after{
+    opacity: 0.9;
+    width: 120px;
+    height: 120px;
+}
+[data-magicbox][data-playing="play"] .videoFrame[data-clickable][data-player="default"]::after{
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z'/></svg>");
+    opacity: 0.05;
+    opacity: 0;
+}
+body:hover [data-magicbox][data-playing="play"] .videoFrame[data-clickable][data-player="default"]::after{
+    opacity: 0;
+}
+body [data-magicbox][data-playing="play"]:hover .videoFrame[data-clickable][data-player="default"]::after{
+    opacity: 0.8;
+}
+[data-magicbox][data-playing] [data-magic-caption]{
+    top: 0;
+    bottom: initial;
+}
+[data-magicbox][data-playing="play"] [data-magic-caption]{
+    display: none!important;
+}
+[data-pwa] .videoFrame[data-clickable][data-player="default"]::after{
+    width: 64px;
+    height: 64px;
+}
+
+[data-magicbox] .videoFrame .plyr{
+    width: 100%;
+    height: 100%;
+}

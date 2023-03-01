@@ -1,0 +1,36 @@
+
+.printEmptyBox{
+  border: 1px solid #777;
+  border-radius: 2px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: red;
+  width: 180px;
+}
+
+
+.printArea .invoice[data-theme="1"] table{
+  margin-top: 15px;
+}
+.printArea .invoice[data-theme="1"] table .productTitle{
+  width: 35%;
+}
+.printArea .invoice[data-theme="1"] table .valPrice{
+  direction: ltr;
+  text-align: right;
+  font-size: 12px;
+}
+.printArea .invoice[data-theme="1"] table .lastCol{
+  width: 15%;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+

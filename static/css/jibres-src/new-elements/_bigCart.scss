@@ -1,0 +1,59 @@
+
+.bigCart{
+	min-height: 60rem;
+	border-radius: 2rem;
+	padding: 6rem;
+	margin:0 0 1.5rem!important;
+	margin: 0;
+	overflow: hidden;
+	background-color: #fff;
+	color: #1d1d1f;
+}
+h2.bigCart{
+	font-size: 7rem;
+	font-weight: 700;
+	line-height: 1.1!important;
+}
+[dir='rtl'] h2.bigCart{
+	line-height: 1.25!important;
+}
+h3.bigCart{
+	font-size: 4.5rem;
+	font-weight: 400;
+	line-height: 1.1!important;
+}
+[dir='rtl'] h3.bigCart{
+	font-size: 3.5rem;
+	line-height: 1.5!important;
+}
+
+// backgrounds
+.bigCart.bgBlue{
+	background-color: #0071e3;
+	color: #f5f5f7;
+}
+.bigCart.bgBlack{
+	background-color: #1d1d1f;
+	color: #fff;
+}
+.bigCart.bgJibres{
+	background-color: #c8095a;
+	color: #fff;
+}
+
+// pwa
+[data-pwa] .bigCart{
+	min-height: 0;
+	padding: 10rem 2rem 5rem;
+}
+[data-pwa] h2.bigCart{
+	font-size: 4rem!important;
+}
+[data-pwa] h3.bigCart{
+	font-size: 3rem!important;
+	font-weight: 400!important;
+}
+[data-pwa][dir='rtl'] h3.bigCart{
+	font-size: 2rem!important;
+}
+

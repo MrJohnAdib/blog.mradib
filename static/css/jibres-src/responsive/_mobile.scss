@@ -1,0 +1,190 @@
+@media (max-width: 767px) {
+@import '../grid/gridMobile';
+
+  .cn{min-width:280px;max-width:750px;width:94%;}
+
+  kbd {display:none;}
+
+  // website
+  // header
+  #jibresPageTitle {font-size:18px;}
+
+
+
+  // custom style for another part of siftal
+  [data-panel] .wrapper{padding:2em 1em}
+  [data-panel] .card .card-data img{max-height:25px}
+  [data-panel] .card .card-data span{font-size:1.6em}
+  [data-panel] .card .card-desc{font-size:1.4em}
+
+  body .w100{min-width:75px;width:75px}
+  body .w125{min-width:100px;width:100px}
+  body .w150{min-width:125px;width:125px}
+  body .w200{min-width:150px;width:150px}
+
+  .pTB1x{padding-top: 5px;padding-bottom: 5px;}
+  .pTB2x{padding-top: 10px;padding-bottom: 10px;}
+  .pTB3x{padding-top: 20px;padding-bottom: 20px;}
+  .pTB4x{padding-top: 50px;padding-bottom: 50px;}
+  .pTB5x{padding-top: 75px;padding-bottom: 75px;}
+
+
+  [dir="ltr"] [data-panel] #main{margin-left:0}
+  [dir="rtl"] [data-panel] #main{margin-right:0}
+  // sidebar
+  [dir="ltr"] [data-panel] #sidebar{left:-250px;}
+  [dir="rtl"] [data-panel] #sidebar{right:-250px;}
+  [data-panel] #sidebar figure{margin:0.5em 0;padding:0}
+  [data-panel] #sidebar figure .avatar{display:inline-block;vertical-align:middle;width:75px;height:75px;margin:1em;}
+  [data-panel] #sidebar figure figcaption{display:inline-block;max-width:140px;line-height:1.5;vertical-align:middle;}
+  [data-panel] #sidebar figure .avatar:after{line-height:70px;}
+  [data-panel] #sidebar ul > li > a {padding:1.2em 2em;}
+  [data-panel] .toggleClean{display:none}
+
+  .tbox2{padding:5px}
+  .tbox2 .pageTitle{padding: 0}
+  .tbox2 nav{margin-top: 1em;}
+  .btn.master.back{min-width:36px;margin-bottom:10px;}
+  .titleBox h2{max-width: 100%;font-size: 1.8em;margin-bottom: 10px;}
+
+  [data-panel] .tbox p{
+    display:none;
+  }
+  [data-panel] .tbox i{
+    display: none;
+  }
+  [dir="ltr"] .tbox.pictogram{
+    padding-right:1em;
+  }
+  [dir="rtl"] .tbox.pictogram{
+    padding-left: 1em;
+  }
+  .tbox.pictogram > span[class^="sf-"]{
+    display: none;
+  }
+  [data-panel] .tbox h2{
+    font-size: 1.2em;
+  }
+
+  .box .body{padding: 1rem 1rem;}
+
+  // tables
+  // .tbl.responsive{
+  //   display: block;
+  //   overflow-x: hidden;
+  //   -ms-overflow-style:-ms-autohiding-scrollbar;
+  // }
+
+  .tbl td.collapsing.sauto, .tbl th.collapsing.sauto{white-space:initial;}
+  .tbl.responsive tr{
+    width: auto!important;
+    display: block!important;
+    border-top: 1px solid rgba(30,30,30,.1);
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
+  .tbl.responsive th, .tbl.responsive td{
+    width: auto!important;
+    display: block!important;
+    padding-top:0.25em!important;
+    padding-bottom:0.25em!important;
+    border: none!important;
+    background-color: transparent!important;
+  }
+  // tbl1 responsive
+  .tbl1 td.collapsing.sauto, .tbl1 th.collapsing.sauto{white-space:initial;}
+  .tbl1.responsive tr{
+    width: auto!important;
+    display: block!important;
+    border-top: 1px solid rgba(30,30,30,.1);
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
+  .tbl1.responsive th, .tbl1.responsive td{
+    width: auto!important;
+    display: block!important;
+    padding:0.25em 1em!important;
+    border: none!important;
+    background-color: transparent!important;
+  }
+  .tbl1.responsive th.collapsing, .tbl1.responsive td.collapsing{
+    display: inline-block!important;
+  }
+  .s12 .cbox{padding: 1em 0.5em;}
+
+
+  // breadcrumb
+  .breadcrumb{
+    padding: 5px 5px;
+    height: auto;
+  }
+  .breadcrumb2{
+    padding: 5px 5px;
+    height: auto;
+  }
+  .breadcrumb2 a{
+    width: 100%;
+  }
+  // pagination
+  .pagination a:not([href]):not(.active)
+  {
+    padding-right:2px;
+    padding-left:2px;
+  }
+
+
+  // padding and margin
+  .sp0{padding:0}
+  .sm0{padding:0}
+
+
+  ul.list li{padding-right:0.1em;padding-left:0.1em;}
+  .alert{padding:0.5em;}
+
+
+  .page-title{padding:5em 0;}
+  .page-title h2{padding: 0 5%;}
+  #tfooter nav.s12{margin:1em auto;}
+  .pc{padding:2em 0;}
+  .pc ul.list{margin: 2em 2%;}
+
+  #landing {min-height:350px;height: 400px;}
+  #landing .title{padding:10px 10px;position:relative;top:50px;}
+  #landing .title .h2{font-size:1.8em;}
+  #landing .title h3{font-size: 1.4em}
+  #keepitsimple .title h2{font-size:2em;}
+  #saleChannels {font-size: 1.2em;}
+  #pricingPlans {font-size: 1.4em;}
+  #quote {min-height: 300px;}
+  #quote .title{right: 0;left: 0;font-size: 1.5em;position: relative;padding:2em 0}
+  #tfooter .middle nav a{display:inline-block;background-color:rgba(0,0,0,0.1);border-radius:0.25rem;margin: 0 0 5px;padding: 1rem 1em}
+  #tfooter .top a{display:inline-block;background-color:rgba(0,0,0,0.1);border-radius:0.25rem;margin: 0 2px 5px!important;padding: 1rem 1em}
+
+  .pricingQuick .box > .c3{
+    border: none!important;
+    border-bottom: 1px solid #e0f0ff!important;
+    padding: 2em 0;
+  }
+  .pricingQuick h3{
+    min-height: initial;
+  }
+  .pricingQuick ul{
+    margin: 0;
+  }
+  .guaranteeBox .text{text-align: center;padding-top:50px;}
+  /*fix logo on mobile*/
+  .logoEffect{
+    height: 300px;
+  }
+  .logoEffect .shadow{
+    height: 162px;
+    width: 163px;
+  }
+  .logoEffect .logo{
+    height: 160px;
+    width: 160px;
+    top: 72px;
+  }
+
+
+}

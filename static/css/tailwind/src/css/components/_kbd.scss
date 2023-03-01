@@ -1,0 +1,50 @@
+.kbd {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  --tw-bg-opacity:1;
+  background-color:hsla(var(--b2)/var(--tw-bg-opacity,1));
+  --tw-border-opacity:.2;
+  border-color:hsla(var(--nf)/var(--tw-border-opacity,1));
+  padding-left:.5rem;
+  padding-right:.5rem;
+  border-radius:var(--rounded-btn,.5rem);
+  border-width:1px 1px 2px;
+  min-height:2.2em;
+  min-width:2.2em
+}
+.kbd-xs {
+  font-size:.75rem;
+  line-height:1rem;
+  padding-left:.25rem;
+  padding-right:.25rem;
+  min-height:1.2em;
+  min-width:1.2em
+}
+
+.kbd-sm {
+  font-size:.875rem;
+  line-height:1.25rem;
+  padding-left:.25rem;
+  padding-right:.25rem;
+  min-height:1.6em;
+  min-width:1.6em
+}
+
+.kbd-md {
+  font-size:1rem;
+  line-height:1.5rem;
+  padding-left:.5rem;
+  padding-right:.5rem;
+  min-height:2.2em;
+  min-width:2.2em
+}
+
+.kbd-lg {
+  font-size:1.125rem;
+  line-height:1.75rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  min-height:2.5em;
+  min-width:2.5em
+}

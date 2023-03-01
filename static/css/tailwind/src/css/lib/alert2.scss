@@ -1,0 +1,74 @@
+[class^="alert2"] {
+  position: relative;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  line-height: 24px;
+  margin-bottom: 5px;
+  transition:0.2s;
+  border-radius:3px;
+}
+[data-pwa] [class^="alert2"]{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+[class^="alert2"].rounded{
+  border-radius:10px;
+}
+.alert2{
+  background-color:#f9fafb;
+  color: #636464;
+}
+
+[class^="alert2"]:hover{
+  border-color: rgba(0,0,0,0.1);
+}
+[class^="alert2"] .alert-link {
+  color: #333;
+}
+[class^="alert2"]:focus{
+  border-color: rgba(0,0,0,0.2);
+  opacity: 0.85;
+}
+[class^="alert2"]:active, [class^="alert2"].active{
+  border-color: rgba(0,0,0,0.2);
+  opacity: 0.9;
+}
+
+[class^="alert2"]:empty{
+  display:none
+}
+[class^="alert2"] > a{
+  font-weight: bold;
+}
+
+
+[class^="alert2"] > svg{
+  width: 24px;
+  margin: 0 10px;
+  flex: none;
+}
+[class^="alert2"].lg{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.alert2-info {
+  background-color:rgba(32, 148, 243, 0.1);
+  color:#2094f3
+}
+
+.alert2-success {
+  background-color:rgba(0, 148, 133, 0.1);
+  color:#009485
+}
+
+.alert2-warning {
+  background-color:rgba(255, 153, 0, 0.1);
+  color:#ff9900
+}
+
+.alert2-danger {
+  background-color:rgba(255, 87, 36, 0.1);
+  color:#ff5724
+}
+

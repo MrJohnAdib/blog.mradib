@@ -1,0 +1,42 @@
+// header line
+#jibresHeader{font-size:1.4rem;padding:0;background-color:$white;overflow:hidden;transition:0.3s;box-shadow: 0 1rem 1rem -1rem rgba(33,35,38,0.1)}
+// logo
+#jibresHeader .logo{display:block;max-width:18rem;overflow: hidden;transition:0.2s;}
+#jibresHeader .logo:hover{background-color: rgba(0,0,0,0.02)}
+#jibresHeader .logo:focus{opacity:0.8;background-color: rgba(0,0,0,0.05)}
+#jibresHeader .logo:active{background-color: rgba(0,0,0,0.07)}
+#jibresHeader .logo img{display:block;height:7rem;padding:1.5rem 1rem;max-width:18rem;margin:0 1rem;transition:0.3s;}
+#jibresHeader .logo svg{display:block;height:7rem;padding:1.5rem 1rem;max-width:18rem;margin:0 1rem;transition:0.3s;}
+#jibresHeader h1{display: none;font-size:2rem;color:$jibres;margin:0;}
+// nav
+#jibresHeader nav a{line-height:5rem;color:$black;padding:1rem 1rem;margin:0 5px;display:inline-block;transition:0.2s;position:relative;min-width: 80px;text-align:center;}
+#jibresHeader nav a:hover{background-color: rgba(0,0,0,0.02);color:$jibres;}
+#jibresHeader nav a:focus{background-color: rgba(0,0,0,0.05);}
+#jibresHeader nav a:active{background-color: rgba(0,0,0,0.07);color:$jibresMono;}
+// master btn
+#jibresHeader .master{display:inline-block;transition:0.2s;position:relative;text-align:center;line-height:36px;margin:1.5rem 1rem;border-radius:3px;min-width: 120px;border:2px solid transparent;background-color: $jibres;color:$white;box-shadow: 0 0.5rem 1.5rem 0 rgba(0,0,0,0.15);}
+#jibresHeader .master:hover{background-color: $jibresMono;}
+#jibresHeader .master:focus{background-color: $jibresMono;border-color:$jibresDark}
+#jibresHeader .master:active{background-color: $jibres;}
+// slave
+#jibresHeader .slave{display:inline-block;transition:0.2s;position:relative;text-align:center;line-height:36px;margin:1.5rem 1rem;border-radius:3px;min-width: 7rem;border:2px solid rgba(14, 19, 24, 0.15);color:rgba(14,19,24,.7);}
+#jibresHeader .slave:hover{border-color:rgba(14,19,24,.45)}
+#jibresHeader .slave:focus{border-color:rgba(14,19,24,.7)}
+#jibresHeader .slave:active{background-color: rgba(14,19,24,.15)}
+
+// page title with type effect
+#jibresPageTitle{position:relative;padding:3rem 0 3rem;font-size:2rem;line-height:7rem;min-height:140px;overflow: hidden;background-color:#c80a5a;color:#fff;}
+#jibresPageTitle p{font-size: 2rem;}
+#jibresPageTitle .typing{min-height: 7rem;font-size:4rem;}
+#jibresPageTitle .typing .typed{font-weight:800;margin:0;display: inline-block;}
+#jibresPageTitle #typed-strings{display:none;}
+#jibresPageTitle .typed-cursor{opacity: 1;font-weight: 100;animation: blink 0.7s infinite;display: inline-block;}
+@keyframes blink{ 0% { opacity:1; } 50% { opacity:0.3; } 100% { opacity:1; } }
+
+[data-subdomain="developers"] #jibresPageTitle{background-color: #607d8b}
+#jibresGoToFa{display:block;position: relative;font-size: 2.5rem;line-height:6rem;font-weight:900;background-color: #ffc107;color: #000;text-align: center;padding:0;direction: rtl;}
+#jibresGoToFa img{height: 4rem;width: auto;margin: 0 1rem; vertical-align: middle;display: inline-block;border-radius: 0.5rem;}
+// pwa
+[data-pwa] #jibresGoToFa {font-size: 1rem;line-height:3rem;}
+[data-pwa] #jibresGoToFa b{display: none;}
+[data-pwa] #jibresGoToFa img{height: 2.4rem;}

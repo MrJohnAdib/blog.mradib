@@ -1,0 +1,23 @@
+
+.invoice[data-size="receipt8"] .logo.midSize{width: 50%;margin:0 auto;}
+.invoice[data-size="receipt8"] .storeDetail h1{font-weight: bold;font-size: 2em}
+.invoice[data-size="receipt8"] .storeDetail address{font-style: normal;line-height: 1.5em;}
+.invoice[data-size="receipt8"] .storeDetail address .phone{font-weight:bold}
+.invoice[data-size="receipt8"] .storeDetail .logo img{width: 80px;height:auto;max-width:80px;max-height:80px;border-radius:3px;overflow:hidden;}
+.invoice[data-size="receipt8"] .storeDetail .desc{line-height:1.5em}
+
+.invoice[data-size="receipt8"] .factorDetail{padding-top:1em;border-top:2px solid #333}
+.invoice[data-size="receipt8"] .factorDetail .datetime .time{font-weight:700}
+.invoice[data-size="receipt8"] .factorDetail code{font-size: 1.5em;background-color:#eee;border-radius:3px;padding:3px 5px;min-width:50px;text-align:center;}
+.invoice[data-size="receipt8"] .barcodePrev{height: 40px;width:140px;}
+.invoice[data-size="receipt8"] .barcodePrev.wide{height: auto;width:100%;}
+.invoice[data-size="receipt8"] .tbl1{color:#000}
+.invoice[data-size="receipt8"] .tbl1 thead th{border-bottom-color: #000;padding-top:1em;padding-bottom:1em; }
+.invoice[data-size="receipt8"] .tbl1 tbody td{line-height:1.4em;}
+.invoice[data-size="receipt8"] .tbl1 .productTitle{width:50%;font-size:0.9em;}
+.invoice[data-size="receipt8"] .tbl1 td{vertical-align: middle;}
+.invoice[data-size="receipt8"] .tbl1 tfoot th{border-top:1px dotted #000;font-weight:bold}
+.invoice[data-size="receipt8"] .factorResult th{vertical-align: middle;}
+.invoice[data-size="receipt8"] .factorResult .collapsing{font-weight:bold;font-size: 1.2em;}
+.invoice[data-size="receipt8"] .factorResult .factorSum{font-size: 1.2em;color:#000!important;}
+

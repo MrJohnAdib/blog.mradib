@@ -1,0 +1,24 @@
+.welcome{
+	text-align: center;
+	color: #333;
+	background-color: #fff;
+	box-shadow: 0 10px 25px #ddd;
+	padding: 2em 2%;
+	position:relative;
+	transition:0.3s;
+	margin: 2em auto;
+	border: 1px solid transparent;
+	border-radius:0.3rem;
+}
+.welcome p{
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+}
+.welcome h2{
+	font-size: 3em;
+	font-weight: 1000;
+}
+.welcome .buildBtn{
+	font-size: 2em;
+	padding:1em 0 2em;
+}

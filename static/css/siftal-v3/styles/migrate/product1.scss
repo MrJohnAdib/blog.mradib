@@ -1,0 +1,218 @@
+[data-slider="product"]{
+	position: relative;
+	max-height: 350px;
+	min-height: 200px;
+	overflow: hidden;
+}
+[data-slider="product"]:not(.slick-initialized){
+	height: 300px;
+}
+[data-slider="product"]::before{
+	content: "";
+	background-color: #f9f9f9;
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom:0;
+	z-index: 11;
+}
+[data-slider="product"]::after{
+	content: "Loading...";
+	position: absolute;
+	top:50%;
+	right: 0;
+	left: 0;
+	display: block;
+	margin:0 auto;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: -15px;
+	text-align: center;
+	animation: blinkText 1s linear infinite;
+	z-index: 12;
+}
+[lang="fa"] [data-slider="product"]::after{
+	content: "در حال بارگذاری";
+}
+@keyframes blinkText{ 0%{opacity: 1;} 50%{opacity: .5;} 100%{opacity: 1;} }
+[data-slider="product"].slick-initialized::before{
+	opacity: 0;
+	display: none;
+}
+[data-slider="product"].slick-initialized::after{
+	opacity: 0;
+	display: none;
+}
+.productBox{
+	padding: 10px 5px;
+	max-width: 200px;
+}
+[data-desktop] .productBox{
+	width: 175px;
+}
+.jProduct1{
+	overflow: hidden;
+	border-radius: 5px;
+	margin:0 auto 0;
+	position: relative;
+	display: block;
+	background-color: #fafafa;
+	font-size: 14px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.jProduct1:hover{
+	box-shadow: 0 1px 10px rgba(0,0,0,.12);
+}
+.jProduct1:focus{
+	box-shadow: 0 1px 15px rgba(0,0,0,.2);
+}
+.jProduct1 .cover{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border-radius: 5px 5px 0 0;
+	max-height: 300px;
+}
+.jProduct1 .cover[data-gr] img{
+	opacity: 0.4;
+}
+.jProduct1 .cover::before{
+	content: "";
+	display: block;
+	width: 100%;
+	padding-top: 100%;
+}
+.jProduct1 .cover img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.jProduct1 .title{
+	height: 50px;
+	line-height: 20px;
+	padding: 10px 5% 0;
+	overflow: hidden;
+	color: #444;
+}
+.jProduct1 footer{
+	padding: 5px 10px 10px;
+	line-height: 25px;
+	direction: ltr;
+}
+[data-pwa] .jProduct1 footer{
+	padding: 5px 5px;
+}
+.jProduct1 .price{
+	height: 25px;
+	line-height: 25px;
+	min-width: 80px;
+	text-align: left;
+	padding: 0 5%;
+	overflow: hidden;
+	font-size: 15px;
+	font-weight: 700;
+	color: #000;
+}
+.jProduct1 .unit{
+	font-size: 10px;
+	font-weight: 400;
+	color: #999;
+}
+.jProduct1 .compareAtPrice{
+	font-size: 12px;
+	color: #999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 50px;
+	text-decoration-color:#ff4747;
+}
+.jProduct1 .discount{
+	position: absolute;
+	overflow: hidden;
+	direction: ltr;
+	width: 100px;
+	height: 40px;
+	right: -37px;
+	top: -8px;
+	transform: rotate(45deg);
+	background-color: #ff4747;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+.jProduct1 .btnAddCart{
+	position: absolute;
+	display: block;
+	top: 10px;
+	bottom: 0;
+	left: 10px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	content: "+";
+	text-align: center;
+	background-color: #00bfd5;
+	color: #fff;
+	opacity: 0;
+	transition: 0.1s;
+	z-index: 2;
+	cursor: copy;
+}
+.jProduct1:hover .btnAddCart{
+	opacity: 1;
+}
+[data-pwa] .jProduct1 .btnAddCart{
+	display: none;
+	opacity: 1;
+	top: 5px;
+	left: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+}
+.avand.productLine{
+	overflow: hidden;
+}
+.horizontalScroll{
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+[data-pwa] .jProduct1{
+	font-size: 12px;
+	height: 100%;
+}
+[data-pwa] .jProduct1 .cover img{
+	padding: 0;
+}
+[data-pwa] .jProduct1 .title{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	white-space: initial;
+	overflow: hidden;
+}
+[data-pwa] .jProduct1 .compareAtPrice{
+	display: none;
+}

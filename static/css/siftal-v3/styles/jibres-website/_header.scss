@@ -1,0 +1,42 @@
+/* header line */
+#jibresHeader{font-size:14px;padding:0;background-color:#fff;overflow:hidden;transition:0.3s;box-shadow: 0 10px 10px -10px rgba(33,35,38,0.1)}
+/* logo */
+#jibresHeader .logo{display:block;max-width:180px;overflow: hidden;transition:0.2s;}
+#jibresHeader .logo:hover{background-color: rgba(0,0,0,0.02)}
+#jibresHeader .logo:focus{opacity:0.8;background-color: rgba(0,0,0,0.05)}
+#jibresHeader .logo:active{background-color: rgba(0,0,0,0.07)}
+#jibresHeader .logo img{display:block;height:70px;padding:15px 10px;max-width:180px;margin:0 10px;transition:0.3s;}
+#jibresHeader .logo svg{display:block;height:70px;padding:15px 10px;max-width:180px;margin:0 10px;transition:0.3s;}
+#jibresHeader h1{display: none;font-size:20px;color:#c80a5a;margin:0;}
+/* nav */
+#jibresHeader nav a{line-height:50px;color:#000;padding:10px 10px;margin:0 5px;display:inline-block;transition:0.2s;position:relative;min-width: 80px;text-align:center;}
+#jibresHeader nav a:hover{background-color: rgba(0,0,0,0.02);color:#c80a5a;}
+#jibresHeader nav a:focus{background-color: rgba(0,0,0,0.05);}
+#jibresHeader nav a:active{background-color: rgba(0,0,0,0.07);color:#F31271;}
+/* master btn */
+#jibresHeader .master{display:inline-block;transition:0.2s;position:relative;text-align:center;line-height:36px;margin:15px 10px;border-radius:3px;min-width: 120px;border:2px solid transparent;background-color: #c80a5a;color:#fff;box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);}
+#jibresHeader .master:hover{background-color: #F31271;}
+#jibresHeader .master:focus{background-color: #F31271;border-color:#A00848}
+#jibresHeader .master:active{background-color: #c80a5a;}
+/* slave */
+#jibresHeader .slave{display:inline-block;transition:0.2s;position:relative;text-align:center;line-height:36px;margin:15px 10px;border-radius:3px;min-width: 70px;border:2px solid rgba(14, 19, 24, 0.15);color:rgba(14,19,24,.7);}
+#jibresHeader .slave:hover{border-color:rgba(14,19,24,.45)}
+#jibresHeader .slave:focus{border-color:rgba(14,19,24,.7)}
+#jibresHeader .slave:active{background-color: rgba(14,19,24,.15)}
+
+/* page title with type effect */
+#jibresPageTitle{position:relative;padding:30px 0 30px;font-size:20px;line-height:70px;min-height:140px;overflow: hidden;background-color:#c80a5a;color:#fff;}
+#jibresPageTitle p{font-size: 20px;}
+#jibresPageTitle .typing{min-height: 70px;font-size:40px;}
+#jibresPageTitle .typing .typed{font-weight:800;margin:0;display: inline-block;}
+#jibresPageTitle #typed-strings{display:none;}
+#jibresPageTitle .typed-cursor{opacity: 1;font-weight: 100;animation: blink 0.7s infinite;display: inline-block;}
+@keyframes blink{ 0% { opacity:1; } 50% { opacity:0.3; } 100% { opacity:1; } }
+
+[data-subdomain="developers"] #jibresPageTitle{background-color: #607d8b}
+#jibresGoToFa{display:block;position: relative;font-size: 20px;line-height:48px;font-weight:700;background-color: #ffc107;color: #000;text-align: center;padding:0;direction: rtl;}
+#jibresGoToFa img{height: 40px;width: auto;margin: 0 10px; vertical-align: middle;display: inline-block;border-radius: 5px;}
+/* pwa */
+[data-pwa] #jibresGoToFa {font-size: 10px;line-height:30px;}
+[data-pwa] #jibresGoToFa b{display: none;}
+[data-pwa] #jibresGoToFa img{height: 24px;}

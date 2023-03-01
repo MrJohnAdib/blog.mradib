@@ -1,0 +1,107 @@
+.chart{
+    direction:ltr;
+    overflow:hidden;
+    width:100%;
+    min-height:100px;
+    max-height:600px;
+    user-select:none;
+    position:relative;
+    transition:0.2s ease-in-out;
+    will-change: transform;
+}
+.chart::after{
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    right: 11px;
+    width: 25px;
+    height: 25px;
+    background:url('../logo/icon/svg/Jibres-Logo-icon.svg') no-repeat;
+}
+[data-pwa] .chart::after{
+    width: 20px;
+    height: 20px;
+    bottom: 12px;
+    right: 14px;
+}
+.chart[data-hint]::before{
+    content: attr(data-hint);
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    width: 70%;
+    line-height: 25px;
+    text-align: center;
+    margin:0 auto;
+    color: #ccc;
+    z-index: 2;
+}
+.chart:active{
+    transform: scale(0.95);
+}
+.chart.notActive:active{transform: none;}
+[dir="rtl"] .chart{text-align:right}
+
+.chart.x100{height:100px;}
+.chart.x150{height:150px;}
+.chart.x200{height:200px;}
+.chart.x210{height:210px;}
+.chart.x240{height:240px;}
+.chart.x250{height:250px;}
+.chart.x260{height:260px;}
+.chart.x270{height:270px;}
+.chart.x280{height:280px;}
+.chart.x285{height:285px;}
+.chart.x290{height:290px;}
+.chart.x300{height:300px;}
+.chart.x310{height:310px;}
+.chart.x320{height:320px;}
+.chart.x330{height:330px;}
+.chart.x350{height:350px;}
+.chart.x370{height:370px;}
+.chart.x380{height:380px;}
+.chart.x400{height:400px;}
+.chart.x450{height:450px;}
+.chart.x470{height:470px;}
+.chart.x500{height:500px;}
+.chart.x600{height:600px;}
+.chart.x700{height:700px;}
+
+
+.highcharts-title {
+    fill:#333!important;
+    opacity:0.5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px!important;
+    right: 0!important;
+    left: 0!important;
+    margin: 0 auto!important;
+}
+.highcharts-tooltip > span {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid silver;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #888;
+    padding: 8px;
+}
+.highcharts-no-data{
+
+}
+[dir="rtl"] .highcharts-tooltip > span{
+    direction:rtl;
+    text-align:right;
+    unicode-bidi: embed;
+}
+[dir="rtl"] .highcharts-tooltip > span b{
+    display:inline-block;
+    direction:ltr;
+}
+[dir="rtl"] .highcharts-contextmenu{
+    text-align: right;
+}
+.chart .chartServiceLogo{
+    y:calc(100% - 32px);
+    x:calc(100% - 32px);
+}
